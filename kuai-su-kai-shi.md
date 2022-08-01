@@ -1,14 +1,14 @@
-# Quick Start
+# 快速开始
+
+
 
 {% hint style="info" %}
-**Good to know:** A quick start guide can be good to help folks get up and running with your API in a few steps. Some people prefer diving in with the basics rather than meticulously reading every page of documentation!
+&#x20;**很高兴知道：**快速入门指南可以帮助人们通过几个步骤启动并运行您的 API。有些人更喜欢深入了解基础知识，而不是仔细阅读每一页文档！
 {% endhint %}
 
-## Get your API keys
+## 获取您的 API 密钥
 
-Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
-
-You can generate an API key from your Dashboard at any time.
+您的 API 请求使用 API 密钥进行身份验证。任何不包含 API 密钥的请求都将返回错误。
 
 ## Install the library
 
