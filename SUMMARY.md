@@ -6,5 +6,5 @@
 ## 参考
 
 * [API 参考](reference/api-reference/README.md)
-  * [Pets](reference/api-reference/pets.md)
-  * [Users](reference/api-reference/users.md)
+  * [商品](reference/api-reference/pets.md)
+  * [订单](reference/api-reference/users.md)
