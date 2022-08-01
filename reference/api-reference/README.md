@@ -1,18 +1,18 @@
-# API Reference
+# API 参考
 
-Dive into the specifics of each API endpoint by checking out our complete documentation.
+查看我们的完整文档，深入了解每个 API 端点的细节。
 
-## Pets
+## 商品
 
-All the methods associated with `CRUD`ing some pets. Which isn't as weird as it sounds:
+与商品相关的一些接口:
 
 {% content-ref url="pets.md" %}
 [pets.md](pets.md)
 {% endcontent-ref %}
 
-## Users
+## 订单
 
-Everything related to users:
+与订单相关的一些接口:
 
 {% content-ref url="users.md" %}
 [users.md](users.md)
