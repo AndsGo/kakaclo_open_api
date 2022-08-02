@@ -12,9 +12,9 @@
 [kuai-su-kai-shi.md](kuai-su-kai-shi.md)
 {% endcontent-ref %}
 
-## Want to deep dive?
+## 想要深入了解吗？
 
-Dive a little deeper and start exploring our API reference to get an idea of everything that's possible with the API:
+深入一点，开始探索我们的API参考，了解API的一切可能：
 
 {% content-ref url="reference/api-reference/" %}
 [api-reference](reference/api-reference/)
