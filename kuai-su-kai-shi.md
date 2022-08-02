@@ -38,7 +38,7 @@ pip install --upgrade myapi
 
 To make your first request, send an authenticated request to the pets endpoint. This will create a `pet`, which is nice.
 
-{% swagger baseUrl="https://api.myapi.com/v1" method="post" path="/pet" summary="Create pet." %}
+{% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="post" path="/pet" summary="Create pet." %}
 {% swagger-description %}
 Creates a new pet.
 {% endswagger-description %}
