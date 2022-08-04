@@ -1,46 +1,82 @@
-# Pets
+# Product
 
-## Creating a new pet
+## Query Products
 
-{% swagger baseUrl="https://api.myapi.com/v1" method="post" path="/pet" summary="Create pet." %}
+{% swagger baseUrl="" method="post" path="/v1/product/QueryProduct" summary="" %}
 {% swagger-description %}
-Creates a new pet.
+
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="name" required="true" type="string" %}
-The name of the pet
+{% swagger-parameter in="body" name="Spus" required="false" type="Arrays" %}
+Commodity SPU code collections, specify the commodity SPU code query, each time a maximum of 30, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="owner_id" required="false" type="string" %}
-The 
-
-`id`
-
- of the user who owns the pet
+{% swagger-parameter in="body" name="Skus" required="false" type="Arrays" %}
+Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="species" required="false" type="string" %}
-The species of the pet
+{% swagger-parameter in="body" name="DateStartTime" required="false" type="Date" %}
+The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="breed" required="false" type="string" %}
-The breed of the pet
+{% swagger-parameter in="body" name="DateEndTime" required="false" type="Date" %}
+The end time of the update time, UTC time, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Pet successfully created" %}
+{% swagger-parameter in="body" name="PageNumber" type="Int" %}
+Page number, when querying according to the update time, PageNumber is required and greater than 0.
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="successfully query" %}
 ```javascript
 {
-    "name"="Wilson",
-    "owner": {
-        "id": "sha7891bikojbkreuy",
-        "name": "Samuel Passet",
-    "species": "Dog",}
-    "breed": "Golden Retriever",
+    "code":10000,
+    "message":"kk.api.200",
+    "data":{
+        "list":[
+            {
+                "KkProductId":"",
+                "Spu":"",
+                "ProductName":"",
+                "Description":"",
+                "SizeImagePath":"",
+                "SpuStatus":"",
+                "FullCategoryId":"",
+                "FullCategoryName":"",
+                "CreateTime":"",
+                "UpdateTime":"",
+                "SkuList":[
+                    {
+                        "Sku":"",
+                        "SkuName":"",
+                        "MainImg":"",
+                        "PackageLength":"",
+                        "PackageWidth":"",
+                        "PackageHeight":"",
+                        "PackageWeight":"",
+                        "Cost":"",
+                        "Price":"",
+                        "Option1":"",
+                        "Option2":"",
+                        "Option3":"",
+                        "Material":"",
+                        "SkuStatus":"",
+                        "ImgUrl":[
+
+                        ]
+                    }
+                ]
+            }
+        ],
+        "total":"",
+        "pageNumber":"",
+        "pageSize":""
+    }
 }
 ```
 {% endswagger-response %}
 
-{% swagger-response status="401" description="Permission denied" %}
+{% swagger-response status="400: Bad Request" description="Permission denied" %}
 
 {% endswagger-response %}
 {% endswagger %}
@@ -49,12 +85,59 @@ The breed of the pet
 **Good to know:** This API method was created using the API Method block, it's how you can build out an API method documentation from scratch. Have a play with the block and you'll see you can do some nifty things like add and reorder parameters, document responses, and give your methods detailed descriptions.
 {% endhint %}
 
-## Updating a pet
+## Query stock
 
-{% swagger src="https://petstore.swagger.io/v2/swagger.json" path="/pet" method="put" %}
-[https://petstore.swagger.io/v2/swagger.json](https://petstore.swagger.io/v2/swagger.json)
+{% swagger method="post" path="/v1/product/QueryStock" baseUrl="" summary="" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="body" name="Skus" type="Arrays" required="true" %}
+Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="WarehouseCode" type="String" %}
+warehouse code
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="Country" type="String" %}
+Shipping country
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="successfully query" %}
+```javascript
+{
+    "code":10000,
+    "message":"kk.api.200",
+    "data":{
+        "list":[
+            {
+                "Sku":"",
+                "WarehouseInventoryList":[
+                    {
+                        "WarehouseCode":"",
+                        "Inventory":"",
+                        "Country":""
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
 {% endswagger %}
 
 {% hint style="info" %}
 **Good to know:** This API method was auto-generated from an example Swagger file. You'll see that it's not editable – that's because the contents are synced to an URL! Any time the linked file changes, the documentation will change too.
+
+
 {% endhint %}
