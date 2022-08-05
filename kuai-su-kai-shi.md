@@ -14,7 +14,7 @@ You can get API keys from your business manager
 
 To make your first request, send an authenticated request to the products endpoint. This will query a product, which is nice.
 
-{% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="post" path="/category" summary="Query category" %}
+{% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="get" path="/product/category" summary="Query category" %}
 {% swagger-description %}
 Creates a new pet.
 {% endswagger-description %}
@@ -35,8 +35,8 @@ of the user who owns the pet
 The species of the pet
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="breed" required="false" type="string" %}
-The breed of the pet
+{% swagger-parameter in="body" name="" required="false" type="" %}
+
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Pet successfully created" %}
