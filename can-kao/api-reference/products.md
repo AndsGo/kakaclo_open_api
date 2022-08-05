@@ -28,7 +28,7 @@
 | price          | Decimal | commodity sku price                                                         |
 | option1        | String  | sku attribute 1, contains size information, variable attribute              |
 | option2        | String  | sku attribute 2, contains color information, variable attribute             |
-| option3        | String  | sku attribute 3, including stamp information, variable attribute            |
+| option3        | String  | sku attribute 3, including pattern information, variable attributes         |
 | material       | String  | Product sku material                                                        |
 | skuStatus      | Int     | The status of the product sku on the shelf, 0-off the shelf; 1-on the shelf |
 | imgUrl         | String  | All pictures of product SKU                                                 |
@@ -113,7 +113,3 @@ Page number, when querying according to the update time, PageNumber is required 
 
 {% endswagger-response %}
 {% endswagger %}
-
-{% hint style="info" %}
-**Good to know:** This API method was created using the API Method block, it's how you can build out an API method documentation from scratch. Have a play with the block and you'll see you can do some nifty things like add and reorder parameters, document responses, and give your methods detailed descriptions.
-{% endhint %}

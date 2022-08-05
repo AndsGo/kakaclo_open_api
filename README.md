@@ -1,12 +1,12 @@
-# Welcome！
+# 欢迎！
 
-## ​Welcome to kakaclo open API
+## ​欢迎使用 kakaclo openAPI
 
-​Welcome to kakaclo open API! Here you'll find all the documentation you need to get up and running with the kakaclo open API
+​欢迎来到 kakaclo openAPI！在这里，您将找到启动和运行 kakaclo openAPI 所需的所有文档。
 
-## Want to jump right in?
+## 想直接跳进去吗？
 
-Feeling like an eager beaver? Jump in to the quick start docs and get making your first request:
+跳转到快速入门文档并提出您的第一个请求：
 
 {% content-ref url="kuai-su-kai-shi.md" %}
 [kuai-su-kai-shi.md](kuai-su-kai-shi.md)
