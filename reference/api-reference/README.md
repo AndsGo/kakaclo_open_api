@@ -1,10 +1,10 @@
 # Product
 
-查看我们的完整文档，深入了解每个 API 端点的细节。
+Dive into the specifics of each API endpoint by checking out our complete documentation
 
-## 商品
+## 商Productss品
 
-与商品相关的一些接口:
+Some interfaces related to commodities:
 
 {% content-ref url="../../can-kao/api-reference/products.md" %}
 [products.md](../../can-kao/api-reference/products.md)
