@@ -1,7 +1,7 @@
 # Table of contents
 
-* [欢迎！](README.md)
-* [快速开始](kuai-su-kai-shi.md)
+* [Welcome！](README.md)
+* [Quick Start](kuai-su-kai-shi.md)
 * [Page 1](page-1.md)
 
 ## 参考

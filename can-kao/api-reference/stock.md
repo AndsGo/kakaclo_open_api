@@ -2,6 +2,17 @@
 
 ## Query stock
 
+{% hint style="info" %}
+#### Response parameter
+{% endhint %}
+
+| Parameter name | Type   | Remark                |
+| -------------- | ------ | --------------------- |
+| sku            | String | product unique code   |
+| qty            | Int    | Inventory quantity    |
+| countryCode    | String | Shipping country code |
+| warehouseCode  | String | warehouse code        |
+
 {% swagger method="get" path="/v1/product/stocks" baseUrl="" summary="" %}
 {% swagger-description %}
 
@@ -58,10 +69,3 @@ Inventory update end time, one of the three is required.
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-| Parameter name | Type   | Remark                |
-| -------------- | ------ | --------------------- |
-| sku            | String | product unique code   |
-| qty            | Int    | Inventory quantity    |
-| countryCode    | String | Shipping country code |
-| warehouseCode  | String | warehouse code        |

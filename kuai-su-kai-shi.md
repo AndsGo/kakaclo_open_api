@@ -1,42 +1,18 @@
-# 快速开始
-
-
+# Quick Start
 
 {% hint style="info" %}
-&#x20;**很高兴知道：**快速入门指南可以帮助人们通过几个步骤启动并运行您的 API。有些人更喜欢深入了解基础知识，而不是仔细阅读每一页文档！
+**Good to know:** A quick start guide can be good to help folks get up and running with your API in a few steps. Some people prefer diving in with the basics rather than meticulously reading every page of documentation!
 {% endhint %}
 
-## 获取您的 API 密钥
+## Get your API keys
 
-您的 API 请求使用 API 密钥进行身份验证。任何不包含 API 密钥的请求都将返回错误。
+Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
 
-## Install the library
-
-The best way to interact with our API is to use one of our official libraries:
-
-{% tabs %}
-{% tab title="Node" %}
-```
-# Install via NPM
-npm install --save my-api
-```
-{% endtab %}
-
-{% tab title="Python" %}
-```
-# Install via pip
-pip install --upgrade myapi
-```
-{% endtab %}
-{% endtabs %}
-
-{% hint style="info" %}
-**Good to know:** Using tabs to separate out different languages is a great way to present technical examples or code documentation without cramming your docs with extra sections or pages per language.
-{% endhint %}
+You can get API keys from your business manager
 
 ## Make your first request
 
-To make your first request, send an authenticated request to the pets endpoint. This will create a `pet`, which is nice.
+To make your first request, send an authenticated request to the products endpoint. This will query a product, which is nice.
 
 {% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="post" path="/pet" summary="Create pet." %}
 {% swagger-description %}
@@ -48,11 +24,11 @@ The name of the pet
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="owner_id" required="false" type="string" %}
-The 
+The
 
 `id`
 
- of the user who owns the pet
+of the user who owns the pet
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="species" required="false" type="string" %}
