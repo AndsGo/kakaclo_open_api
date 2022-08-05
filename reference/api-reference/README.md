@@ -14,8 +14,8 @@
 
 与订单相关的一些接口:
 
-{% content-ref url="../../can-kao/ding-dan/users.md" %}
-[users.md](../../can-kao/ding-dan/users.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% hint style="info" %}
