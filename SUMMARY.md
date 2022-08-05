@@ -2,9 +2,14 @@
 
 * [欢迎！](README.md)
 * [快速开始](kuai-su-kai-shi.md)
+* [Page 1](page-1.md)
 
 ## 参考
 
-* [API 参考](reference/api-reference/README.md)
-  * [Product](reference/api-reference/pets.md)
-  * [订单](reference/api-reference/users.md)
+* [Product](reference/api-reference/README.md)
+  * [CountryAndWarehouse](can-kao/api-reference/countryandwarehouse.md)
+  * [Stock](can-kao/api-reference/stock.md)
+  * [Category](can-kao/api-reference/category.md)
+  * [Products](can-kao/api-reference/products.md)
+* [订单](can-kao/ding-dan/README.md)
+  * [订单](can-kao/ding-dan/users.md)
