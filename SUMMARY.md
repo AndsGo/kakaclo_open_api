@@ -3,7 +3,7 @@
 * [Welcome！](README.md)
 * [Quick Start](kuai-su-kai-shi.md)
 
-## 参考
+## API
 
 * [Product](reference/api-reference/README.md)
   * [CountryAndWarehouse](can-kao/api-reference/countryandwarehouse.md)
