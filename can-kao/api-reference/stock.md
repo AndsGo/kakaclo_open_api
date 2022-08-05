@@ -1,10 +1,6 @@
 # Stock
 
-## Query stock
-
-{% hint style="info" %}
-#### Response parameter
-{% endhint %}
+## Stock Properties
 
 | Parameter name | Type   | Remark                |
 | -------------- | ------ | --------------------- |
@@ -12,6 +8,8 @@
 | qty            | Int    | Inventory quantity    |
 | countryCode    | String | Shipping country code |
 | warehouseCode  | String | warehouse code        |
+
+## Query stock
 
 {% swagger method="get" path="/v1/product/stocks" baseUrl="" summary="" %}
 {% swagger-description %}
