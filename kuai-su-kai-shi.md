@@ -14,7 +14,7 @@ You can get API keys from your business manager
 
 To make your first request, send an authenticated request to the products endpoint. This will query a product, which is nice.
 
-{% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="get" path="/product/category" summary="Query category" %}
+{% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="post" path="/pet" summary="Create pet." %}
 {% swagger-description %}
 Creates a new pet.
 {% endswagger-description %}
@@ -35,8 +35,8 @@ of the user who owns the pet
 The species of the pet
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="" required="false" type="" %}
-
+{% swagger-parameter in="body" name="breed" required="false" type="string" %}
+The breed of the pet
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Pet successfully created" %}
@@ -66,10 +66,39 @@ Take a look at how you might call this method using our official libraries, or v
 {% tabs %}
 {% tab title="curl" %}
 ```
-curl --request GET \
-     --url 'https://api.kakaclo.com/openapi/v1/category' \
-     --header 'Accept: application/json' \
-     --header 'Authorization: Bearer YOU_TOKEN' 
+curl https://api.myapi.com/v1/pet  
+    -u YOUR_API_KEY:  
+    -d name='Wilson'  
+    -d species='dog'  
+    -d owner_id='sha7891bikojbkreuy'  
+```
+{% endtab %}
+
+{% tab title="Node" %}
+```javascript
+// require the myapi module and set it up with your API key
+const myapi = require('myapi')(YOUR_API_KEY);
+
+const newPet = away myapi.pet.create({
+    name: 'Wilson',
+    owner_id: 'sha7891bikojbkreuy',
+    species: 'Dog',
+    breed: 'Golden Retriever',
+})
+```
+{% endtab %}
+
+{% tab title="Python" %}
+```python
+// Set your API key before making the request
+myapi.api_key = YOUR_API_KEY
+
+myapi.Pet.create(
+    name='Wilson',
+    owner_id='sha7891bikojbkreuy',
+    species='Dog',
+    breed='Golden Retriever',
+)
 ```
 {% endtab %}
 {% endtabs %}
