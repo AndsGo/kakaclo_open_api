@@ -2,7 +2,7 @@
 
 Dive into the specifics of each API endpoint by checking out our complete documentation
 
-## 商Productss品
+## Products
 
 Some interfaces related to commodities:
 
