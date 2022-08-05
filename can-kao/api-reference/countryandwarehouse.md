@@ -1,8 +1,18 @@
 # CountryAndWarehouse
 
+## Response Properties <a href="#response-parameter" id="response-parameter"></a>
+
+| Parameter name  | Type   | Remark                          |
+| --------------- | ------ | ------------------------------- |
+| warehouseCode   | String | Shipping warehouse code         |
+| warehouseName   | String | Shipping warehouse name         |
+| arehouseNameExt | String | Shipping warehouse Chinese name |
+| countryCode     | String | Shipping country code           |
+| countryCn       | String | Shipping country name           |
+
 ## Query shipping country and warehouse
 
-{% swagger method="get" path="/v1/product/countryAndWarehouse" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/product/countryAndWarehouse" baseUrl="" summary="get country and warehouse" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -35,11 +45,3 @@
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-| Parameter name  | Type   | Remark                          |
-| --------------- | ------ | ------------------------------- |
-| warehouseCode   | String | Shipping warehouse code         |
-| warehouseName   | String | Shipping warehouse name         |
-| arehouseNameExt | String | Shipping warehouse Chinese name |
-| countryCode     | String | Shipping country code           |
-| countryCn       | String | Shipping country name           |

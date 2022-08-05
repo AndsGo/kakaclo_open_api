@@ -1,8 +1,40 @@
 # Products
 
+## Product Properties
+
+| Parameter name | Type    | Remark                                                                      |
+| -------------- | ------- | --------------------------------------------------------------------------- |
+| kkProductId    | Long    | Product unique Id                                                           |
+| spu            | String  | Unique product name                                                         |
+| productName    | String  | Product name                                                                |
+| description    | String  | Product Description                                                         |
+| sizeImagePath  | String  | Product size picture                                                        |
+| spuStatus      | Int     | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf          |
+| categoryId     | Int     | product category id                                                         |
+| createTime     | Date    | creation time                                                               |
+| updateTime     | Date    | update time                                                                 |
+| sku            | String  | product sku                                                                 |
+| skuName        | String  | Product sku name                                                            |
+| mainImg        | String  | Product sku main image                                                      |
+| packageLength  | Decimal | Product length                                                              |
+| packageWidth   | Decimal | Product width                                                               |
+| packageHeight  | Decimal | Product height                                                              |
+| packageWeight  | Decimal | Product weight                                                              |
+| cost           | Decimal | commodity sku cost                                                          |
+| price          | Decimal | commodity sku price                                                         |
+| option1        | String  | sku attribute 1, contains size information, variable attribute              |
+| option2        | String  | sku attribute 2, contains color information, variable attribute             |
+| option3        | String  | sku attribute 3, including stamp information, variable attribute            |
+| material       | String  | Product sku material                                                        |
+| skuStatus      | Int     | The status of the product sku on the shelf, 0-off the shelf; 1-on the shelf |
+| imgUrl         | String  | All pictures of product SKU                                                 |
+| total          | Int     | total data volume                                                           |
+| pageNumber     | Int     | current page number                                                         |
+| pageSize       | Int     | Quantity per page                                                           |
+
 ## Query Products
 
-{% swagger baseUrl="" method="get" path="/v1/product/products" summary="" %}
+{% swagger baseUrl="" method="get" path="/v1/product/products" summary="get products" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -23,7 +55,7 @@ The start time of the update time, UTC time, cannot be greater than the end time
 The end time of the update time, UTC time, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="pageNumber" type="Int" %}
+{% swagger-parameter in="body" name="pageNumber" type="Int" required="false" %}
 Page number, when querying according to the update time, PageNumber is required and greater than 0.
 {% endswagger-parameter %}
 
@@ -79,37 +111,3 @@ Page number, when querying according to the update time, PageNumber is required 
 
 {% endswagger-response %}
 {% endswagger %}
-
-| Parameter name | Type    | Remark                                                                      |
-| -------------- | ------- | --------------------------------------------------------------------------- |
-| kkProductId    | Long    | Product unique Id                                                           |
-| spu            | String  | Unique product name                                                         |
-| productName    | String  | Product name                                                                |
-| description    | String  | Product Description                                                         |
-| sizeImagePath  | String  | Product size picture                                                        |
-| spuStatus      | Int     | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf          |
-| categoryId     | Int     | product category id                                                         |
-| createTime     | Date    | creation time                                                               |
-| updateTime     | Date    | update time                                                                 |
-| sku            | String  | product sku                                                                 |
-| skuName        | String  | Product sku name                                                            |
-| mainImg        | String  | Product sku main image                                                      |
-| packageLength  | Decimal | Product length                                                              |
-| packageWidth   | Decimal | Product width                                                               |
-| packageHeight  | Decimal | Product height                                                              |
-| packageWeight  | Decimal | Product weight                                                              |
-| cost           | Decimal | commodity sku cost                                                          |
-| price          | Decimal | commodity sku price                                                         |
-| option1        | String  | sku attribute 1, contains size information, variable attribute              |
-| option2        | String  | sku attribute 2, contains color information, variable attribute             |
-| option3        | String  | sku attribute 3, including stamp information, variable attribute            |
-| material       | String  | Product sku material                                                        |
-| skuStatus      | Int     | The status of the product sku on the shelf, 0-off the shelf; 1-on the shelf |
-| imgUrl         | String  | All pictures of product SKU                                                 |
-| total          | Int     | total data volume                                                           |
-| pageNumber     | Int     | current page number                                                         |
-| pageSize       | Int     | Quantity per page                                                           |
-
-{% hint style="info" %}
-**Good to know:** This API method was created using the API Method block, it's how you can build out an API method documentation from scratch. Have a play with the block and you'll see you can do some nifty things like add and reorder parameters, document responses, and give your methods detailed descriptions.
-{% endhint %}

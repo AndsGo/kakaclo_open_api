@@ -13,7 +13,7 @@
 
 ## Query category
 
-{% swagger method="get" path="/v1/product/category" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/product/category" baseUrl="" summary="get product category" %}
 {% swagger-description %}
 
 {% endswagger-description %}
