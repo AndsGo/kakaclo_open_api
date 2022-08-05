@@ -8,7 +8,7 @@
 
 Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
 
-You can get API keys from your business manager
+Apps must authenticate using OAuth 2.0 to use  kakaclo open API resources.you can get API keys from your business manager
 
 ## Make your first request
 
