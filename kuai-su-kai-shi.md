@@ -8,7 +8,7 @@
 
 Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
 
-Apps must authenticate using OAuth 2.0 to use  kakaclo open API resources.you can get API keys from your business manager
+Apps must authenticate using OAuth 2.0 to use  kakaclo open API resources.you can get API keys from your business manager.
 
 ## Make your first request
 
@@ -36,10 +36,6 @@ To make your first request, send an authenticated request to the products endpoi
 
 {% endswagger-response %}
 {% endswagger %}
-
-{% hint style="info" %}
-**Good to know:** You can use the API Method block to fully document an API method. You can also sync your API blocks with an OpenAPI file or URL to auto-populate them.
-{% endhint %}
 
 Take a look at how you might call this method using our official libraries, or via `curl`:
 
