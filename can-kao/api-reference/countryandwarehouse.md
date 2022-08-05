@@ -2,6 +2,18 @@
 
 ## Query shipping country and warehouse
 
+{% hint style="info" %}
+#### Response parameter <a href="#response-parameter" id="response-parameter"></a>
+{% endhint %}
+
+| Parameter name  | Type   | Remark                          |
+| --------------- | ------ | ------------------------------- |
+| warehouseCode   | String | Shipping warehouse code         |
+| warehouseName   | String | Shipping warehouse name         |
+| arehouseNameExt | String | Shipping warehouse Chinese name |
+| countryCode     | String | Shipping country code           |
+| countryCn       | String | Shipping country name           |
+
 {% swagger method="get" path="/v1/product/countryAndWarehouse" baseUrl="" summary="" %}
 {% swagger-description %}
 
@@ -35,11 +47,3 @@
 ```
 {% endswagger-response %}
 {% endswagger %}
-
-| Parameter name  | Type   | Remark                          |
-| --------------- | ------ | ------------------------------- |
-| warehouseCode   | String | Shipping warehouse code         |
-| warehouseName   | String | Shipping warehouse name         |
-| arehouseNameExt | String | Shipping warehouse Chinese name |
-| countryCode     | String | Shipping country code           |
-| countryCn       | String | Shipping country name           |
