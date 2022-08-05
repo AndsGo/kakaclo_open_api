@@ -1,14 +1,5 @@
 # Stock
 
-## Stock Properties
-
-| Parameter name | Type   | Remark                |
-| -------------- | ------ | --------------------- |
-| sku            | String | product unique code   |
-| qty            | Int    | Inventory quantity    |
-| countryCode    | String | Shipping country code |
-| warehouseCode  | String | warehouse code        |
-
 ## Query stock
 
 {% swagger method="get" path="/v1/product/stocks" baseUrl="" summary="" %}
@@ -16,23 +7,23 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="skus" type="Arrays" required="false" %}
+{% swagger-parameter in="query" name="skus" type="Arrays" %}
 Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, Three options are required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="warehouseCode" type="String" required="false" %}
+{% swagger-parameter in="query" name="warehouseCode" type="String" %}
 arehouse code
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="countryCode" type="String" required="false" %}
+{% swagger-parameter in="query" name="countryCode" type="String" %}
 hipping country
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="dateStartTime" type="Date" required="false" %}
+{% swagger-parameter in="query" name="dateStartTime" type="Date" %}
 Inventory update start time, one of the three is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="dateEndTime" type="Date" required="false" %}
+{% swagger-parameter in="query" name="dateEndTime" type="Date" %}
 Inventory update end time, one of the three is required.
 {% endswagger-parameter %}
 
@@ -67,3 +58,10 @@ Inventory update end time, one of the three is required.
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+| Parameter name | Type   | Remark                |
+| -------------- | ------ | --------------------- |
+| sku            | String | product unique code   |
+| qty            | Int    | Inventory quantity    |
+| countryCode    | String | Shipping country code |
+| warehouseCode  | String | warehouse code        |
