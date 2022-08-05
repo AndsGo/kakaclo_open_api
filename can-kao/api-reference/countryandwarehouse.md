@@ -36,10 +36,10 @@
 {% endswagger-response %}
 {% endswagger %}
 
-| Parameter name   | Type   | Remark                          |
-| ---------------- | ------ | ------------------------------- |
-| warehouseCode    | String | Shipping warehouse code         |
-| warehouseName    | String | Shipping warehouse name         |
-| warehouseNameExt | String | Shipping warehouse Chinese name |
-| countryCode      | String | Shipping country code           |
-| countryCn        | String | Shipping country name           |
+| Parameter name  | Type   | Remark                          |
+| --------------- | ------ | ------------------------------- |
+| warehouseCode   | String | Shipping warehouse code         |
+| warehouseName   | String | Shipping warehouse name         |
+| arehouseNameExt | String | Shipping warehouse Chinese name |
+| countryCode     | String | Shipping country code           |
+| countryCn       | String | Shipping country name           |

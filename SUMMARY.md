@@ -2,7 +2,6 @@
 
 * [Welcome！](README.md)
 * [Quick Start](kuai-su-kai-shi.md)
-* [Page 1](page-1.md)
 
 ## 参考
 
@@ -11,5 +10,4 @@
   * [Stock](can-kao/api-reference/stock.md)
   * [Category](can-kao/api-reference/category.md)
   * [Products](can-kao/api-reference/products.md)
-* [订单](can-kao/ding-dan/README.md)
-  * [订单](can-kao/ding-dan/users.md)
+* [Order](can-kao/order.md)
