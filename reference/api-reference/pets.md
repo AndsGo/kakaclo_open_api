@@ -2,28 +2,28 @@
 
 ## Query Products
 
-{% swagger baseUrl="" method="post" path="/v1/product/QueryProduct" summary="" %}
+{% swagger baseUrl="" method="get" path="/v1/product/products" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="Spus" required="false" type="Arrays" %}
+{% swagger-parameter in="body" name="spus" required="false" type="Arrays" %}
 Commodity SPU code collections, specify the commodity SPU code query, each time a maximum of 30, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Skus" required="false" type="Arrays" %}
+{% swagger-parameter in="body" name="skus" required="false" type="Arrays" %}
 Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="DateStartTime" required="false" type="Date" %}
+{% swagger-parameter in="body" name="dateStartTime" required="false" type="Date" %}
 The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="DateEndTime" required="false" type="Date" %}
+{% swagger-parameter in="body" name="dateEndTime" required="false" type="Date" %}
 The end time of the update time, UTC time, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="PageNumber" type="Int" %}
+{% swagger-parameter in="body" name="pageNumber" type="Int" %}
 Page number, when querying according to the update time, PageNumber is required and greater than 0.
 {% endswagger-parameter %}
 
@@ -35,33 +35,33 @@ Page number, when querying according to the update time, PageNumber is required 
     "data":{
         "list":[
             {
-                "KkProductId":"",
-                "Spu":"",
-                "ProductName":"",
-                "Description":"",
-                "SizeImagePath":"",
-                "SpuStatus":"",
-                "FullCategoryId":"",
-                "FullCategoryName":"",
-                "CreateTime":"",
-                "UpdateTime":"",
-                "SkuList":[
+                "kkProductId":"",
+                "spu":"",
+                "productName":"",
+                "description":"",
+                "sizeImagePath":"",
+                "spuStatus":"",
+                "fullCategoryId":"",
+                "fullCategoryName":"",
+                "createTime":"",
+                "updateTime":"",
+                "skuList":[
                     {
-                        "Sku":"",
-                        "SkuName":"",
-                        "MainImg":"",
-                        "PackageLength":"",
-                        "PackageWidth":"",
-                        "PackageHeight":"",
-                        "PackageWeight":"",
-                        "Cost":"",
-                        "Price":"",
-                        "Option1":"",
-                        "Option2":"",
-                        "Option3":"",
-                        "Material":"",
-                        "SkuStatus":"",
-                        "ImgUrl":[
+                        "sku":"",
+                        "skuName":"",
+                        "mainImg":"",
+                        "packageLength":"",
+                        "packageWidth":"",
+                        "packageHeight":"",
+                        "packageWeight":"",
+                        "cost":"",
+                        "price":"",
+                        "option1":"",
+                        "option2":"",
+                        "option3":"",
+                        "material":"",
+                        "skuStatus":"",
+                        "imgUrl":[
 
                         ]
                     }
@@ -87,21 +87,29 @@ Page number, when querying according to the update time, PageNumber is required 
 
 ## Query stock
 
-{% swagger method="post" path="/v1/product/QueryStock" baseUrl="" summary="" %}
+{% swagger method="get" path="/v1/product/stocks" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="Skus" type="Arrays" required="true" %}
-Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30.
+{% swagger-parameter in="body" name="skus" type="Arrays" required="false" %}
+Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, Three options are required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="WarehouseCode" type="String" %}
+{% swagger-parameter in="body" name="warehouseCode" type="String" %}
 warehouse code
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="Country" type="String" %}
+{% swagger-parameter in="body" name="countryCode" type="String" %}
 Shipping country
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="dateStartTime" type="Date" %}
+Inventory update start time, one of the three is required.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="dateEndTime" type="Date" %}
+Inventory update end time, one of the three is required.
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="successfully query" %}
@@ -112,12 +120,12 @@ Shipping country
     "data":{
         "list":[
             {
-                "Sku":"",
-                "WarehouseInventoryList":[
+                "sku":"",
+                "warehouseStockList":[
                     {
-                        "WarehouseCode":"",
-                        "Inventory":"",
-                        "Country":""
+                        "warehouseCode":"",
+                        "qty":"",
+                        "countryCode":""
                     }
                 ]
             }
@@ -141,3 +149,83 @@ Shipping country
 
 
 {% endhint %}
+
+## Query category
+
+{% swagger method="get" path="/v1/product/category" baseUrl="" summary="" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="successfully query" %}
+```javascript
+{
+    "code":10000,
+    "message":"kk.api.200",
+    "data":{
+        "list":[
+            {
+                "categoryId":"",
+                "parentId":"",
+                "level":"",
+                "fullCategoryId":"",
+                "imgUrl":"",
+                "name":"",
+                "child":[
+                    {
+
+                    }
+                ]
+            }
+        ]
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+| Parameter name | Type   | Remark                                                                             |
+| -------------- | ------ | ---------------------------------------------------------------------------------- |
+| categoryId     | Long   | Category unique identifier Id                                                      |
+| parentId       | Long   | The category id of the previous level, if it is the first level, the ParentId is 0 |
+| level          | Int    | category level                                                                     |
+| fullCategoryId | String | The full path where the current category is located                                |
+| imgUrl         | String | Category pictures                                                                  |
+| name           | String | Category name                                                                      |
+| child          | Arrays | Next-level category information, the parameters are the same as above              |
+
+## Query shipping country and warehouse
+
+{% swagger method="get" path="/v1/product/countryAndWarehouse" baseUrl="" summary="" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-response status="200: OK" description="successfully query" %}
+```javascript
+{
+    "code":10000,
+    "message":"kk.api.200",
+    "data":{
+        "list":[
+            {
+                "warehouseCode":"",
+                "warehouseName":"",
+                "warehouseNameExt":"",
+                "countryCode":"",
+                "countryCn":""
+            }
+        ]
+    }
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+| Parameter name   | Type   | Remark                          |
+| ---------------- | ------ | ------------------------------- |
+| warehouseCode    | String | Shipping warehouse code         |
+| warehouseName    | String | Shipping warehouse name         |
+| warehouseNameExt | String | Shipping warehouse Chinese name |
+| countryCode      | String | Shipping country code           |
+| countryCn        | String | Shipping country name           |
