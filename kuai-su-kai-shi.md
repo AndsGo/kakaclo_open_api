@@ -14,7 +14,7 @@ Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can
 
 After you get your **Access-Token**, it's very easy to start making API call to Shoplazzaa.All endpoints are only accessible via HTTPS and are located at&#x20;
 
-`https://openapi.kakaclo.com​`
+`https://api.kakaclo.com/openapi​`
 
 ## Make your first request
 
