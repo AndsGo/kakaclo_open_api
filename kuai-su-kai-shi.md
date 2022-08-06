@@ -1,14 +1,20 @@
 # Quick Start
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **Good to know:** A quick start guide can be good to help folks get up and running with your API in a few steps. Some people prefer diving in with the basics rather than meticulously reading every page of documentation!
 {% endhint %}
 
-## Get your API keys
+## Get your API **Access-Token**
 
-Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
+Your API requests are authenticated using API **Access-Token**. Any request that doesn't include an API **Access-Token** will return an error.
 
-Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can get API keys from your business manager.
+Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can get API **Access-Token** from your business manager.
+
+## **API endpoint**
+
+After you get your **Access-Token**, it's very easy to start making API call to Shoplazzaa.All endpoints are only accessible via HTTPS and are located at&#x20;
+
+`https://opneapi.kakaclo.com​`
 
 ## Make your first request
 
@@ -45,7 +51,7 @@ Take a look at how you might call this method using our official libraries, or v
 curl --request GET \
      --url 'https://api.kakaclo.com/openapi/v1/produc/category' \
      --header 'Accept: application/json' \
-     --header 'Authorization: Bearer YOU_TOKEN' 
+     --header 'Authorization: Beare YOU-ACCESS-TOKOEN'
 ```
 {% endtab %}
 {% endtabs %}
