@@ -39,23 +39,23 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="spus" required="false" type="Arrays" %}
-Commodity SPU code collections, specify the commodity SPU code query, each time a maximum of 30, and one of the four options is required.
+{% swagger-parameter in="query" name="spus" type="Arrays" %}
+the commodity SPU code query, each time a maximum of 30, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="skus" required="false" type="Arrays" %}
-Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, and one of the four options is required.
+{% swagger-parameter in="query" name="skus" type="Arrays" %}
+the commodity SKU code query, each time a maximum of 30, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="dateStartTime" required="false" type="Date" %}
+{% swagger-parameter in="query" name="dateStartTime" type="String" %}
 The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="dateEndTime" required="false" type="Date" %}
+{% swagger-parameter in="query" name="dateEndTime" type="String" %}
 The end time of the update time, UTC time, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="pageNumber" type="Int" required="false" %}
+{% swagger-parameter in="query" name="pageNumber" type="Int" %}
 Page number, when querying according to the update time, PageNumber is required and greater than 0.
 {% endswagger-parameter %}
 

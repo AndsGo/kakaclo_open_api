@@ -31,11 +31,11 @@ arehouse code
 hipping country
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="dateStartTime" type="Date" required="false" %}
+{% swagger-parameter in="query" name="dateStartTime" type="String" required="false" %}
 Inventory update start time, one of the three is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="dateEndTime" type="Date" required="false" %}
+{% swagger-parameter in="query" name="dateEndTime" type="String" required="false" %}
 Inventory update end time, one of the three is required.
 {% endswagger-parameter %}
 
