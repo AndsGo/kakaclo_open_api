@@ -8,7 +8,7 @@
 
 Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
 
-Apps must authenticate using OAuth 2.0 to use  kakaclo open API resources.you can get API keys from your business manager.
+Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can get API keys from your business manager.
 
 ## Make your first request
 
@@ -43,7 +43,7 @@ Take a look at how you might call this method using our official libraries, or v
 {% tab title="curl" %}
 ```
 curl --request GET \
-     --url 'https://api.kakaclo.com/openapi/v1/category' \
+     --url 'https://api.kakaclo.com/openapi/v1/produc/category' \
      --header 'Accept: application/json' \
      --header 'Authorization: Bearer YOU_TOKEN' 
 ```
