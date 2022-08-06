@@ -6,9 +6,13 @@
 
 ## Get your API keys
 
-Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
+Your API requests are authenticated using API **Access-Token**. Any request that doesn't include an API key will return an error.
 
-Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can get API keys from your business manager.
+Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can get API **Access-Token** from your business manager.
+
+## API Endpoint
+
+After you get your **Access-Token**, it's very easy to start making API call to Shoplazzaa.All endpoints are only accessible via HTTPS and are located at `https://api.kakaclo.com/openapi`
 
 ## Make your first request
 
