@@ -8,6 +8,9 @@
 | qty            | Int    | Inventory quantity    |
 | countryCode    | String | Shipping country code |
 | warehouseCode  | String | warehouse code        |
+| total          | Int    | total data volume     |
+| pageNumber     | Int    | page number           |
+| pageSize       | Int    | ty per page           |
 
 ## Query stock
 
@@ -34,6 +37,10 @@ Inventory update start time, one of the three is required.
 
 {% swagger-parameter in="query" name="dateEndTime" type="Date" required="false" %}
 Inventory update end time, one of the three is required.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="pageNumber" type="Int" %}
+Page number, when querying according to the update time, PageNumber is required and greater than 0.
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successfully query" %}
