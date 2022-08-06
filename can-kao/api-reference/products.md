@@ -16,12 +16,12 @@
 | sku            | String  | product sku                                                                 |
 | skuName        | String  | Product sku name                                                            |
 | mainImg        | String  | Product sku main image                                                      |
-| packageLength  | Decimal | Product length                                                              |
-| packageWidth   | Decimal | Product width                                                               |
-| packageHeight  | Decimal | Product height                                                              |
-| packageWeight  | Decimal | Product weight                                                              |
-| cost           | Decimal | commodity sku cost                                                          |
-| price          | Decimal | commodity sku price                                                         |
+| packageLength  | Decimal | Product length，unit(cm)                                                     |
+| packageWidth   | Decimal | Product width，unit(cm)                                                      |
+| packageHeight  | Decimal | Product height，unit(cm)                                                     |
+| packageWeight  | Decimal | Product weight，unit(g)                                                      |
+| cost           | Decimal | commodity sku cost, Dollar                                                  |
+| price          | Decimal | commodity sku price，Dollar                                                  |
 | option1        | String  | sku attribute 1, contains size information, variable attribute              |
 | option2        | String  | sku attribute 2, contains color information, variable attribute             |
 | option3        | String  | sku attribute 3, including stamp information, variable attribute            |

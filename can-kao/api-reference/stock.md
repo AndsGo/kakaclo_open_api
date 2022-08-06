@@ -10,7 +10,7 @@
 | warehouseCode  | String | warehouse code        |
 | total          | Int    | total data volume     |
 | pageNumber     | Int    | page number           |
-| pageSize       | Int    | ty per page           |
+| pageSize       | Int    | Quantity per page     |
 
 ## Query stock
 
