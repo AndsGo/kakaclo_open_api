@@ -12,7 +12,7 @@ Apps must authenticate using OAuth 2.0 to use kakaclo open API resources.you can
 
 ## API Endpoint
 
-After you get your **Access-Token**, it's very easy to start making API call to kakaclo open API.All endpoints are only accessible via HTTPS and are located at `https://`developer`.kakaclo.com/openapi`
+After you get your **Access-Token**, it's very easy to start making API call to kakaclo open API.All endpoints are only accessible via HTTPS and are located at `https://developer.kakaclo.com/openapi`
 
 {% hint style="info" %}
 Access-Token needs to be put in the http request header，**Authorization: Bearer YOU\_ACCES-TOKEN**
@@ -24,7 +24,7 @@ Access-Token needs to be put in the http request header，**Authorization: Beare
 
 To make your first request, send an authenticated request to the products endpoint. This will query a product, which is nice.
 
-{% swagger baseUrl="https:/api.kakaclo.com/openapi/v1" method="get" path="/product/category" summary="Query category" %}
+{% swagger baseUrl="https:/developer.kakaclo.com/openapi" method="get" path="/v1/product/category" summary="Query category" %}
 {% swagger-description %}
 
 {% endswagger-description %}
