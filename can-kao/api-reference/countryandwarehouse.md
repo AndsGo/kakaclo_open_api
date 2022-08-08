@@ -12,7 +12,7 @@
 
 ## Query shipping country and warehouse
 
-{% swagger method="get" path="/v1/product/countryAndWarehouse" baseUrl="" summary="get country and warehouse" %}
+{% swagger method="get" path="/openapi/v1/product/countryAndWarehouse" baseUrl="" summary="get country and warehouse" %}
 {% swagger-description %}
 
 {% endswagger-description %}

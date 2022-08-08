@@ -14,7 +14,7 @@
 
 ## Query stock
 
-{% swagger method="get" path="/v1/product/stocks" baseUrl="" summary="get product stock" %}
+{% swagger method="get" path="/openapi/v1/product/stocks" baseUrl="" summary="get product stock" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -27,10 +27,6 @@ Commodity SKU code collections, specify the commodity SKU code query, each time 
 arehouse code
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="countryCode" type="String" required="false" %}
-hipping country
-{% endswagger-parameter %}
-
 {% swagger-parameter in="query" name="dateStartTime" type="String" required="false" %}
 Inventory update start time, one of the three is required.
 {% endswagger-parameter %}
@@ -39,7 +35,7 @@ Inventory update start time, one of the three is required.
 Inventory update end time, one of the three is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pageNumber" type="Int" %}
+{% swagger-parameter in="query" name="pageNumber" type="Int" required="false" %}
 Page number, when querying according to the update time, PageNumber is required and greater than 0.
 {% endswagger-parameter %}
 
