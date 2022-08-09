@@ -6,17 +6,39 @@ This interface provides querying product information based on parameters. There 
 
 ## Product Properties
 
+| Parameter name | Type   | Remark                                                             |
+| -------------- | ------ | ------------------------------------------------------------------ |
+| kkProductId    | Long   | Product unique Id                                                  |
+| spu            | String | Unique product name                                                |
+| productName    | String | Product name                                                       |
+| description    | String | Product Description                                                |
+| sizeImagePath  | String | Product size picture                                               |
+| spuStatus      | Int    | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf |
+| categoryId     | Int    | product category id                                                |
+| createTime     | Date   | creation time                                                      |
+| updateTime     | Date   | update time                                                        |
+| skuList        | Arrays | sku collection                                                     |
+| skuImgUrl      | Arrays | sku's picture collection                                           |
+| total          | Int    | total data volume                                                  |
+| pageNumber     | Int    | current page number                                                |
+| skuImgUrl      | Arrays | sku's picture collection                                           |
+| pageSize       | Int    | Quantity per page                                                  |
+
+```
+skuImgUrl
+```
+
+| Parameter name | Type   | Remark                                                                        |
+| -------------- | ------ | ----------------------------------------------------------------------------- |
+| skus           | Arrays | sku collection                                                                |
+| imgUrl         | Arrays | Sku picture collection, this collection belongs to all sku of skus collection |
+
+```
+skuList
+```
+
 | Parameter name | Type    | Remark                                                                      |
 | -------------- | ------- | --------------------------------------------------------------------------- |
-| kkProductId    | Long    | Product unique Id                                                           |
-| spu            | String  | Unique product name                                                         |
-| productName    | String  | Product name                                                                |
-| description    | String  | Product Description                                                         |
-| sizeImagePath  | String  | Product size picture                                                        |
-| spuStatus      | Int     | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf          |
-| categoryId     | Int     | product category id                                                         |
-| createTime     | Date    | creation time                                                               |
-| updateTime     | Date    | update time                                                                 |
 | sku            | String  | product sku                                                                 |
 | skuName        | String  | Product sku name                                                            |
 | mainImg        | String  | Product sku main image                                                      |
@@ -31,10 +53,6 @@ This interface provides querying product information based on parameters. There 
 | option3        | String  | sku attribute 3, including stamp information, variable attribute            |
 | material       | String  | Product sku material                                                        |
 | skuStatus      | Int     | The status of the product sku on the shelf, 0-off the shelf; 1-on the shelf |
-| imgUrl         | String  | All pictures of product SKU                                                 |
-| total          | Int     | total data volume                                                           |
-| pageNumber     | Int     | current page number                                                         |
-| pageSize       | Int     | Quantity per page                                                           |
 
 ## Query Products
 
@@ -80,6 +98,12 @@ Page number, when querying according to the update time, PageNumber is required 
                 "categoryId":"",
                 "createTime":"",
                 "updateTime":"",
+                "skuImgUrl":[
+                    {
+                        "skus":[],
+                        "imgUrl":[]
+                    }
+                ]
                 "skuList":[
                     {
                         "sku":"",
@@ -95,10 +119,7 @@ Page number, when querying according to the update time, PageNumber is required 
                         "option2":"",
                         "option3":"",
                         "material":"",
-                        "skuStatus":"",
-                        "imgUrl":[
-
-                        ]
+                        "skuStatus":""
                     }
                 ]
             }
