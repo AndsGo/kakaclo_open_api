@@ -4,6 +4,10 @@ description: Product category list
 
 # Category
 
+{% hint style="info" %}
+This interface is to provide a list of all categories of products. The corresponding category can be found by **categoryId**.
+{% endhint %}
+
 ## Category Properties
 
 | Parameter name | Type   | Remark                                                                             |

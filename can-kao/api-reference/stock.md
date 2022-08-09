@@ -1,5 +1,9 @@
 # Stock
 
+{% hint style="info" %}
+This interface is to query sku inventory. The same sku may belong to different repositories.
+{% endhint %}
+
 ## Stock Properties
 
 | Parameter name | Type   | Remark                |
