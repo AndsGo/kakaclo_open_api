@@ -1,3 +1,7 @@
+---
+description: Product category list
+---
+
 # Category
 
 ## Category Properties
