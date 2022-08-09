@@ -6,9 +6,7 @@ description: >-
 
 # Order
 
-Creating orders will be grouped according to the location of the sku warehouse to generate multiple orders
-
-## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
+After the order is successfully created, the status is Waiting\_payment, and the system will automatically pay after 10 minutes. Please call the Query Order API to check the order status change.
 
 | Parameter name | Type        | Remark                          |
 | -------------- | ----------- | ------------------------------- |
@@ -33,7 +31,37 @@ Creating orders will be grouped according to the location of the sku warehouse t
 ## Request Properties <a href="#response-parameter" id="response-parameter"></a>
 
 ```
+{
+    "orderAddresses": {
+      "countryCode": "",
+      "phone": "",
+      "street1": "",
+      "street2": "",
+      "recipient": "",
+      "province": "",
+      "zip": "",
+      "ioss": "",
+      "vat": "",
+      "city": ""
+    },
+    "remark": "这个订单我不要了",
+        "orderItemsList": [
+          {
+            "sku": "",
+            "quantity": 1
+          }
+        ],
+    "CustomOrderNumber": "",
+    "SalePlatform": ""
+ 
+}
 ```
+
+## Response Properties <a href="#response-parameter" id="response-parameter"></a>
+
+| Parameter name | Type   | Remark                                       |
+| -------------- | ------ | -------------------------------------------- |
+| kkOrderId      | number | The order number is returned when successful |
 
 {% swagger method="post" path="/openapi/v1/order/order" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
@@ -59,4 +87,25 @@ Order Items Properties
 {% swagger-parameter in="body" name="remark" %}
 order notes
 {% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    "code":10000,
+    "message":"kk.api.200",
+    "data":{
+        "kkOrderIds":1100020202021,
+        "status":0
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
 {% endswagger %}
