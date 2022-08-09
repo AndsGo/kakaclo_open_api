@@ -1,4 +1,14 @@
+---
+description: Country and warehouse relations
+---
+
 # CountryAndWarehouse
+
+
+
+{% hint style="info" %}
+This interface is to obtain the corresponding relationship between country and warehouse. Our inventory is placed in different countries and warehouses, you can obtain inventory through different countries and warehouses.
+{% endhint %}
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
