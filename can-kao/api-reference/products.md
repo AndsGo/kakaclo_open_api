@@ -1,5 +1,9 @@
 # Products
 
+{% hint style="info" %}
+This interface provides querying product information based on parameters. There are multiple sku under each spu.
+{% endhint %}
+
 ## Product Properties
 
 | Parameter name | Type    | Remark                                                                      |
