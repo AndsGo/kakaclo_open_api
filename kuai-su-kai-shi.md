@@ -18,13 +18,11 @@ After you get your **Access-Token**, it's very easy to start making API call to 
 Access-Token needs to be put in the http request header，**Authorization: Bearer YOU\_ACCES-TOKEN**
 {% endhint %}
 
-
-
 ## Make your first request
 
 To make your first request, send an authenticated request to the products endpoint. This will query a product, which is nice.
 
-{% swagger baseUrl="https:/developer.kakaclo.com/openapi" method="get" path="/v1/product/category" summary="Query category" %}
+{% swagger baseUrl="https://developer.kakaclo.com/openapi" method="get" path="/v1/product/category" summary="Query category" %}
 {% swagger-description %}
 
 {% endswagger-description %}

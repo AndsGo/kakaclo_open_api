@@ -19,19 +19,19 @@
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="skus" type="Arrays" required="false" %}
+{% swagger-parameter in="query" name="skus" type="Arrays" required="true" %}
 Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, Three options are required.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="warehouseCode" type="String" required="false" %}
-arehouse code
+warehouse code
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="dateStartTime" type="String" required="false" %}
+{% swagger-parameter in="query" name="dateStartTime" type="String" required="true" %}
 Inventory update start time, one of the three is required.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="dateEndTime" type="String" required="false" %}
+{% swagger-parameter in="query" name="dateEndTime" type="String" required="true" %}
 Inventory update end time, one of the three is required.
 {% endswagger-parameter %}
 
