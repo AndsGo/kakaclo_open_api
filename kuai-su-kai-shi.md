@@ -51,7 +51,7 @@ Take a look at how you might call this method using our official libraries, or v
 {% tab title="curl" %}
 ```
 curl --request GET \
-     --url 'https://developer.kakaclo.com/openapi/v1/produc/category' \
+     --url 'https://developer.kakaclo.com/openapi/v1/product/category' \
      --header 'Accept: application/json' \
      --header 'Authorization: Bearer YOU_ACCES-TOKEN' 
 ```
