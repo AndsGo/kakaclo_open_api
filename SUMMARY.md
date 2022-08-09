@@ -10,4 +10,5 @@
   * [Products](can-kao/api-reference/products.md)
   * [CountryAndWarehouse](can-kao/api-reference/countryandwarehouse.md)
   * [Stock](can-kao/api-reference/stock.md)
-* [Order](can-kao/order.md)
+* [Order](api/order/README.md)
+  * [logistics](api/order/logistics.md)
