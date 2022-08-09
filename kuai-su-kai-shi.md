@@ -16,6 +16,10 @@ After you get your **Access-Token**, it's very easy to start making API call to 
 
 {% hint style="info" %}
 Access-Token needs to be put in the http request header，**Authorization: Bearer YOU\_ACCES-TOKEN**
+
+```
+Bearer needs a space after it
+```
 {% endhint %}
 
 ## Make your first request
