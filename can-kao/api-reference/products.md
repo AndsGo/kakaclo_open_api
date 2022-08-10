@@ -6,53 +6,48 @@ This interface provides querying product information based on parameters. There 
 
 ## Product Properties
 
-| Parameter name | Type   | Remark                                                             |
-| -------------- | ------ | ------------------------------------------------------------------ |
-| kkProductId    | Long   | Product unique Id                                                  |
-| spu            | String | Unique product name                                                |
-| productName    | String | Product name                                                       |
-| description    | String | Product Description                                                |
-| sizeImagePath  | String | Product size picture                                               |
-| spuStatus      | Int    | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf |
-| categoryId     | Int    | product category id                                                |
-| createTime     | Date   | creation time                                                      |
-| updateTime     | Date   | update time                                                        |
-| skuList        | Arrays | sku collection                                                     |
-| skuImgUrl      | Arrays | sku's picture collection                                           |
-| total          | Int    | total data volume                                                  |
-| pageNumber     | Int    | current page number                                                |
-| skuImgUrl      | Arrays | sku's picture collection                                           |
-| pageSize       | Int    | Quantity per page                                                  |
+| Parameter name                     | Type   | Remark                                                                                                                                                                                                                                     |
+| ---------------------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| kkProductId                        | Long   | Product unique Id,for example: 1207904                                                                                                                                                                                                     |
+| spu                                | String | Unique product name,for example: AMN00432                                                                                                                                                                                                  |
+| productName                        | String | Product name,for example: Casual/ Comfortable And Stylishwomen'S Velvet Jacket Suit                                                                                                                                                        |
+| description                        | String | Product Description,for example: Women'S Velvet Jacket                                                                                                                                                                                     |
+| sizeImagePath                      | String | Product size picture,for example: [https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_G\_XXL%2Fe674a874a5bd0a1d2839dbe8ab84ce1d.jpg](https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_G\_XXL%2Fe674a874a5bd0a1d2839dbe8ab84ce1d.jpg) |
+| spuStatus                          | Int    | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf,for example: 1                                                                                                                                                          |
+| categoryId                         | Int    | product category id,for example: 3654                                                                                                                                                                                                      |
+| createTime                         | Date   | creation time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                            |
+| updateTime                         | Date   | update time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                              |
+| [skuList](products.md#undefined)   | Arrays | sku collection                                                                                                                                                                                                                             |
+| [skuImgUrl](products.md#skuimgurl) | Arrays | sku's picture collection                                                                                                                                                                                                                   |
+| total                              | Int    | total data volume                                                                                                                                                                                                                          |
+| pageNumber                         | Int    | current page number                                                                                                                                                                                                                        |
+| pageSize                           | Int    | Quantity per page                                                                                                                                                                                                                          |
 
-```
-skuImgUrl
-```
+#### skuImgUrl
 
-| Parameter name | Type   | Remark                                                                        |
-| -------------- | ------ | ----------------------------------------------------------------------------- |
-| skus           | Arrays | sku collection                                                                |
-| imgUrl         | Arrays | Sku picture collection, this collection belongs to all sku of skus collection |
+| Parameter name | Type   | Remark                                                                                                                                                                                                                                                                                             |
+| -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| skus           | Arrays | sku collection,for example: \[AMN00432\_B\_M,AMN00432\_B\_XL]                                                                                                                                                                                                                                      |
+| imgUrl         | Arrays | Sku picture collection, this collection belongs to all sku of skus collection,for example: \[[https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_B\_S%2F5c4a540d4006e222a9a20bbc5b7b2d67.jpg](https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_B\_S%2F5c4a540d4006e222a9a20bbc5b7b2d67.jpg)] |
 
-```
-skuList
-```
+#### skuList
 
-| Parameter name | Type    | Remark                                                                      |
-| -------------- | ------- | --------------------------------------------------------------------------- |
-| sku            | String  | product sku                                                                 |
-| skuName        | String  | Product sku name                                                            |
-| mainImg        | String  | Product sku main image                                                      |
-| packageLength  | Decimal | Product length，unit(cm)                                                     |
-| packageWidth   | Decimal | Product width，unit(cm)                                                      |
-| packageHeight  | Decimal | Product height，unit(cm)                                                     |
-| packageWeight  | Decimal | Product weight，unit(g)                                                      |
-| cost           | Decimal | commodity sku cost, Dollar                                                  |
-| price          | Decimal | commodity sku price，Dollar                                                  |
-| option1        | String  | sku attribute 1, contains size information, variable attribute              |
-| option2        | String  | sku attribute 2, contains color information, variable attribute             |
-| option3        | String  | sku attribute 3, including stamp information, variable attribute            |
-| material       | String  | Product sku material                                                        |
-| skuStatus      | Int     | The status of the product sku on the shelf, 0-off the shelf; 1-on the shelf |
+| Parameter name | Type       | Remark                                                                                                                                                                                                                                   |
+| -------------- | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sku            | String     | product sku,for example: AMN00432\_B\_M                                                                                                                                                                                                  |
+| skuName        | String     | Product sku name,for example: crossover design T-shirt                                                                                                                                                                                   |
+| mainImg        | String     | Product sku main image,for example: [https://img.kakaclo.com/image%2FAMN00094%2FAMN00094\_B\_S%2F9f7aa16dec9b73ba46dda3b74f0f03eb.jpg](https://img.kakaclo.com/image%2FAMN00094%2FAMN00094\_B\_S%2F9f7aa16dec9b73ba46dda3b74f0f03eb.jpg) |
+| packageLength  | Decimal(2) | Product length(CM),for example: 199.00                                                                                                                                                                                                   |
+| packageWidth   | Decimal(2) | Product width(CM),for example: 32.00                                                                                                                                                                                                     |
+| packageHeight  | Decimal(2) | Product height(CM),for example: 22.00                                                                                                                                                                                                    |
+| packageWeight  | Decimal(2) | Product weight(CM),for example: 2.00                                                                                                                                                                                                     |
+| cost           | Decimal(2) | commodity sku cost, Dollar,for example: 4.13                                                                                                                                                                                             |
+| price          | Decimal(2) | commodity sku price，Dollar,for example: 5.37                                                                                                                                                                                             |
+| option1        | String     | sku attribute 1, contains size information, variable attribute,for example: {"name":"color","value":"Black"}                                                                                                                             |
+| option2        | String     | sku attribute 2, contains color information, variable attribute,for example: {"name":"size","value":"XL"}                                                                                                                                |
+| option3        | String     | sku attribute 3, including stamp information, variable attribute,for example: {"name":"print","value":"light blue new"}                                                                                                                  |
+| material       | String     | Product sku material,for example: 95% Polyester,5% Spandex                                                                                                                                                                               |
+| skuStatus      | Int        | The status of the product sku on the shelf, 0-off the shelf; 1-on the shelf,for example: 1                                                                                                                                               |
 
 ## Query Products
 

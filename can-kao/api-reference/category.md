@@ -10,14 +10,14 @@ This interface is to provide a list of all categories of products. The correspon
 
 ## Category Properties
 
-| Parameter name | Type   | Remark                                                                             |
-| -------------- | ------ | ---------------------------------------------------------------------------------- |
-| categoryId     | Int    | Category unique identifier Id                                                      |
-| name           | String | tegory name                                                                        |
-| parentId       | Int    | The category id of the previous level, if it is the first level, the ParentId is 0 |
-| level          | Int    | category level                                                                     |
-| fullCategoryId | String | The full path where the current category is located                                |
-| child          | Arrays | Next-level category information, the parameters are the same as above              |
+| Parameter name | Type   | Remark                                                                                            |
+| -------------- | ------ | ------------------------------------------------------------------------------------------------- |
+| categoryId     | Int    | Category unique identifier Id,for example: 3600                                                   |
+| name           | String | tegory name,for example: Kids                                                                     |
+| parentId       | Int    | The category id of the previous level, if it is the first level, the ParentId is 0,for example: 0 |
+| level          | Int    | category level,for example: 1                                                                     |
+| fullCategoryId | String | The full path where the current category is located,for example: 3600/3516                        |
+| child          | Arrays | Next-level category information, the parameters are the same as above                             |
 
 ## Query category
 

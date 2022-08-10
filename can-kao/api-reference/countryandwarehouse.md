@@ -7,18 +7,18 @@ description: Country and warehouse relations
 
 
 {% hint style="info" %}
-This interface is to obtain the corresponding relationship between country and warehouse. Our inventory is placed in different countries and warehouses, you can obtain inventory through different countries and warehouses.
+This interface is to obtain the corresponding relationship between country and warehouse. Our [stock](stock.md) is placed in different countries and warehouses, you can obtain [stock](stock.md) through different countries and warehouses.
 {% endhint %}
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name   | Type   | Remark                          |
-| ---------------- | ------ | ------------------------------- |
-| warehouseCode    | String | Shipping warehouse code         |
-| warehouseName    | String | Shipping warehouse name         |
-| warehouseNameExt | String | Shipping warehouse Chinese name |
-| countryCode      | String | Shipping country code           |
-| countryCn        | String | Shipping country name           |
+| Parameter name   | Type   | Remark                                                          |
+| ---------------- | ------ | --------------------------------------------------------------- |
+| warehouseCode    | String | Shipping warehouse code,for example: G004                       |
+| warehouseName    | String | Shipping warehouse name,for example: Warehouse 8 in South China |
+| warehouseNameExt | String | Shipping warehouse Chinese name,for example: 东莞-独立站             |
+| countryCode      | String | Shipping country code,for example: CN\_S                        |
+| countryCn        | String | Shipping country name,for example: South China                  |
 
 ## Query shipping country and warehouse
 
