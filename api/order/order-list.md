@@ -23,8 +23,19 @@ description: View order related information
 | freightAmount     | BigDecimal                  | Order shipping amount                                      |   |
 | skusAmount        | BigDecimal                  | total order item                                           |   |
 | orderItems        | array of OrderItems objects | order sku information                                      |   |
+| fulfillments      | array of OrderItems objects | Order logistics information                                |   |
 | createAt          | String                      | createAt time  "2016-01-18T23:41:00Z"                      |   |
 | updateAt          | String                      | updateAt time  "2016-01-18T23:41:00Z"                      |   |
+
+## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
+
+| Parameter name     | Type                        | Remark                                |
+| ------------------ | --------------------------- | ------------------------------------- |
+| id                 | String                      | package id                            |
+| deliveryTime       | String                      | delivery time  "2016-01-18T23:41:00Z" |
+| trackingCode       | String                      | order tracking number                 |
+| orderItems         | array of OrderItems objects | Order logistics information           |
+| logisticsProviders | String                      | order carrier                         |
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -40,7 +51,6 @@ description: View order related information
 | option2        | String     | sku attribute 2, contains size information, variable attribute |
 | option3        | String     | sku attribute 3, contains size information, variable attribute |
 | productNum     | Number     | Sales volume                                                   |
-|                |            |                                                                |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -109,6 +119,74 @@ page numberlimit per page, default:
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns an array of Order objects" %}
+```javascript
+{     
+      "id":124534634,
+      "CustomOrderNumber":"123553453534",
+      "remark":"",
+      "status":"refund_fail",
+      "purchaseDate": 2021,
+      "payAt": 2021,
+      "completedAt": 2021,
+      "cancelDate": 1,
+      "refundDate": 1,
+    "shippingAddress": {
+      "country": "CH",
+      "city": "深圳",
+      "phone": "137562586632",
+      "recipient": "铁头男孩",
+      "street1": "街道一",
+      "street2": "街道二",
+      "province": "湖南省",
+      "zip": "邮编",
+      "vat": "ssssaca",
+      "ioss": ""
+    },
+      "warehouseCode": "pengd",
+      "finalAmount": "15.01",
+      "freightAmount": "15.03",
+      "skusAmount": "15.03",
+      "orderItems": [{
+            "id":123456672,
+            "imageUrl": "LKNASKONCOASNCLKNAS",
+            "productName": "NC 女士缎面真丝睡衣..",
+            "productNum": 2,
+            "skuCode": "AMB00393",
+            "option1": "red",
+            "option2": "red",
+            "option3": "red",
+            "subtotal": 50,
+            "purchasePrices": 50
+          }],
+"createAt":"",
+"updateAt":"",
+    "fulfillments": [
+      {
+        "deliveryTime": 137562586632,
+        "trackingCode": "1ssdvsdv",
+        "logisticsProviders": "小四快递",
+        "orderItems": [
+          {
+            "id":123456672,
+            "imageUrl": "LKNASKONCOASNCLKNAS",
+            "productName": "NC 女士缎面真丝睡衣..",
+            "productNum": 2,
+            "skuCode": "AMB00393",
+            "option1": "red",
+            "option2": "red",
+            "option3": "red",
+            "subtotal": 50,
+            "purchasePrices": 50
+          }
+        ],
+        "id": ""
+      }
+    ]
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="401: Unauthorized" description="" %}
 ```javascript
 {
     // Response
