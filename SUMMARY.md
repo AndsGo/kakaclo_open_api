@@ -5,11 +5,11 @@
 
 ## API
 
-* [Product](reference/api-reference/README.md)
-  * [Category](can-kao/api-reference/category.md)
-  * [Products](can-kao/api-reference/products.md)
-  * [CountryAndWarehouse](can-kao/api-reference/countryandwarehouse.md)
-  * [Stock](can-kao/api-reference/stock.md)
+* [Product](api/api-reference/README.md)
+  * [Category](api/api-reference/category.md)
+  * [Products](api/api-reference/products.md)
+  * [CountryAndWarehouse](api/api-reference/countryandwarehouse.md)
+  * [Stock](api/api-reference/stock.md)
 * [Order](api/order/README.md)
   * [logistics](api/order/logistics.md)
   * [Order List](api/order/order-list.md)
