@@ -18,7 +18,7 @@ This interface is to query sku inventory. The same sku may belong to different r
 
 ## Query stock
 
-{% swagger method="get" path="/openapi/v1/product/stocks" baseUrl="" summary="get product stock" %}
+{% swagger method="get" path="/v1/product/stocks" baseUrl="" summary="get product stock" %}
 {% swagger-description %}
 
 {% endswagger-description %}
