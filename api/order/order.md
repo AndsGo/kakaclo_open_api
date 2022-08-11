@@ -6,14 +6,16 @@ description: >-
 
 # Order
 
-After the order is successfully created, the status is Waiting\_payment, and the system will automatically pay after 10 minutes. Please call the Query Order API to check the order status change.
+
+
+## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
 | Parameter name | Type        | Remark                          |
 | -------------- | ----------- | ------------------------------- |
 | sku            | string\[64] | sku                             |
 | quantity       | number      | Quantity must be greater than 0 |
 
-## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
+## Order Item  Properties <a href="#response-parameter" id="response-parameter"></a>
 
 | Parameter name | Type        | Remark                              |
 | -------------- | ----------- | ----------------------------------- |
@@ -21,12 +23,12 @@ After the order is successfully created, the status is Waiting\_payment, and the
 | phone          | string\[64] | address phone required              |
 | street1        | string\[64] | address street1 optional            |
 | street2        | string\[64] | address street2 optional            |
+| city           | string\[64] | address city optional               |
 | recipient      | string\[32] | address recipient required          |
 | province       | string\[32] | address province  required          |
 | zip            | string\[32] | address zip optional                |
 | ioss           | string\[32] | address ioss optional               |
 | vat            | string\[32] | address vat optional                |
-| city           | string\[64] | address city optional               |
 
 ## Request Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -94,7 +96,7 @@ order notes
     "code":10000,
     "message":"kk.api.200",
     "data":{
-        "kkOrderIds":1100020202021,
+        "id":1100020202021,
         "status":0
     }
 }
