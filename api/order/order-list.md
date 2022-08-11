@@ -24,8 +24,8 @@ description: View order related information
 | skusAmount        | BigDecimal                  | total order item                                           |   |
 | orderItems        | array of OrderItems objects | order sku information                                      |   |
 | fulfillments      | array of OrderItems objects | Order logistics information                                |   |
-| createAt          | String                      | createAt time  "2016-01-18T23:41:00Z"                      |   |
-| updateAt          | String                      | updateAt time  "2016-01-18T23:41:00Z"                      |   |
+| createDate        | String                      | createAt time  "2016-01-18T23:41:00Z"                      |   |
+| updateDate        | String                      | updateAt time  "2016-01-18T23:41:00Z"                      |   |
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -67,6 +67,20 @@ description: View order related information
 | vat       | String | place an order vat       |
 | ioss      | String | place an order ioss      |
 
+## Order Status
+
+| status           | Remark                  |   |
+| ---------------- | ----------------------- | - |
+| waiting\_payment | Order pending payment   |   |
+| cancel           | order cancelled         |   |
+| waiting\_toship  | Order to be shipped     |   |
+| refunding        | order refund            |   |
+| refunded         | Order has been refunded |   |
+| partial\_shipped | Order Partially Shipped |   |
+| shipped          | Order shipped           |   |
+| delivered        | order completed         |   |
+| refund\_fail     | Order refund failed     |   |
+
 {% swagger method="get" path="/openapi/v1/order/order" baseUrl="" summary="" %}
 {% swagger-description %}
 
@@ -76,25 +90,25 @@ description: View order related information
 order status, please use comma as separator, for example  waiting_payment,cancel
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="createdAtMin" %}
+{% swagger-parameter in="query" name="createStartTime" %}
 filter orders created at or before date, for example: 
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="createdAtMax" %}
+{% swagger-parameter in="query" name="createEndTime" %}
 filter orders created at or before date, for example: 
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="updatedAtMin" %}
+{% swagger-parameter in="query" name="updateStartTime" %}
 filter orders last updated at or after date, for example: 
 
 `"2016-01-18T23:41:00Z"`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="updatedAtMax" %}
+{% swagger-parameter in="query" name="updateEndTime" %}
 filter orders last updated at or before date, for example: 
 
 `2016-01-18T23:41:00Z`
