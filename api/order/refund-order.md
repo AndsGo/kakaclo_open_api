@@ -6,10 +6,14 @@ description: Create a refund order
 
 Create a refund order
 
-{% swagger method="post" path="/order/{id}/refund" baseUrl="" summary="" %}
+{% swagger method="post" path="/AddRefundOrder" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
+
+{% swagger-parameter in="body" name="OrderNo" required="true" %}
+order id
+{% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="Reason" required="true" %}
 reason for return

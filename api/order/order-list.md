@@ -12,7 +12,7 @@ description: View order related information
 | id                | number                      | order id                                                   |   |
 | CustomOrderNumber | String                      | Customer-defined tracking number                           |   |
 | remark            | String                      | User comments                                              |   |
-| status            | String                      |                                                            |   |
+| status            | String                      | order status                                               |   |
 | purchaseDate      | String                      | order time "2016-01-18T23:41:00Z"                          |   |
 | payAt             | String                      | payment time "2016-01-18T23:41:00Z"                        |   |
 | completedAt       | String                      | Complete time  "2016-01-18T23:41:00Z"                      |   |
