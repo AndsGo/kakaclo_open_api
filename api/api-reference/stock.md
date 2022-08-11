@@ -24,7 +24,9 @@ This interface is to query sku inventory. The same sku may belong to different r
 {% endswagger-description %}
 
 {% swagger-parameter in="query" name="skus" type="String" required="true" %}
-Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, Three options are required. for example: FSZW03961_Y_S_NUB,FSZW03961_Y_XL_NUB
+Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of 30, Three options are required. for example: 
+
+**FSZW03961_Y_S_NUB,FSZW03961_Y_XL_NUB**
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="warehouseCode" type="String" required="false" %}
