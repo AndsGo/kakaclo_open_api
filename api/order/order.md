@@ -21,12 +21,12 @@ After the order is successfully created, the status is Waiting\_payment, and the
 | phone          | string\[64] | address phone required              |
 | street1        | string\[64] | address street1 optional            |
 | street2        | string\[64] | address street2 optional            |
-| city           | string\[64] | address city optional               |
 | recipient      | string\[32] | address recipient required          |
 | province       | string\[32] | address province  required          |
 | zip            | string\[32] | address zip optional                |
 | ioss           | string\[32] | address ioss optional               |
 | vat            | string\[32] | address vat optional                |
+| city           | string\[64] | address city optional               |
 
 ## Request Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -94,7 +94,7 @@ order notes
     "code":10000,
     "message":"kk.api.200",
     "data":{
-        "id":1100020202021,
+        "kkOrderIds":1100020202021,
         "status":0
     }
 }
