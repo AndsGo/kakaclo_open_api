@@ -6,36 +6,36 @@ description: View order related information
 
 ## Order List Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name    | Type                        | Remark                                                     |   |
-| ----------------- | --------------------------- | ---------------------------------------------------------- | - |
-| shippingAddress   | object                      | address information                                        |   |
-| id                | number                      | order id                                                   |   |
-| CustomOrderNumber | String                      | Customer-defined tracking number                           |   |
-| remark            | String                      | User comments                                              |   |
-| status            | String                      | order status                                               |   |
-| purchaseDate      | String                      | order time "2016-01-18T23:41:00Z"                          |   |
-| payAt             | String                      | payment time "2016-01-18T23:41:00Z"                        |   |
-| completedAt       | String                      | Complete time  "2016-01-18T23:41:00Z"                      |   |
-| cancelDate        | String                      | cancel time  "2016-01-18T23:41:00Z"                        |   |
-| refundDate        | String                      | refund time "2016-01-18T23:41:00Z"                         |   |
-| warehouseCode     | String\[64]                 | Order delivery warehouse, used for inventory replenishment |   |
-| finalAmount       | BigDecimal                  | payment amount                                             |   |
-| freightAmount     | BigDecimal                  | Order shipping amount                                      |   |
-| skusAmount        | BigDecimal                  | total order item                                           |   |
-| orderItems        | array of OrderItems objects | order sku information                                      |   |
-| fulfillments      | array of OrderItems objects | Order logistics information                                |   |
-| createDate        | String                      | createAt time  "2016-01-18T23:41:00Z"                      |   |
-| updateDate        | String                      | updateAt time  "2016-01-18T23:41:00Z"                      |   |
+| Parameter name                                     | Type                        | Remark                                                     |   |
+| -------------------------------------------------- | --------------------------- | ---------------------------------------------------------- | - |
+| shippingAddress                                    | object                      | address information                                        |   |
+| id                                                 | number                      | order id                                                   |   |
+| CustomOrderNumber                                  | String                      | Customer-defined tracking number                           |   |
+| remark                                             | String                      | User comments                                              |   |
+| status                                             | String                      | order status                                               |   |
+| purchaseDate                                       | String                      | order time "2016-01-18T23:41:00Z"                          |   |
+| payAt                                              | String                      | payment time "2016-01-18T23:41:00Z"                        |   |
+| completedAt                                        | String                      | Complete time  "2016-01-18T23:41:00Z"                      |   |
+| cancelDate                                         | String                      | cancel time  "2016-01-18T23:41:00Z"                        |   |
+| refundDate                                         | String                      | refund time "2016-01-18T23:41:00Z"                         |   |
+| warehouseCode                                      | String\[64]                 | Order delivery warehouse, used for inventory replenishment |   |
+| finalAmount                                        | BigDecimal                  | payment amount                                             |   |
+| freightAmount                                      | BigDecimal                  | Order shipping amount                                      |   |
+| skusAmount                                         | BigDecimal                  | total order item                                           |   |
+| [orderItems](order-list.md#response-parameter-2)   | array of OrderItems objects | order sku information                                      |   |
+| [fulfillments](order-list.md#response-parameter-1) | array of OrderItems objects | Order logistics information                                |   |
+| createDate                                         | String                      | createAt time  "2016-01-18T23:41:00Z"                      |   |
+| updateDate                                         | String                      | updateAt time  "2016-01-18T23:41:00Z"                      |   |
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name     | Type                        | Remark                                |
-| ------------------ | --------------------------- | ------------------------------------- |
-| id                 | String                      | package id                            |
-| deliveryTime       | String                      | delivery time  "2016-01-18T23:41:00Z" |
-| trackingCode       | String                      | order tracking number                 |
-| orderItems         | array of OrderItems objects | Order logistics information           |
-| logisticsProviders | String                      | order carrier                         |
+| Parameter name                                   | Type                        | Remark                                |
+| ------------------------------------------------ | --------------------------- | ------------------------------------- |
+| id                                               | String                      | package id                            |
+| deliveryTime                                     | String                      | delivery time  "2016-01-18T23:41:00Z" |
+| trackingCode                                     | String                      | order tracking number                 |
+| [orderItems](order-list.md#response-parameter-2) | array of OrderItems objects | Order logistics information           |
+| logisticsProviders                               | String                      | order carrier                         |
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
