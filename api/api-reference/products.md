@@ -4,16 +4,6 @@
 This interface provides querying product information based on parameters. There are multiple sku under each spu.
 {% endhint %}
 
-## Request parameter
-
-| Parameter name | Type   | Remark                                                                                                                                                                                                                                                                        |
-| -------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| spus           | String | the commodity SPU code query, each time a maximum of **30**, and one of the four options is required. for example: **AMN00432,AMN00433**                                                                                                                                      |
-| skus           | String | the commodity SKU code query, each time a maximum of **30**, and one of the four options is required. for example: **AMN00432\_B\_M,AMN00432\_B\_XL**                                                                                                                         |
-| dateStartTime  | String | The start time of the **update time**, **UTC time**, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: **2022-01-07T04:04:39Z** |
-| dateEndTime    | String | The end time of the **update time**, **UTC time**, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required. for example: **2022-01-08T04:04:39Z**         |
-| pageNumber     | Int    | Page number, when querying according to the update time, PageNumber is required and greater than 0.                                                                                                                                                                           |
-
 ## Response parameter
 
 | Parameter name                     | Type   | Remark                                                                                                                                                                                                                                     |

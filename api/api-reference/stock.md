@@ -4,6 +4,16 @@
 This interface is to query sku inventory. The same sku may belong to different repositories.
 {% endhint %}
 
+## Request parameter
+
+| Parameter name | Type   | Remark                                                                                                                                                                                       |
+| -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| skus           | String | Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of **30**, Three options are required. for example: **FSZW03961\_Y\_S\_NUB,FSZW03961\_Y\_XL\_NUB** |
+| warehouseCode  | String | warehouse code. for example: **G007**                                                                                                                                                        |
+| dateStartTime  | String | Inventory update start time, one of the three is required. for example: **2022-03-25T04:00:30Z**                                                                                             |
+| dateEndTime    | String | Inventory update end time, one of the three is required. for example: **2022-03-26T04:00:30Z**                                                                                               |
+| pageNumber     | Int    | Page number, when querying according to the update time, PageNumber is required and greater than 0. for example: 1                                                                           |
+
 ## Response parameter
 
 | Parameter name | Type   | Remark                                                 |
