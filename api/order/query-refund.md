@@ -20,7 +20,6 @@ Query Order Refund Transaction Slip
 | -------------- | ------ | ------------------- |
 | refundNo       | String | refund order number |
 | id             | String | order id            |
-| reason         | String | reason for return   |
 | remark         | String | order notes         |
 | refundStatus   | String | refund status       |
 
@@ -29,13 +28,29 @@ Query Order Refund Transaction Slip
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="refundNo" %}
+{% swagger-parameter in="query" name="refundNo" required="false" %}
 refund's Nos, please use comma as separator, for example 1000000065617,1000000065618
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="ids" %}
+{% swagger-parameter in="query" name="ids" required="false" %}
 Order's IDs, please use comma as separator, for example 1000000065617,1000000065618
 {% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="pageNumber" %}
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="pageSize" %}
+
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="" %}
+```javascript
+{
+    // Response
+}
+```
+{% endswagger-response %}
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript

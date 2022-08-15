@@ -15,8 +15,8 @@ description: View order related information
 | status                                             | String                      | order status                                               |   |
 | purchaseDate                                       | String                      | order time "2016-01-18T23:41:00Z"                          |   |
 | payAt                                              | String                      | payment time "2016-01-18T23:41:00Z"                        |   |
-| completedAt                                        | String                      | Complete time  "2016-01-18T23:41:00Z"                      |   |
-| cancelDate                                         | String                      | cancel time  "2016-01-18T23:41:00Z"                        |   |
+| completedAt                                        | String                      | Complete time "2016-01-18T23:41:00Z"                       |   |
+| cancelDate                                         | String                      | cancel time "2016-01-18T23:41:00Z"                         |   |
 | refundDate                                         | String                      | refund time "2016-01-18T23:41:00Z"                         |   |
 | warehouseCode                                      | String\[64]                 | Order delivery warehouse, used for inventory replenishment |   |
 | finalAmount                                        | BigDecimal                  | payment amount                                             |   |
@@ -24,18 +24,18 @@ description: View order related information
 | skusAmount                                         | BigDecimal                  | total order item                                           |   |
 | [orderItems](order-list.md#response-parameter-2)   | array of OrderItems objects | order sku information                                      |   |
 | [fulfillments](order-list.md#response-parameter-1) | array of OrderItems objects | Order logistics information                                |   |
-| createDate                                         | String                      | createAt time  "2016-01-18T23:41:00Z"                      |   |
-| updateDate                                         | String                      | updateAt time  "2016-01-18T23:41:00Z"                      |   |
+| createDate                                         | String                      | createAt time "2016-01-18T23:41:00Z"                       |   |
+| updateDate                                         | String                      | updateAt time "2016-01-18T23:41:00Z"                       |   |
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name                                   | Type                        | Remark                                |
-| ------------------------------------------------ | --------------------------- | ------------------------------------- |
-| id                                               | String                      | package id                            |
-| deliveryTime                                     | String                      | delivery time  "2016-01-18T23:41:00Z" |
-| trackingCode                                     | String                      | order tracking number                 |
-| [orderItems](order-list.md#response-parameter-2) | array of OrderItems objects | Order logistics information           |
-| logisticsProviders                               | String                      | order carrier                         |
+| Parameter name                                   | Type                        | Remark                               |
+| ------------------------------------------------ | --------------------------- | ------------------------------------ |
+| id                                               | String                      | package id                           |
+| deliveryTime                                     | String                      | delivery time "2016-01-18T23:41:00Z" |
+| trackingCode                                     | String                      | order tracking number                |
+| [orderItems](order-list.md#response-parameter-2) | array of OrderItems objects | Order logistics information          |
+| logisticsProviders                               | String                      | order carrier                        |
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -45,7 +45,7 @@ description: View order related information
 | imageUrl       | String     | product picture                                                |
 | productName    | String     | product name                                                   |
 | skuCode        | String     | sku                                                            |
-| subtotal       | BigDecimal | purchasePrices  \*productNum                                   |
+| subtotal       | BigDecimal | purchasePrices \*productNum                                    |
 | purchasePrices | BigDecimal | sku sales unit price                                           |
 | option1        | String     | sku attribute 1, contains size information, variable attribute |
 | option2        | String     | sku attribute 2, contains size information, variable attribute |
@@ -86,55 +86,60 @@ description: View order related information
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="status" %}
-order status, please use comma as separator, for example  waiting_payment,cancel
+{% swagger-parameter in="query" name="status" required="false" %}
+order status, please use comma as separator, for example waiting_payment,cancel
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="createStartTime" %}
-filter orders created at or before date, for example: 
+{% swagger-parameter in="query" name="createStartTime" required="false" %}
+filter orders created at or before date, for example:
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="createEndTime" %}
-filter orders created at or before date, for example: 
+{% swagger-parameter in="query" name="createEndTime" required="false" %}
+filter orders created at or before date, for example:
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="updateStartTime" %}
-filter orders last updated at or after date, for example: 
+{% swagger-parameter in="query" name="updateStartTime" required="false" %}
+filter orders last updated at or after date, for example:
 
 `"2016-01-18T23:41:00Z"`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="updateEndTime" %}
-filter orders last updated at or before date, for example: 
+{% swagger-parameter in="query" name="updateEndTime" required="false" %}
+filter orders last updated at or before date, for example:
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="ids" %}
+{% swagger-parameter in="query" name="ids" required="false" %}
 Order's IDs, please use comma as separator, for example 1000000065617,1000000065618
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pageNumber" type="number" %}
-page numberlimit per page, default: 
+{% swagger-parameter in="query" name="pageNumber" type="number" required="false" %}
+page numberlimit per page, default:
 
 `10`
 
-, maximum: 
+, maximum:
 
 `250`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pageSize" type="number" %}
-
+{% swagger-parameter in="query" name="pageSize" type="number" required="false" %}
+Default is 1
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Returns an array of Order objects" %}
 ```javascript
-{     
+{
+    "code":10000,
+    "message":"kk.api.200",
+    "data":{
+        "list":[
+          {     
       "id":124534634,
       "CustomOrderNumber":"123553453534",
       "remark":"",
@@ -196,6 +201,12 @@ page numberlimit per page, default:
         "id": ""
       }
     ]
+}
+        ],
+        "total":"",
+        "pageNumber":"",
+        "pageSize":""
+    }
 }
 ```
 {% endswagger-response %}
