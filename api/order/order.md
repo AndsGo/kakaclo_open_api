@@ -33,26 +33,23 @@ description: >-
 ```
 {
     "orderAddresses": {
-      "countryCode": "",
-      "phone": "",
-      "street1": "",
-      "street2": "",
-      "recipient": "",
-      "province": "",
-      "zip": "",
-      "ioss": "",
-      "vat": "",
-      "city": ""
-    },
-    "remark": "这个订单我不要了",
+    "country": "FR",
+    "city": "Orlns",
+    "phone": "07 82 20 10 93",
+    "recipient": "Lollia Olena",
+    "street1": " 7 rue  Rabelais",
+    "province": " de Loire",
+    "zip": "45000"
+  },
+    "remark": "I don't want this order",
         "orderItemsList": [
           {
-            "sku": "",
+            "sku": "FWXW00290_WHT_M",
             "quantity": 1
           }
         ],
-    "CustomOrderNumber": "",
-    "SalePlatform": ""
+    "CustomOrderNumber": "111",
+    "SalePlatform": "KA"
  
 }
 ```
