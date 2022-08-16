@@ -6,29 +6,27 @@ description: >-
 
 # Order
 
-
-
-## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
+## Order Item  Properties <a href="#response-parameter" id="response-parameter"></a>
 
 | Parameter name | Type        | Remark                          |
 | -------------- | ----------- | ------------------------------- |
 | sku            | string\[64] | sku                             |
 | quantity       | number      | Quantity must be greater than 0 |
 
-## Order Item  Properties <a href="#response-parameter" id="response-parameter"></a>
+## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name | Type        | Remark                              |
-| -------------- | ----------- | ----------------------------------- |
-| countryCode    | string\[32] | Shipping country shortcode required |
-| phone          | string\[64] | address phone required              |
-| street1        | string\[64] | address street1 optional            |
-| street2        | string\[64] | address street2 optional            |
-| city           | string\[64] | address city optional               |
-| recipient      | string\[32] | address recipient required          |
-| province       | string\[32] | address province  required          |
-| zip            | string\[32] | address zip optional                |
-| ioss           | string\[32] | address ioss optional               |
-| vat            | string\[32] | address vat optional                |
+| Parameter name | Type        | Remark                                    |
+| -------------- | ----------- | ----------------------------------------- |
+| country        | string\[32] | Shipping country shortcode required FR,US |
+| phone          | string\[64] | address phone required                    |
+| street1        | string\[64] | address street1 optional                  |
+| street2        | string\[64] | address street2 optional                  |
+| city           | string\[64] | address city optional                     |
+| recipient      | string\[32] | address recipient required                |
+| province       | string\[32] | address province required                 |
+| zip            | string\[32] | address zip optional                      |
+| ioss           | string\[32] | address ioss optional                     |
+| vat            | string\[32] | address vat optional                      |
 
 ## Request Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -74,11 +72,7 @@ description: >-
 Order Address Properties
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" type="" name="CustomOrderNumber" required="true" %}
-User-defined tracking number
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="SalePlatform" required="true" %}
+{% swagger-parameter in="body" name="SalePlatform" required="false" %}
 Third-party platform tracking number
 {% endswagger-parameter %}
 
@@ -86,19 +80,16 @@ Third-party platform tracking number
 Order Items Properties
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="remark" %}
+{% swagger-parameter in="body" name="remark" required="false" %}
 order notes
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
-    "code":10000,
-    "message":"kk.api.200",
-    "data":{
-        "id":1100020202021,
-        "status":0
-    }
+    "code": 10000,
+    "message": "success",
+    "data": 1000000371651
 }
 ```
 {% endswagger-response %}
