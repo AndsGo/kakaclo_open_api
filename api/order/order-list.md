@@ -10,7 +10,6 @@ description: View order related information
 | -------------------------------------------------- | --------------------------- | ---------------------------------------------------------- | - |
 | shippingAddress                                    | object                      | address information                                        |   |
 | id                                                 | number                      | order id                                                   |   |
-| CustomOrderNumber                                  | String                      | Customer-defined tracking number                           |   |
 | remark                                             | String                      | User comments                                              |   |
 | status                                             | String                      | order status                                               |   |
 | purchaseDate                                       | String                      | order time "2016-01-18T23:41:00Z"                          |   |
@@ -18,7 +17,7 @@ description: View order related information
 | completedAt                                        | String                      | Complete time "2016-01-18T23:41:00Z"                       |   |
 | cancelDate                                         | String                      | cancel time "2016-01-18T23:41:00Z"                         |   |
 | refundDate                                         | String                      | refund time "2016-01-18T23:41:00Z"                         |   |
-| warehouseCode                                      | String\[64]                 | Order delivery warehouse, used for inventory replenishment |   |
+| warehouseId                                        | int\[16]                    | Order delivery warehouse, used for inventory replenishment |   |
 | finalAmount                                        | BigDecimal                  | payment amount                                             |   |
 | freightAmount                                      | BigDecimal                  | Order shipping amount                                      |   |
 | skusAmount                                         | BigDecimal                  | total order item                                           |   |
@@ -50,7 +49,7 @@ description: View order related information
 | option1        | String     | sku attribute 1, contains size information, variable attribute |
 | option2        | String     | sku attribute 2, contains size information, variable attribute |
 | option3        | String     | sku attribute 3, contains size information, variable attribute |
-| productNum     | Number     | Sales volume                                                   |
+| productNum     | int\[16]   | Sales volume                                                   |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 

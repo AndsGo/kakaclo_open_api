@@ -11,7 +11,7 @@ description: >-
 | Parameter name | Type        | Remark                          |
 | -------------- | ----------- | ------------------------------- |
 | sku            | string\[64] | sku                             |
-| quantity       | number      | Quantity must be greater than 0 |
+| quantity       | int\[16]    | Quantity must be greater than 0 |
 
 ## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -56,9 +56,9 @@ description: >-
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name | Type   | Remark                                       |
-| -------------- | ------ | -------------------------------------------- |
-| kkOrderId      | number | The order number is returned when successful |
+| Parameter name | Type        | Remark                                       |
+| -------------- | ----------- | -------------------------------------------- |
+| kkOrderId      | String\[32] | The order number is returned when successful |
 
 {% swagger method="post" path="/openapi/v1/order/order" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
@@ -67,10 +67,6 @@ description: >-
 
 {% swagger-parameter in="body" name="orderAddress" type="Object" required="true" %}
 Order Address Properties
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="SalePlatform" required="false" %}
-Third-party platform tracking number
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="orderItemsList" type="Array" required="true" %}
