@@ -23,17 +23,13 @@ Query Order Refund Transaction Slip
 | remark         | String | order notes         |
 | refundStatus   | String | refund status       |
 
-{% swagger method="get" path="/order/refund" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/order/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="refundNo" required="false" %}
+{% swagger-parameter in="query" name="refundNo" required="true" %}
 refund's Nos, please use comma as separator, for example 1000000065617,1000000065618
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="ids" required="false" %}
-Order's IDs, please use comma as separator, for example 1000000065617,1000000065618
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="pageNumber" %}
