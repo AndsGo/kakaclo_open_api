@@ -32,11 +32,11 @@ Query Order Refund Transaction Slip
 refund's Nos, please use comma as separator, for example 1000000065617,1000000065618
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pageNumber" %}
+{% swagger-parameter in="query" name="pageNumber" required="true" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pageSize" %}
+{% swagger-parameter in="query" name="pageSize" required="true" %}
 
 {% endswagger-parameter %}
 
