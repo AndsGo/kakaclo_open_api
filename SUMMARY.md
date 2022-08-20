@@ -16,5 +16,5 @@
   * [refund order](api/order/refund-order.md)
   * [Query ReFund](api/order/query-refund.md)
   * [logistics](api/order/logistics.md)
-
-
+* [Payment](api/payment.md)
+* [Query Balance](api/query-balance.md)
