@@ -13,18 +13,18 @@ This interface provides querying product information based on parameters. There 
 | categoryId                        | Number | Category id, one of five is required, and pageNumber is required as a parameter. for example: **3654**                                                                                                                                                                        |
 | dateStartTime                     | String | The start time of the **update time**, **UTC time**, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: **2022-01-07T04:04:39Z** |
 | dateEndTime                       | String | The end time of the **update time**, **UTC time**, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required. for example: **2022-01-08T04:04:39Z**         |
-| [sortType](products.md#undefined) | Number | Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: 10                                                                                                         |
+| [sortType](products.md#undefined) | String | Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: salasVolume                                                                                                |
 | sortBy                            | String | Sorting method, ascending order: **asc**, reverse order: **desc.** for example: desc                                                                                                                                                                                          |
 | pageNumber                        | Number | Page number, when querying according to the update time, PageNumber is required and greater than 0.                                                                                                                                                                           |
 
 #### sortType
 
-| code | description |   |   |
-| ---- | ----------- | - | - |
-| 10   | salasVolume |   |   |
-| 20   | stock       |   |   |
-| 30   | price       |   |   |
-| 40   | updateTime  |   |   |
+| sort field  | definition          | field       |   |   |
+| ----------- | ------------------- | ----------- | - | - |
+| salasVolume | product salasVolume | salasVolume |   |   |
+| stock       | product stock       | stock       |   |   |
+| price       | product price       | price       |   |   |
+| updateTime  | updateTime          | updateTime  |   |   |
 
 ## Response parameter
 
