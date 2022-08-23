@@ -38,6 +38,7 @@ This interface provides querying product information based on parameters. There 
 | spuStatus                          | Number     | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf,for example: 1                                                                                                                                                          |
 | categoryId                         | Number     | product category id,for example: 3654                                                                                                                                                                                                      |
 | salesVolume                        | Number     | salesVolume. for example: 30                                                                                                                                                                                                               |
+| attributesJson                     | String     | Product attribute fields. for example: {"style": "Grace", "season": "Spring-Summer", "pattern": "Floral print", "material": "Cotton blend", "sleeve\_type": "Puffed sleeve", "sleeve\_length": "Half sleeve"}                              |
 | minPrice                           | Decimal(2) | The minimum selling price of sku. for example: 15.30                                                                                                                                                                                       |
 | stock                              | Number     | sku total inventory. for example: 1000                                                                                                                                                                                                     |
 | createTime                         | Date       | creation time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                            |
@@ -138,6 +139,7 @@ Page number, when querying according to the update time, PageNumber is required 
                 "spuStatus":"",
                 "categoryId":"",
                 "salesVolume":"",
+                "attributesJson":"",
                 "minPrice":"",
                 "stock":"",
                 "createTime":"",
