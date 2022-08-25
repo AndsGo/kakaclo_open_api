@@ -99,8 +99,8 @@ Category id, one of five is required, and pageNumber is required as a parameter.
 The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: 2022-01-07T04:04:39Z
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="sortType" type="Number" %}
-Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: 10.
+{% swagger-parameter in="query" name="sortType" type="String" %}
+Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: salasVolume
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="sortBy" type="String" %}

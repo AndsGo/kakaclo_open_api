@@ -43,15 +43,20 @@ refund's Nos, please use comma as separator, for example 1000000065617,100000006
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
+    "code": 10000,
+    "data": {
+        "total": 1,
+        "pageNumber": 1,
+        "pageSize": 10,
+        "list": [
+            {
+                "refundNo": "1560897343230267394",
+                "refundStatus": "refund_successfully",
+                "id": "1000000387523"
+            }
+        ]
+    },
+    "message": "success"
 }
 ```
 {% endswagger-response %}
