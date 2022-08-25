@@ -39,7 +39,7 @@ This interface provides querying product information based on parameters. There 
 | categoryId                         | Number     | product category id,for example: 3654                                                                                                                                                                                                      |
 | salesVolume                        | Number     | salesVolume. for example: 30                                                                                                                                                                                                               |
 | attributesJson                     | String     | Product attribute fields. for example: {"style": "Grace", "season": "Spring-Summer", "pattern": "Floral print", "material": "Cotton blend", "sleeve\_type": "Puffed sleeve", "sleeve\_length": "Half sleeve"}                              |
-| minPrice                           | Decimal(2) | The minimum selling price of sku. for example: 15.30                                                                                                                                                                                       |
+| price                              | Decimal(2) | The minimum selling price of sku. for example: 15.30                                                                                                                                                                                       |
 | stock                              | Number     | sku total inventory. for example: 1000                                                                                                                                                                                                     |
 | createTime                         | Date       | creation time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                            |
 | updateTime                         | Date       | update time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                              |
@@ -140,7 +140,7 @@ Page number, when querying according to the update time, PageNumber is required 
                 "categoryId":"",
                 "salesVolume":"",
                 "attributesJson":"",
-                "minPrice":"",
+                "price":"",
                 "stock":"",
                 "createTime":"",
                 "updateTime":"",
