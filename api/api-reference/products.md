@@ -37,6 +37,7 @@ This interface provides querying product information based on parameters. There 
 | sizeImagePath                      | String     | Product size picture,for example: [https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_G\_XXL%2Fe674a874a5bd0a1d2839dbe8ab84ce1d.jpg](https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_G\_XXL%2Fe674a874a5bd0a1d2839dbe8ab84ce1d.jpg) |
 | spuStatus                          | Number     | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf,for example: 1                                                                                                                                                          |
 | categoryId                         | Number     | product category id,for example: 3654                                                                                                                                                                                                      |
+| fullCategoryName                   | String     | Product classification full path, for example: Women/Activewear/Suit                                                                                                                                                                       |
 | salesVolume                        | Number     | salesVolume. for example: 30                                                                                                                                                                                                               |
 | attributesJson                     | String     | Product attribute fields. for example: {"style": "Grace", "season": "Spring-Summer", "pattern": "Floral print", "material": "Cotton blend", "sleeve\_type": "Puffed sleeve", "sleeve\_length": "Half sleeve"}                              |
 | price                              | Decimal(2) | The minimum selling price of sku. for example: 15.30                                                                                                                                                                                       |
@@ -138,6 +139,7 @@ Page number, when querying according to the update time, PageNumber is required 
                 "sizeImagePath":"",
                 "spuStatus":"",
                 "categoryId":"",
+                "fullCategoryName":"",
                 "salesVolume":"",
                 "attributesJson":"",
                 "price":"",
