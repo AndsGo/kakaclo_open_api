@@ -48,8 +48,7 @@ description: >-
             "quantity": 1
           }
         ],
-    "CustomOrderNumber": "111",
-    "SalePlatform": "KA"
+    "salePlatform": "KA"
  
 }
 ```
@@ -75,6 +74,10 @@ Order Items Properties
 
 {% swagger-parameter in="body" name="remark" required="false" %}
 order notes
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="salePlatform" %}
+Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress、OverStock、TopHatter、JoyBuy、Homedepot、Facebookshop、Mercari、Facebook Marketplace
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
