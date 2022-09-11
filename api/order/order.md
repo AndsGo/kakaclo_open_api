@@ -59,7 +59,7 @@ description: >-
 | -------------- | ----------- | -------------------------------------------- |
 | kkOrderId      | String\[32] | The order number is returned when successful |
 
-{% swagger method="post" path="/openapi/v1/order/order" baseUrl="" summary="Create order related information" %}
+{% swagger method="post" path="/openapi/v1/order/orders" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
 
 {% endswagger-description %}

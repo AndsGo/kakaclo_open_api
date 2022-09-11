@@ -2,11 +2,11 @@
 description: Create a refund order
 ---
 
-# refund order
+# Refund Order
 
 Create a refund order
 
-{% swagger method="post" path="/openapi/v1/order/order/{id}/refund" baseUrl="" summary="" %}
+{% swagger method="post" path="/openapi/v1/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
