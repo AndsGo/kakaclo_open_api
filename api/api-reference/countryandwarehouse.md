@@ -4,6 +4,8 @@ description: Country and warehouse relations
 
 # CountryAndWarehouse
 
+
+
 {% hint style="info" %}
 This interface is to obtain the corresponding relationship between country and warehouse. Our [stock](stock.md) is placed in different countries and warehouses, you can obtain [stock](stock.md) through different countries and warehouses.
 {% endhint %}
@@ -12,7 +14,6 @@ This interface is to obtain the corresponding relationship between country and w
 
 | Parameter name   | Type   | Remark                                                          |
 | ---------------- | ------ | --------------------------------------------------------------- |
-| warehouseId      | Number | warehouse id. for example: 13                                   |
 | warehouseCode    | String | Shipping warehouse code,for example: G004                       |
 | warehouseName    | String | Shipping warehouse name,for example: Warehouse 8 in South China |
 | warehouseNameExt | String | Shipping warehouse Chinese name,for example: 东莞-独立站             |
@@ -34,7 +35,6 @@ This interface is to obtain the corresponding relationship between country and w
     "data":{
         "list":[
             {
-                "warehouseId":"",
                 "warehouseCode":"",
                 "warehouseName":"",
                 "warehouseNameExt":"",

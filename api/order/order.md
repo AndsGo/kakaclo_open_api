@@ -48,7 +48,8 @@ description: >-
             "quantity": 1
           }
         ],
-    "salePlatform": "KA"
+    "CustomOrderNumber": "111",
+    "SalePlatform": "KA"
  
 }
 ```
@@ -59,7 +60,7 @@ description: >-
 | -------------- | ----------- | -------------------------------------------- |
 | kkOrderId      | String\[32] | The order number is returned when successful |
 
-{% swagger method="post" path="/openapi/v1/order/orders" baseUrl="" summary="Create order related information" %}
+{% swagger method="post" path="/openapi/v1/order/order" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -74,10 +75,6 @@ Order Items Properties
 
 {% swagger-parameter in="body" name="remark" required="false" %}
 order notes
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="salePlatform" %}
-Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress、OverStock、TopHatter、JoyBuy、Homedepot、Facebookshop、Mercari、Facebook Marketplace
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
