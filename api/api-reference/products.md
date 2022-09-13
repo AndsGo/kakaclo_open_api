@@ -13,18 +13,18 @@ This interface provides querying product information based on parameters. There 
 | categoryId                        | Number | Category id, one of five is required, and pageNumber is required as a parameter. for example: **3654**                                                                                                                                                                        |
 | dateStartTime                     | String | The start time of the **update time**, **UTC time**, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: **2022-01-07T04:04:39Z** |
 | dateEndTime                       | String | The end time of the **update time**, **UTC time**, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required. for example: **2022-01-08T04:04:39Z**         |
-| [sortType](products.md#undefined) | Number | Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: 10                                                                                                         |
+| [sortType](products.md#undefined) | String | Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: salasVolume                                                                                                |
 | sortBy                            | String | Sorting method, ascending order: **asc**, reverse order: **desc.** for example: desc                                                                                                                                                                                          |
 | pageNumber                        | Number | Page number, when querying according to the update time, PageNumber is required and greater than 0.                                                                                                                                                                           |
 
 #### sortType
 
-| code | description |   |   |
-| ---- | ----------- | - | - |
-| 10   | salasVolume |   |   |
-| 20   | stock       |   |   |
-| 30   | price       |   |   |
-| 40   | updateTime  |   |   |
+| sort field  | definition          | field       |   |   |
+| ----------- | ------------------- | ----------- | - | - |
+| salasVolume | product salasVolume | salasVolume |   |   |
+| stock       | product stock       | stock       |   |   |
+| price       | product price       | price       |   |   |
+| updateTime  | updateTime          | updateTime  |   |   |
 
 ## Response parameter
 
@@ -37,8 +37,10 @@ This interface provides querying product information based on parameters. There 
 | sizeImagePath                      | String     | Product size picture,for example: [https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_G\_XXL%2Fe674a874a5bd0a1d2839dbe8ab84ce1d.jpg](https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_G\_XXL%2Fe674a874a5bd0a1d2839dbe8ab84ce1d.jpg) |
 | spuStatus                          | Number     | Commodity spu on the shelf status, 0-off the shelf; 1-on the shelf,for example: 1                                                                                                                                                          |
 | categoryId                         | Number     | product category id,for example: 3654                                                                                                                                                                                                      |
+| fullCategoryName                   | String     | Product classification full path, for example: Women/Activewear/Suit                                                                                                                                                                       |
 | salesVolume                        | Number     | salesVolume. for example: 30                                                                                                                                                                                                               |
-| minPrice                           | Decimal(2) | The minimum selling price of sku. for example: 15.30                                                                                                                                                                                       |
+| attributesJson                     | String     | Product attribute fields. for example: {"style": "Grace", "season": "Spring-Summer", "pattern": "Floral print", "material": "Cotton blend", "sleeve\_type": "Puffed sleeve", "sleeve\_length": "Half sleeve"}                              |
+| price                              | Decimal(2) | The minimum selling price of sku. for example: 15.30                                                                                                                                                                                       |
 | stock                              | Number     | sku total inventory. for example: 1000                                                                                                                                                                                                     |
 | createTime                         | Date       | creation time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                            |
 | updateTime                         | Date       | update time,for example: 2022-01-07T04:04:39Z                                                                                                                                                                                              |
@@ -98,8 +100,8 @@ Category id, one of five is required, and pageNumber is required as a parameter.
 The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: 2022-01-07T04:04:39Z
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="sortType" type="Number" %}
-Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: 10.
+{% swagger-parameter in="query" name="sortType" type="String" %}
+Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: salasVolume
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="sortBy" type="String" %}
@@ -137,8 +139,10 @@ Page number, when querying according to the update time, PageNumber is required 
                 "sizeImagePath":"",
                 "spuStatus":"",
                 "categoryId":"",
+                "fullCategoryName":"",
                 "salesVolume":"",
-                "minPrice":"",
+                "attributesJson":"",
+                "price":"",
                 "stock":"",
                 "createTime":"",
                 "updateTime":"",

@@ -2,7 +2,7 @@
 description: View order related information
 ---
 
-# Order List
+# Query Order
 
 ## Order List Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -80,7 +80,7 @@ description: View order related information
 | delivered        | order completed         |   |
 | refund\_fail     | Order refund failed     |   |
 
-{% swagger method="get" path="/openapi/v1/order/order" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}

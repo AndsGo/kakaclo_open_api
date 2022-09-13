@@ -23,39 +23,40 @@ Query Order Refund Transaction Slip
 | remark         | String | order notes         |
 | refundStatus   | String | refund status       |
 
-{% swagger method="get" path="/order/refund" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="refundNo" required="false" %}
+{% swagger-parameter in="query" name="refundNo" required="true" %}
 refund's Nos, please use comma as separator, for example 1000000065617,1000000065618
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="ids" required="false" %}
-Order's IDs, please use comma as separator, for example 1000000065617,1000000065618
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="pageNumber" %}
+{% swagger-parameter in="query" name="pageNumber" required="true" %}
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="pageSize" %}
+{% swagger-parameter in="query" name="pageSize" required="true" %}
 
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="200: OK" description="" %}
-```javascript
-{
-    // Response
+    "code": 10000,
+    "data": {
+        "total": 1,
+        "pageNumber": 1,
+        "pageSize": 10,
+        "list": [
+            {
+                "refundNo": "1560897343230267394",
+                "refundStatus": "refund_successfully",
+                "id": "1000000387523"
+            }
+        ]
+    },
+    "message": "success"
 }
 ```
 {% endswagger-response %}

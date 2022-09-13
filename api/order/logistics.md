@@ -35,7 +35,7 @@ Calculate the logistics channels supported by the sku that currently needs to pl
 
 ## &#x20;Properties <a href="#response-parameter" id="response-parameter"></a>
 
-{% swagger method="post" path="/openapi/v1/order/logisticsChannel" baseUrl="https://test-developer.kakaclo.com" summary="Get current logistics channels" %}
+{% swagger method="post" path="/openapi/v1/order/logisticsChannel" baseUrl="" summary="Get current logistics channels" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -65,8 +65,9 @@ The sku information that needs to be calculated
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
-<pre class="language-javascript"><code class="lang-javascript"><strong>{
-</strong>    "code":10000,
+```javascript
+{
+    "code":10000,
     "message":"kk.api.200",
     "data":{
         "list":[
@@ -77,7 +78,8 @@ The sku information that needs to be calculated
             }
         ]
     }
-}</code></pre>
+}
+```
 {% endswagger-response %}
 
 {% swagger-response status="401: Unauthorized" description="Successfully query" %}
