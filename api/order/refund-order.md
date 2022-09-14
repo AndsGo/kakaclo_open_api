@@ -4,7 +4,9 @@ description: Create a refund order
 
 # Refund Order
 
-Create a refund order
+Create a refund order。
+
+Cancel the order and get a refund. you can only do this when the order has not been shipped. This operation is performed asynchronously, and you can get the latest status information through "[Query ReFund](query-refund.md)"
 
 {% swagger method="post" path="/openapi/v1/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
