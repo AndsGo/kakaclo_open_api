@@ -78,7 +78,6 @@ description: View order related information
 | partial\_shipped    | Order Partially Shipped |   |
 | shipped             | Order shipped           |   |
 | delivered           | order completed         |   |
-| refund\_fail        | Order refund failed     |   |
 
 {% swagger method="get" path="/openapi/v1/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
