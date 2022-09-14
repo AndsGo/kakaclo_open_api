@@ -14,6 +14,22 @@ This interface is to query sku inventory. The same sku may belong to different r
 | dateEndTime    | String | Inventory update end time, one of the three is required. for example: **2022-03-26T04:00:30Z**                                                                                               |
 | pageNumber     | Number | Page number, when querying according to the update time, PageNumber is required and greater than 0. for example: 1                                                                           |
 
+<details>
+
+<summary>When querying according to skus, sku is required, and other parameters are optional, for example:</summary>
+
+[https://developer.kakaclo.com/openapi/v1/product/stocks?skus=FSZW03961\_Y\_S\_NUB](https://test-developer.kakaclo.com/openapi/v1/product/stocks?skus=FSZW03961\_Y\_S\_NUB)
+
+</details>
+
+<details>
+
+<summary>When querying based on the update time, either dateStartTime and dateEndTime are required, pageNumber is required, and other parameters are optional, for example:</summary>
+
+[https://developer.kakaclo.com/openapi/v1/product/stocks?dateStartTime=2022-08-01T00:00:00Z\&pageNumber=1\&dateEndTime=2022-08-02T00:00:00Z](https://test-developer.kakaclo.com/openapi/v1/product/stocks?dateStartTime=2022-08-01T00:00:00Z\&pageNumber=1\&dateEndTime=2022-08-02T00:00:00Z)
+
+</details>
+
 ## Response parameter
 
 | Parameter name | Type   | Remark                                                 |
