@@ -68,17 +68,17 @@ description: View order related information
 
 ## Order Status
 
-| status           | Remark                  |   |
-| ---------------- | ----------------------- | - |
-| waiting\_payment | Order pending payment   |   |
-| cancel           | order cancelled         |   |
-| waiting\_toship  | Order to be shipped     |   |
-| refunding        | order refund            |   |
-| refunded         | Order has been refunded |   |
-| partial\_shipped | Order Partially Shipped |   |
-| shipped          | Order shipped           |   |
-| delivered        | order completed         |   |
-| refund\_fail     | Order refund failed     |   |
+| status              | Remark                  |   |
+| ------------------- | ----------------------- | - |
+| waiting\_payment    | Order pending payment   |   |
+| cancel              | order cancelled         |   |
+| waiting\__to\__ship | Order to be shipped     |   |
+| refunding           | order refund            |   |
+| refunded            | Order has been refunded |   |
+| partial\_shipped    | Order Partially Shipped |   |
+| shipped             | Order shipped           |   |
+| delivered           | order completed         |   |
+| refund\_fail        | Order refund failed     |   |
 
 {% swagger method="get" path="/openapi/v1/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
