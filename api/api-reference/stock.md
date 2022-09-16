@@ -32,19 +32,50 @@ This interface is to query sku inventory. The same sku may belong to different r
 
 ## Response parameter
 
-| Parameter name | Type   | Remark                                                 |
-| -------------- | ------ | ------------------------------------------------------ |
-| sku            | String | product unique code, for example: FSZW03961\_Y\_S\_NUB |
-| qty            | Number | Inventory quantity, for example: 20                    |
-| countryCode    | String | Shipping country code, for example: CN\_S              |
-| warehouseCode  | String | warehouse code, for example: G007                      |
-| total          | Number | The total number of query results, for example: 1000   |
-| pageNumber     | Number | page number, for example: 1                            |
-| pageSize       | Number | Quantity per page, for example: 30                     |
+| Parameter name | Type   | Remark                                                                                               |
+| -------------- | ------ | ---------------------------------------------------------------------------------------------------- |
+| sku            | String | product unique code, for example: FSZW03961\_Y\_S\_NUB                                               |
+| qty            | Number | Inventory quantity, for example: 20                                                                  |
+| countryCode    | String | Shipping country code, for example: CN\_S                                                            |
+| warehouseCode  | String | warehouse code, for example: G007                                                                    |
+| total          | Number | The total number of query results(The total number of list data for paging query), for example: 1000 |
+| pageNumber     | Number | page number, for example: 1                                                                          |
+| pageSize       | Number | Quantity per page, for example: 30                                                                   |
 
 {% hint style="info" %}
 #### The countryCode and warehouseCode fields are reserved fields, and developers do not need to pay attention to the use of these two fields.
 {% endhint %}
+
+#### Response Example
+
+```
+{
+    "code": 10000,
+    "data": {
+        "total": 1,
+        "pageNumber": 1,
+        "pageSize": 30,
+        "list": [
+            {
+                "warehouseStockList": [
+                    {
+                        "countryCode": "CN_N",
+                        "qty": 45,
+                        "warehouseCode": "G006"
+                    },
+                    {
+                        "countryCode": "CN_S",
+                        "qty": 20,
+                        "warehouseCode": "G007"
+                    }
+                ],
+                "sku": "FSZW03961_Y_XL_NUB"
+            }
+        ]
+    },
+    "message": "Success！"
+}
+```
 
 ## Query stock
 
