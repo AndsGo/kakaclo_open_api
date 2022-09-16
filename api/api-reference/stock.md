@@ -76,24 +76,47 @@ Page number, when querying according to the update time, PageNumber is required 
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="Successfully query" %}
-```javascript
+```json
 {
-    "code":10000,
-    "message":"kk.api.200",
-    "data":{
-        "list":[
+    "code": 10000,
+    "data": {
+        "total": 2,
+        "pageNumber": 1,
+        "pageSize": 30,
+        "list": [
             {
-                "sku":"",
-                "warehouseStockList":[
+                "warehouseStockList": [
                     {
-                        "warehouseCode":"",
-                        "qty":"",
-                        "countryCode":""
+                        "countryCode": "CN_N",
+                        "qty": 45,
+                        "warehouseCode": "G006"
+                    },
+                    {
+                        "countryCode": "CN_S",
+                        "qty": 20,
+                        "warehouseCode": "G007"
                     }
-                ]
+                ],
+                "sku": "FSZW03961_Y_S_NUB"
+            },
+            {
+                "warehouseStockList": [
+                    {
+                        "countryCode": "CN_N",
+                        "qty": 45,
+                        "warehouseCode": "G006"
+                    },
+                    {
+                        "countryCode": "CN_S",
+                        "qty": 20,
+                        "warehouseCode": "G007"
+                    }
+                ],
+                "sku": "FSZW03961_Y_XL_NUB"
             }
         ]
-    }
+    },
+    "message": "Success！"
 }
 ```
 {% endswagger-response %}
