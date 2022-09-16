@@ -42,6 +42,10 @@ This interface is to query sku inventory. The same sku may belong to different r
 | pageNumber     | Number | page number, for example: 1                            |
 | pageSize       | Number | Quantity per page, for example: 30                     |
 
+{% hint style="info" %}
+#### The countryCode and warehouseCode fields are reserved fields, and developers do not need to pay attention to the use of these two fields.
+{% endhint %}
+
 ## Query stock
 
 {% swagger method="get" path="/openapi/v1/product/stocks" baseUrl="" summary="get product stock" %}
