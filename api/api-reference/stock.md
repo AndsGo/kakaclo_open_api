@@ -38,7 +38,7 @@ This interface is to query sku inventory. The same sku may belong to different r
 | qty            | Number | Inventory quantity, for example: 20                    |
 | countryCode    | String | Shipping country code, for example: CN\_S              |
 | warehouseCode  | String | warehouse code, for example: G007                      |
-| total          | Number | total data volume, for example: 1000                   |
+| total          | Number | The total number of query results, for example: 1000   |
 | pageNumber     | Number | page number, for example: 1                            |
 | pageSize       | Number | Quantity per page, for example: 30                     |
 
