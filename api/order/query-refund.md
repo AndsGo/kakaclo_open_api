@@ -23,7 +23,7 @@ Query Order Refund Transaction Slip
 | remark         | String | order notes         |
 | refundStatus   | String | refund status       |
 
-{% swagger method="get" path="/openapi/v1/order/orders/{id}/refund" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/orders/refund/{id}" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
