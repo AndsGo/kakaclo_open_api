@@ -2,6 +2,8 @@
 
 * [Welcome！](README.md)
 * [Quick Start](kuai-su-kai-shi.md)
+* [API Usage](api-usage/README.md)
+  * [API Endpoint](api-usage/api-endpoint.md)
 
 ## API
 
