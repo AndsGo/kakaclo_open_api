@@ -4,6 +4,7 @@
 * [Quick Start](kuai-su-kai-shi.md)
 * [API Usage](api-usage/README.md)
   * [API Endpoint](api-usage/api-endpoint.md)
+  * [Rate Limits](api-usage/rate-limits.md)
 
 ## API
 

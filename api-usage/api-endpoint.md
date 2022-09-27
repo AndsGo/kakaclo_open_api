@@ -1,15 +1,15 @@
 # API Endpoint
 
+**API endpoint**
 
+After you get your **Access-Token**, it's very easy to start making API call to KakaClo.
 
-### **API endpoint**
-
-After you get your **Access-Token**, it's very easy to start making API call to Shoplazzaa.
-
-> #### 📘
+> #### 📘 Noted
 >
-> All endpoints are only accessible via HTTPS and are located at `https://{your_store_slug}.myshoplaza.com`, which `your_store_slug` is the given store domain.
+> After you get your **Access-Token**, it's very easy to start making API call to kakaclo open API.All endpoints are only accessible via HTTPS and are located at `https://developer.kakaclo.com/openapi`
 >
-> While using the "Try out" feature in this document, the `your_store_slug` is pre-filled with `developer`, which is a testing store provided by **Shoplazza** for you to easily navigated with.
+> testing environment :`https://test-developer.kakaclo.com/openapi`\
+> ``\
+> ``Access-Token needs to be put in the http request header，**Authorization: Bearer YOU\_ACCES-TOKEN**
 
 ### ****
