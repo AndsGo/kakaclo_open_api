@@ -1,6 +1,6 @@
 # Query Balance
 
-Query current account information
+Get account balance
 
 {% swagger method="get" path="/openapi/v1/payment/balance" baseUrl="" summary="" %}
 {% swagger-description %}
