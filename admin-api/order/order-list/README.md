@@ -69,7 +69,7 @@ description: View order related information
 
 ## Order Status
 
-| Status              | Remark                  |   |
+| Value               | Remark                  |   |
 | ------------------- | ----------------------- | - |
 | waiting\_payment    | order pending payment   |   |
 | cancel              | order cancelled         |   |
