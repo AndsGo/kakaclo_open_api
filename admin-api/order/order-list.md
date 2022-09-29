@@ -34,7 +34,7 @@ description: View order related information
 | deliveryTime                                     | String                      | delivery time "2016-01-18T23:41:00Z" |
 | trackingCode                                     | String                      | order tracking number                |
 | [orderItems](order-list.md#response-parameter-2) | array of OrderItems objects | Order logistics information          |
-| logisticsProviders                               | String                      | order carrier                        |
+| logisticsProviders11                             | String                      | order carrier                        |
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
