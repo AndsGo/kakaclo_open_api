@@ -11,13 +11,13 @@ description: >-
 | Parameter name | Type        | Remark                          |
 | -------------- | ----------- | ------------------------------- |
 | sku            | string\[64] | sku                             |
-| quantity       | int\[16]    | Quantity must be greater than 0 |
+| quantity       | int\[16]    | quantity must be greater than 0 |
 
 ## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
 | Parameter name | Type        | Remark                                    |
 | -------------- | ----------- | ----------------------------------------- |
-| country        | string\[32] | Shipping country shortcode required FR,US |
+| country        | string\[32] | shipping country shortcode required FR,US |
 | phone          | string\[64] | address phone required                    |
 | street1        | string\[64] | address street1 optional                  |
 | street2        | string\[64] | address street2 optional                  |
@@ -57,7 +57,7 @@ description: >-
 
 | Parameter name | Type        | Remark                                       |
 | -------------- | ----------- | -------------------------------------------- |
-| kkOrderId      | String\[32] | The order number is returned when successful |
+| kkOrderId      | String\[32] | the order number is returned when successful |
 
 {% swagger method="post" path="/openapi/v1/order/orders" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
