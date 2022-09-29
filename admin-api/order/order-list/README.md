@@ -10,19 +10,19 @@ description: View order related information
 | --------------------------------------- | --------------------------- | ---------------------------------------------------------- | - |
 | shippingAddress                         | object                      | address information                                        |   |
 | id                                      | number                      | order id                                                   |   |
-| remark                                  | String                      | User comments                                              |   |
+| remark                                  | String                      | user comments                                              |   |
 | status                                  | String                      | order status                                               |   |
 | purchaseDate                            | String                      | order time "2016-01-18T23:41:00Z"                          |   |
 | payAt                                   | String                      | payment time "2016-01-18T23:41:00Z"                        |   |
-| completedAt                             | String                      | Complete time "2016-01-18T23:41:00Z"                       |   |
+| completedAt                             | String                      | complete time "2016-01-18T23:41:00Z"                       |   |
 | cancelDate                              | String                      | cancel time "2016-01-18T23:41:00Z"                         |   |
 | refundDate                              | String                      | refund time "2016-01-18T23:41:00Z"                         |   |
-| warehouseId                             | int\[16]                    | Order delivery warehouse, used for inventory replenishment |   |
+| warehouseId                             | int\[16]                    | order delivery warehouse, used for inventory replenishment |   |
 | finalAmount                             | BigDecimal                  | payment amount                                             |   |
 | freightAmount                           | BigDecimal                  | Order shipping amount                                      |   |
 | skusAmount                              | BigDecimal                  | total order item                                           |   |
 | [orderItems](./#response-parameter-2)   | array of OrderItems objects | order sku information                                      |   |
-| [fulfillments](./#response-parameter-1) | array of OrderItems objects | Order logistics information                                |   |
+| [fulfillments](./#response-parameter-1) | array of OrderItems objects | order logistics information                                |   |
 | createDate                              | String                      | createAt time "2016-01-18T23:41:00Z"                       |   |
 | updateDate                              | String                      | updateAt time "2016-01-18T23:41:00Z"                       |   |
 
@@ -33,7 +33,7 @@ description: View order related information
 | id                                    |   | String                      | package id                                             |
 | deliveryTime                          |   | String                      | delivery time "2016-01-18T23:41:00Z"                   |
 | trackingCode                          |   | String                      | order tracking number                                  |
-| [orderItems](./#response-parameter-2) |   | array of OrderItems objects | Order logistics information                            |
+| [orderItems](./#response-parameter-2) |   | array of OrderItems objects | order logistics information                            |
 | logisticsSearchUrl                    |   | String                      | [https://track.yw56.com.cn](https://track.yw56.com.cn) |
 | carrier                               |   | String                      | order carrier                                          |
 
@@ -50,7 +50,7 @@ description: View order related information
 | option1        | String     | sku attribute 1, contains size information, variable attribute |
 | option2        | String     | sku attribute 2, contains size information, variable attribute |
 | option3        | String     | sku attribute 3, contains size information, variable attribute |
-| productNum     | int\[16]   | Sales volume                                                   |
+| productNum     | int\[16]   | sales volume                                                   |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -71,13 +71,13 @@ description: View order related information
 
 | status              | Remark                  |   |
 | ------------------- | ----------------------- | - |
-| waiting\_payment    | Order pending payment   |   |
+| waiting\_payment    | order pending payment   |   |
 | cancel              | order cancelled         |   |
-| waiting\__to\__ship | Order to be shipped     |   |
+| waiting\__to\__ship | order to be shipped     |   |
 | refunding           | order refund            |   |
-| refunded            | Order has been refunded |   |
-| partial\_shipped    | Order Partially Shipped |   |
-| shipped             | Order shipped           |   |
+| refunded            | order has been refunded |   |
+| partial\_shipped    | order Partially Shipped |   |
+| shipped             | order shipped           |   |
 | delivered           | order completed         |   |
 
 {% swagger method="get" path="/openapi/v1/order/orders" baseUrl="" summary="" %}
