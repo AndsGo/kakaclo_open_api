@@ -128,55 +128,59 @@ Page number, when querying according to the update time, PageNumber is required 
 ```javascript
 {
     "code":10000,
-    "message":"kk.api.200",
     "data":{
         "list":[
             {
-                "kkProductId":"",
-                "spu":"",
-                "productName":"",
-                "description":"",
-                "sizeImagePath":"",
-                "spuStatus":"",
-                "categoryId":"",
-                "fullCategoryName":"",
-                "salesVolume":"",
-                "attributesJson":"",
-                "price":"",
-                "stock":"",
-                "createTime":"",
-                "updateTime":"",
+                "attributesJson":"{\"season\": \"Spring-Summer\", \"waistline\": \"Mid waist\"}",
+                "kkProductId":1177295,
+                "salesVolume":501,
+                "spuStatus":1,
+                "description":"Women'S Threaded Contrast Cropped Pantscomfortable Fabric/  Fashionable Style/  Casual And Versatile/  Suitable For Daily Wear/  School/  Leisure/  Vacation/  Date/  Party/  Club/  Etc/  Please Refer To The Left Size Picture Before Purchasing/  Due To Different Computer Display Colors/  The Actual Product Color May Be Slightly Different From The Picture Above",
+                "updateTime":"2022-01-07T03:29:18Z",
+                "productName":"Fashion All-Match Casual Women'S Threaded Contrast Cropped Pants",
+                "createTime":"2022-01-07T03:29:18Z",
+                "price":5.98,
+                "fullCategoryName":"Women/Bottoms/Cropped Pants",
+                "skuDetails":[
+                    {
+                        "mainImg":"https://img.kakaclo.com/image%2FAMN00769%2FAMN00769_DGR_S%2F87c26392683a1a34df19f3b2cfb053b6.jpg",
+                        "cost":4.6,
+                        "packageWeight":256,
+                        "skuStatus":1,
+                        "packageWidth":22,
+                        "skuName":"Fashion All-Match Casual Women'S Threaded Contrast Cropped Pants",
+                        "packageHeight":3,
+                        "material":"100% Cotton",
+                        "price":5.98,
+                        "option3":"{\"name\":\"print\",\"value\":\"\"}",
+                        "packageLength":32,
+                        "option1":"{\"name\":\"color\",\"value\":\"Charcoal grey\"}",
+                        "option2":"{\"name\":\"size\",\"value\":\"XL\"}",
+                        "sku":"AMN00769_DGR_XL_AU",
+                        "stock":20
+                    }
+                ],
+                "sizeImagePath":"https://img.kakaclo.com/image%2FAMN00769%2FAMN00769_LGR_S%2Fd042f310fe9ac4115ba85a525ada61f4.jpg",
+                "spu":"AMN00769",
+                "stock":20,
+                "categoryId":3658,
                 "skuImgUrl":[
                     {
-                        "skus":[],
-                        "imgUrl":[]
-                    }
-                ]
-                "skuList":[
-                    {
-                        "sku":"",
-                        "skuName":"",
-                        "mainImg":"",
-                        "packageLength":"",
-                        "packageWidth":"",
-                        "packageHeight":"",
-                        "packageWeight":"",
-                        "cost":"",
-                        "price":"",
-                        "stock":"",
-                        "option1":"",
-                        "option2":"",
-                        "option3":"",
-                        "material":"",
-                        "skuStatus":""
+                        "imgUrl":[
+                            "https://img.kakaclo.com/image%2FAMN00769%2FAMN00769_DGR_S%2F87c26392683a1a34df19f3b2cfb053b6.jpg"
+                        ],
+                        "skus":[
+                            "AMN00769_DGR_XL_AU"
+                        ]
                     }
                 ]
             }
         ],
-        "total":"",
-        "pageNumber":"",
-        "pageSize":""
-    }
+        "total":1,
+        "pageNumber":1,
+        "pageSize":1
+    },
+    "message":"Success！"
 }
 ```
 {% endswagger-response %}
