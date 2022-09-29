@@ -54,22 +54,22 @@ description: View order related information
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
-|           |        |                          |
-| --------- | ------ | ------------------------ |
-| country   | String | place an order country   |
-| city      | String | place an order city      |
-| phone     | String | place an order phone     |
-| recipient | String | place an order recipient |
-| street1   | String | place an order street1   |
-| street2   | String | place an order street2   |
-| province  | String | place an order province  |
-| zip       | String | place an order zip       |
-| vat       | String | place an order vat       |
-| ioss      | String | place an order ioss      |
+| Parameter name | Type   | Remark                   |
+| -------------- | ------ | ------------------------ |
+| country        | String | place an order country   |
+| city           | String | place an order city      |
+| phone          | String | place an order phone     |
+| recipient      | String | place an order recipient |
+| street1        | String | place an order street1   |
+| street2        | String | place an order street2   |
+| province       | String | place an order province  |
+| zip            | String | place an order zip       |
+| vat            | String | place an order vat       |
+| ioss           | String | place an order ioss      |
 
 ## Order Status
 
-| status              | Remark                  |   |
+| Status              | Remark                  |   |
 | ------------------- | ----------------------- | - |
 | waiting\_payment    | order pending payment   |   |
 | cancel              | order cancelled         |   |
