@@ -14,7 +14,7 @@ It is recommended that you refer to the following process for programming
 
 Step 1. Obtained by "dateStartTime", "dateEndTime" call "product API" to pull product information.&#x20;
 
-Step 2. After processing the product response data, store it in the database "product" table and "sku" table respectively, and the "product" table and "sku" table are related by the kk\_product\_id field.
+Step 2. After processing the product response data, store it in the database "product" table and "sku" table respectively, and the "product" table and "sku" table are related by the spu or kkProductId field.
 
 Step 1 to Step 2 until the "dateEndTime" in Step 1 reaches the end of the current time.
 
