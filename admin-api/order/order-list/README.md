@@ -28,14 +28,14 @@ description: View order related information
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name                        | Type                        | Remark                                                 |   |
-| ------------------------------------- | --------------------------- | ------------------------------------------------------ | - |
-| id                                    | String                      | package id                                             |   |
-| deliveryTime                          | String                      | delivery time "2016-01-18T23:41:00Z"                   |   |
-| trackingCode                          | String                      | order tracking number                                  |   |
-| [orderItems](./#response-parameter-2) | array of OrderItems objects | order logistics information                            |   |
-| logisticsSearchUrl                    | String                      | [https://track.yw56.com.cn](https://track.yw56.com.cn) |   |
-| carrier                               | String                      | order carrier                                          |   |
+| Parameter name                        | Type                        | Remark                                                                                                     |   |
+| ------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------- | - |
+| id                                    | String                      | package id                                                                                                 |   |
+| deliveryTime                          | String                      | delivery time "2016-01-18T23:41:00Z"                                                                       |   |
+| trackingCode                          | String                      | order tracking number                                                                                      |   |
+| [orderItems](./#response-parameter-2) | array of OrderItems objects | order logistics information                                                                                |   |
+| logisticsSearchUrl                    | String                      | [https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ](https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ) |   |
+| carrier                               | String                      | order carrier                                                                                              |   |
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 

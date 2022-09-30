@@ -13,6 +13,7 @@
   * [Products](admin-api/api-reference/products.md)
   * [CountryAndWarehouse](admin-api/api-reference/countryandwarehouse.md)
   * [Stock](admin-api/api-reference/stock.md)
+  * [Product API pull suggestion](admin-api/api-reference/product-api-pull-suggestion.md)
 * [Order](admin-api/order/README.md)
   * [Order](admin-api/order/order.md)
   * [Query Order](admin-api/order/order-list/README.md)
