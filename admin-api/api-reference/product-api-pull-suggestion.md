@@ -31,5 +31,7 @@ Step 3 to Step 6 until the "dateEndTime" in Step 3 reaches the end of the curren
 Through the above steps, you can basically think that the data in the product, sku, and stock tables in your database are real-time. You can get spuStatus, skuStatus, stock information from product table and sku table.
 
 {% hint style="info" %}
-You can choose an appropriate step size when you get it by "dateStartTime", "dateEndTime". "dateEndTime" cannot be greater than the current time.
+You can select an appropriate step size when obtaining through "dateStartTime" and "dateEndTime", and "dateEndTime" cannot be greater than the current time. "dateStartTime" is suggested to be the "dateEndTime" of the last pull.&#x20;
+
+The pull cycle is recommended to be every 2-5 minutes.
 {% endhint %}
