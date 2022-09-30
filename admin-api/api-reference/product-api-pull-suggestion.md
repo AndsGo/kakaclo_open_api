@@ -2,7 +2,7 @@
 
 ## Product Stock relationship
 
-<figure><img src="../../.gitbook/assets/file.drawing (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/file.drawing.svg" alt=""><figcaption></figcaption></figure>
 
 The return value of the Product API includes stock (the sum of all sku stocks under spu), skuList, and skuList includes sku, stock (the sum of the stocks of all sku warehouses). The Stock API returns the specific inventory data of the warehouse corresponding to the sku. Therefore, by obtaining the return data of Stock Api, the total inventory of sku can be obtained, and then the inventory of spu can be obtaine
 
@@ -10,7 +10,7 @@ The return value of the Product API includes stock (the sum of all sku stocks un
 
 It is recommended that you refer to the following process for programming
 
-<figure><img src="../../.gitbook/assets/file.drawing.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/file.drawing (1).svg" alt=""><figcaption></figcaption></figure>
 
 Step 1. Obtained by "dateStartTime", "dateEndTime" call "product API" to pull product information.&#x20;
 
@@ -31,5 +31,5 @@ Step 3 to Step 6 until the "dateEndTime" in Step 3 reaches the end of the curren
 Through the above steps, you can basically think that the data in the product, sku, and stock tables in your database are real-time. You can get spuStatus, skuStatus, stock information from product table and sku table.
 
 {% hint style="info" %}
-你通过s\\
+You can choose an appropriate step size when you get it by "dateStartTime", "dateEndTime". "dateEndTime" cannot be greater than the current time.
 {% endhint %}
