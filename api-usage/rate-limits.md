@@ -16,7 +16,7 @@ To ensure our platform remains stable and fair for everyone, all KakaClo APIs ar
 
 ### **The leaky bucket algorithm**
 
-All Shoplazza APIs use a leaky bucket algorithm to manage requests. This algorithm lets your app make an unlimited amount of requests in infrequent bursts over time.\
+All kakaclo APIs use a leaky bucket algorithm to manage requests. This algorithm lets your app make an unlimited amount of requests in infrequent bursts over time.\
 The main points to understand about the leaky bucket metaphor are as follows:
 
 * Each app has access to a bucket. It can hold, say, 120 “marbles”.
