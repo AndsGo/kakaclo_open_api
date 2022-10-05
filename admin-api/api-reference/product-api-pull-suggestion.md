@@ -33,5 +33,9 @@ Through the above steps, you can basically think that the data in the product, s
 {% hint style="info" %}
 You can select an appropriate step size when obtaining through "dateStartTime" and "dateEndTime", and "dateEndTime" cannot be greater than the current time. "dateStartTime" is suggested to be the "dateEndTime" of the last pull.&#x20;
 
-The pull cycle is recommended to be every 2-5 minutes.
+The pull cycle is recommended to be every 1-5 minutes.
+{% endhint %}
+
+{% hint style="info" %}
+Generally, the data is pulled like this. Your step size is set to 8 hours. You start from "2021-06-01T00:00:00Z" and pull it every 1 minute. The time point of your first pull is "2021-06-01T00:00:00Z" - "2021-06-01T08:00:00Z", when the last page is pulled in this time period, you can start downloading A time period "2021-06-01T08:00:00Z" - "2021-06-01T16:00:00Z". Until the end time is equal to the current time (for example, the current time is "2022-10-05T11:00:00Z"), the pulled time period is "2022-10-05T08:00:00Z" - "2022-10-05T11:00:00Z". Since your pull task runs every 1 minute. The subsequent interval is basically 1 minute. Such as "2022-10-05T11:00:00Z" - "2022-10-05T11:01:00Z", the next time is "2022-10-05T11:01:00Z" - "2022-10-05T11:02:00Z" " . In this way, the difference between your data and kakaclo's data is basically only 1 minute, and since there is not much data changed in one minute, it can be considered that the data you obtain is real-time.
 {% endhint %}
