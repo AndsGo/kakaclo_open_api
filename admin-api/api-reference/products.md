@@ -57,6 +57,17 @@ This interface provides querying product information based on parameters. There 
 | skus           | Arrays | sku collection,for example: \[AMN00432\_B\_M,AMN00432\_B\_XL]                                                                                                                                                                                                                                      |
 | imgUrl         | Arrays | Sku picture collection, this collection belongs to all sku of skus collection,for example: \[[https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_B\_S%2F5c4a540d4006e222a9a20bbc5b7b2d67.jpg](https://img.kakaclo.com/image%2FAMN00432%2FAMN00432\_B\_S%2F5c4a540d4006e222a9a20bbc5b7b2d67.jpg)] |
 
+{% hint style="info" %}
+### Image resizing reference
+
+Normal image format: [https://img.kakaclo.com/image/AMN00609/AMN00609\_DG\_S/b76d5c978d0271c83c52d0f901b15fe3.jpg](https://img.kakaclo.com/image/AMN00609/AMN00609\_DG\_S/b76d5c978d0271c83c52d0f901b15fe3.jpg)
+
+Scaled image format:\
+[https://img.kakaclo.com/image/AMN00609/AMN00609\_DG\_S/b76d5c978d0271c83c52d0f901b15fe3.jpg?x-oss-process=image/resize,w\_504,h\_672,m\_fill/format,webp](https://img.kakaclo.com/image/AMN00609/AMN00609\_DG\_S/b76d5c978d0271c83c52d0f901b15fe3.jpg?x-oss-process=image/resize,w\_504,h\_672,m\_fill/format,webp)
+
+For scaling parameters, please refer to: https://help.aliyun.com/document\_detail/44688.html
+{% endhint %}
+
 #### skuList
 
 | Parameter name | Type       | Remark                                                                                                                                                                                                                                   |
