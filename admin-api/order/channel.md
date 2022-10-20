@@ -1,4 +1,10 @@
-# Logistics channel
+---
+description: >-
+  Logistics Channel API provide information like tracking company
+  (channelNameEn) or freight
+---
+
+# Logistics Channel
 
 ## Products Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -24,13 +30,13 @@
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name           | Type   | Remark                 |
-| ------------------------ | ------ | ---------------------- |
-| channelCode              | String | Logistics channel code |
-| channelNameEn            | String | channel name           |
-| estimatedFreight         | String | Shipping amount        |
-| estimatedFreightCurrency | String | USD                    |
-|                          |        |                        |
+| Parameter name           | Type   | Remark                           |
+| ------------------------ | ------ | -------------------------------- |
+| channelCode              | String | Logistics channel code           |
+| channelNameEn            | String | channel name                     |
+| estimatedFreight         | String | Shipping amount                  |
+| estimatedFreightCurrency | String | USD                              |
+| deliveryTime             | String | For example: 6\~10 Business Days |
 
 {% swagger method="post" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
 {% swagger-description %}
