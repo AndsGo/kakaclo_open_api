@@ -15,7 +15,7 @@
   * [Stock](admin-api/api-reference/stock.md)
   * [Product API pull suggestion](admin-api/api-reference/product-api-pull-suggestion.md)
 * [Order](admin-api/order/README.md)
-  * [Channel](admin-api/order/channel.md)
+  * [Logistics channel](admin-api/order/logistics-channel.md)
   * [Order](admin-api/order/order.md)
   * [Query Order](admin-api/order/order-list/README.md)
     * [Orders Status Json Response](admin-api/order/order-list/orders-status-json-response.md)

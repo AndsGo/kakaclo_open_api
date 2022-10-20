@@ -1,4 +1,4 @@
-# Channel
+# Logistics channel
 
 ## Products Properties <a href="#response-parameter" id="response-parameter"></a>
 

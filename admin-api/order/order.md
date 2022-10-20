@@ -80,6 +80,10 @@ order notes
 Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress、OverStock、TopHatter、JoyBuy、Homedepot、Facebookshop、Mercari、Facebook Marketplace
 {% endswagger-parameter %}
 
+{% swagger-parameter in="body" name="channelCode" %}
+From Logistics channel API 
+{% endswagger-parameter %}
+
 {% swagger-response status="200: OK" description="" %}
 ```javascript
 {
