@@ -53,10 +53,10 @@ description: >-
 }
 ```
 
+
+
 {% hint style="info" %}
-```
 "channelCode" If no value is passed, the "Standard Shipping" logistics channel will be used by default
-```
 {% endhint %}
 
 | Parameter name | Type        | Remark                                       |
