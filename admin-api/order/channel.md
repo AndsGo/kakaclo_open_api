@@ -39,8 +39,33 @@ description: >-
 | estimatedFreightCurrency | String | USD                                                                                                                                  |
 | deliveryTime             | String | For example: 6\~10 Business Days                                                                                                     |
 
+## Response Examples <a href="#response-parameter" id="response-parameter"></a>
+
+```
+{
+    "code": 10000,
+    "message": "success",
+    "data": [
+        {
+            "channelCode": "WB004",
+            "channelNameEn": "PP",
+            "estimatedFreight": 4.83,
+            "estimatedFreightCurrency": "USD",
+            "deliveryTime": "3~5 Business Days"
+        },
+        {
+            "channelCode": "WB001",
+            "channelNameEn": "Wb clothing line （general goods ）",
+            "estimatedFreight": 3.61,
+            "estimatedFreightCurrency": "USD",
+            "deliveryTime": "6~10 Business Days"
+        }
+    ]
+}
+```
+
 {% hint style="info" %}
-data is sorted according to deliveryTime from small to large, deliveryTime: the largest is "Standard Shipping".
+data is sorted according to "deliveryTime " from small to large, deliveryTime: the largest is "Standard Shipping".
 {% endhint %}
 
 {% swagger method="post" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
