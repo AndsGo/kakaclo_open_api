@@ -12,6 +12,7 @@ description: >-
 | -------------- | ----------- | ------------------------------- |
 | sku            | string\[64] | sku                             |
 | quantity       | int\[16]    | quantity must be greater than 0 |
+| shipToCountry  | string\[12] | ship to country                 |
 
 ## Request Properties <a href="#response-parameter" id="response-parameter"></a>
 
