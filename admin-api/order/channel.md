@@ -31,13 +31,13 @@ description: >-
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name           | Type   | Remark                           |
-| ------------------------ | ------ | -------------------------------- |
-| channelCode              | String | Logistics channel code           |
-| channelNameEn            | String | channel name                     |
-| estimatedFreight         | String | Shipping amount                  |
-| estimatedFreightCurrency | String | USD                              |
-| deliveryTime             | String | For example: 6\~10 Business Days |
+| Parameter name           | Type   | Remark                                                                                                                               |
+| ------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
+| channelCode              | String | Logistics channel code,This value is used on the [channelCode](order.md#response-parameter-2) parameter in the [Order API](order.md) |
+| channelNameEn            | String | channel name                                                                                                                         |
+| estimatedFreight         | String | Shipping amount                                                                                                                      |
+| estimatedFreightCurrency | String | USD                                                                                                                                  |
+| deliveryTime             | String | For example: 6\~10 Business Days                                                                                                     |
 
 {% swagger method="post" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
 {% swagger-description %}

@@ -81,7 +81,11 @@ Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress�
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="channelCode" %}
-From Logistics channel API 
+From Logistics 
+
+[channel API ](channel.md#response-parameter-2)
+
+
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
