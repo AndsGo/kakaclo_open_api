@@ -48,12 +48,16 @@ description: >-
             "quantity": 1
           }
         ],
-    "salePlatform": "KA"
- 
+    "salePlatform": "KA",
+    "chinnelCode":"G004"
 }
 ```
 
-## Response Properties <a href="#response-parameter" id="response-parameter"></a>
+{% hint style="info" %}
+```
+"channelCode" If no value is passed, the "Standard Shipping" logistics channel will be used by defaultResponse Properties
+```
+{% endhint %}
 
 | Parameter name | Type        | Remark                                       |
 | -------------- | ----------- | -------------------------------------------- |
