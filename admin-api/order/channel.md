@@ -1,7 +1,7 @@
 ---
 description: >-
   Logistics Channel API provide information like tracking company
-  (channelNameEn) or freight.
+  (channelNameEn) or freight
 ---
 
 # Logistics Channel

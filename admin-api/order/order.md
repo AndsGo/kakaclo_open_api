@@ -48,8 +48,8 @@ description: >-
             "quantity": 1
           }
         ],
-    "salePlatform": "KA"
- 
+    "salePlatform": "KA",
+    "chinnelCode":"G004"
 }
 ```
 
