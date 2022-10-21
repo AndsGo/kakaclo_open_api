@@ -1,7 +1,7 @@
 ---
 description: >-
   Logistics Channel API provide information like tracking company
-  (channelNameEn) or freight
+  (channelNameEn) or freight.
 ---
 
 # Logistics Channel
@@ -38,6 +38,10 @@ description: >-
 | estimatedFreight         | String | Shipping amount                                                                                                                      |
 | estimatedFreightCurrency | String | USD                                                                                                                                  |
 | deliveryTime             | String | For example: 6\~10 Business Days                                                                                                     |
+
+{% hint style="info" %}
+data is sorted according to deliveryTime from small to large, deliveryTime: the largest is "Standard Shipping".
+{% endhint %}
 
 {% swagger method="post" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
 {% swagger-description %}
