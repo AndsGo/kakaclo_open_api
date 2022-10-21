@@ -24,7 +24,7 @@ description: >-
                 }
             ],
        
-    "country": "US"
+    "shipToCountry": "US"
 }
 ```
 
@@ -43,7 +43,7 @@ description: >-
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="country" required="true" %}
+{% swagger-parameter in="body" name="shipToCountry" required="true" %}
 shipping country shortcode required FR,US
 {% endswagger-parameter %}
 
