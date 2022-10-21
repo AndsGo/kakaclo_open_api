@@ -1,7 +1,7 @@
 ---
 description: >-
-  Logistics Channel API provide information like tracking company
-  (channelNameEn) or freight.
+  Logistics Channel API provide information like shipping method (channelNameEn)
+  or freight.
 ---
 
 # Logistics Channel
@@ -34,7 +34,7 @@ description: >-
 | Parameter name           | Type   | Remark                                                                                                                               |
 | ------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------ |
 | channelCode              | String | Logistics channel code,This value is used on the [channelCode](order.md#response-parameter-2) parameter in the [Order API](order.md) |
-| channelNameEn            | String | channel name，shipping method                                                                                                         |
+| channelNameEn            | String | channel name(shipping method)                                                                                                        |
 | estimatedFreight         | String | Shipping amount                                                                                                                      |
 | estimatedFreightCurrency | String | USD                                                                                                                                  |
 | deliveryTime             | String | For example: 6\~10 Business Days                                                                                                     |
