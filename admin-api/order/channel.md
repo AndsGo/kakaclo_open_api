@@ -1,7 +1,7 @@
 ---
 description: >-
-  Logistics Channel API provide information like shipping method (channelNameEn)
-  ,deliveryTime or freight.
+  Logistics Channel API provides information like shipping method
+  (channelNameEn), channel code, delivery time, or freight.
 ---
 
 # Logistics Channel
