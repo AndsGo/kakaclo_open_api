@@ -18,13 +18,12 @@ description: >-
 
 ```
 {
-            "products": [
-                {
-                    "sku": "FSZW06578_P_L_NUB",
-                    "quantity": 1
-                }
-            ],
-       
+    "products": [
+      {
+       "sku": "FSZW06578_P_L_NUB",
+       "quantity": 1
+      }
+    ],
     "shipToCountry": "US"
 }
 ```
