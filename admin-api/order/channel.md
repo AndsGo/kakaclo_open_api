@@ -1,7 +1,7 @@
 ---
 description: >-
-  Logistics Channel API provide information like shipping method (channelNameEn)
-  or freight.
+  Logistics Channel API provides information like shipping method
+  (channelNameEn), channel code, delivery time, or freight.
 ---
 
 # Logistics Channel
@@ -68,7 +68,7 @@ description: >-
 data is sorted according to "deliveryTime " from small to large, deliveryTime the largest is "Standard Shipping".
 {% endhint %}
 
-{% swagger method="post" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
