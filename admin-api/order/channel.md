@@ -77,7 +77,7 @@ data is sorted according to "deliveryTime " from small to large, deliveryTime th
 shipping country shortcode required FR,US
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="products" type="Array" %}
+{% swagger-parameter in="body" name="products" type="Array" required="true" %}
 Product information
 {% endswagger-parameter %}
 
