@@ -68,7 +68,7 @@ description: >-
 data is sorted according to "deliveryTime " from small to large, deliveryTime the largest is "Standard Shipping".
 {% endhint %}
 
-{% swagger method="get" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
+{% swagger method="post" path="/openapi/v1/order/orders/channel" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
