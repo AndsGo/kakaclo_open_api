@@ -37,6 +37,7 @@ description: >-
 | estimatedFreight         | String | Shipping amount                                                                                                                      |
 | estimatedFreightCurrency | String | USD                                                                                                                                  |
 | deliveryTime             | String | For example: 6\~10 Business Days                                                                                                     |
+| channelType              | String | channelType                                                                                                                          |
 
 ## Response Examples <a href="#response-parameter" id="response-parameter"></a>
 
