@@ -49,16 +49,18 @@ description: >-
         {
             "channelCode": "WB004",
             "channelNameEn": "PP",
-            "estimatedFreight": 4.83,
+            "estimatedFreight": 6.45,
             "estimatedFreightCurrency": "USD",
-            "deliveryTime": "3~5 Business Days"
+            "deliveryTime": "3~5 Business Days",
+            "channelType": "Standard"
         },
         {
             "channelCode": "WB001",
             "channelNameEn": "Wb clothing line （general goods ）",
-            "estimatedFreight": 3.61,
+            "estimatedFreight": 4.77,
             "estimatedFreightCurrency": "USD",
-            "deliveryTime": "6~10 Business Days"
+            "deliveryTime": "6~10 Business Days",
+            "channelType": "Expedited"
         }
     ]
 }
