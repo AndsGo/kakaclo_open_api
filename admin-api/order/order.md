@@ -33,7 +33,7 @@ description: >-
 ```
 {
     "orderAddresses": {
-    "country": "FR",
+    "country": "US",
     "city": "Orlafasns",
     "phone": "07 82 24 67 93",
     "recipient": "Lffsollia Odfsdlena",
@@ -49,11 +49,9 @@ description: >-
           }
         ],
     "salePlatform": "KA",
-    "chinnelCode":"G004"
+    "customOrderId":"dssdfds"
 }
 ```
-
-
 
 {% hint style="info" %}
 "channelCode" If no value is passed, the "Standard Shipping" logistics channel will be used by default
@@ -82,6 +80,10 @@ order notes
 
 {% swagger-parameter in="body" name="salePlatform" %}
 Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress、OverStock、TopHatter、JoyBuy、Homedepot、Facebookshop、Mercari、Facebook Marketplace
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="customOrderId" %}
+custom order number
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="channelCode" %}
