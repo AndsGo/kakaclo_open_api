@@ -6,51 +6,29 @@ description: View order related information
 
 ## Order List Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name                          | Type                        | Remark                                                     |   |
-| --------------------------------------- | --------------------------- | ---------------------------------------------------------- | - |
-| shippingAddress                         | object                      | address information                                        |   |
-| id                                      | number                      | order id                                                   |   |
-| remark                                  | String                      | user comments                                              |   |
-| status                                  | String                      | order status                                               |   |
-| purchaseDate                            | String                      | order time "2016-01-18T23:41:00Z"                          |   |
-| payAt                                   | String                      | payment time "2016-01-18T23:41:00Z"                        |   |
-| completedAt                             | String                      | complete time "2016-01-18T23:41:00Z"                       |   |
-| cancelDate                              | String                      | cancel time "2016-01-18T23:41:00Z"                         |   |
-| refundDate                              | String                      | refund time "2016-01-18T23:41:00Z"                         |   |
-| warehouseId                             | int\[16]                    | order delivery warehouse, used for inventory replenishment |   |
-| finalAmount                             | BigDecimal                  | payment amount                                             |   |
-| freightAmount                           | BigDecimal                  | Order shipping amount                                      |   |
-| skusAmount                              | BigDecimal                  | total order item                                           |   |
-| [orderItems](./#response-parameter-2)   | array of OrderItems objects | order sku information                                      |   |
-| [fulfillments](./#response-parameter-1) | array of OrderItems objects | order logistics information                                |   |
-| createDate                              | String                      | createAt time "2016-01-18T23:41:00Z"                       |   |
-| updateDate                              | String                      | updateAt time "2016-01-18T23:41:00Z"                       |   |
+<table><thead><tr><th>Parameter name</th><th>Type</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>shippingAddress</td><td>object</td><td>address information</td><td></td></tr><tr><td>id</td><td>number</td><td>order id</td><td></td></tr><tr><td>remark</td><td>String</td><td>user comments</td><td></td></tr><tr><td>status</td><td>String</td><td>order status</td><td></td></tr><tr><td>purchaseDate</td><td>String</td><td>order time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>payAt</td><td>String</td><td>payment time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>completedAt</td><td>String</td><td>complete time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>cancelDate</td><td>String</td><td>cancel time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>refundDate</td><td>String</td><td>refund time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>warehouseId</td><td>int[16]</td><td>order delivery warehouse, used for inventory replenishment</td><td></td></tr><tr><td>finalAmount</td><td>BigDecimal</td><td>payment amount</td><td></td></tr><tr><td>freightAmount</td><td>BigDecimal</td><td>Order shipping amount</td><td></td></tr><tr><td>skusAmount</td><td>BigDecimal</td><td>total order item</td><td></td></tr><tr><td><a href="./#response-parameter-2">orderItems</a></td><td>array of OrderItems objects</td><td>order sku information</td><td></td></tr><tr><td><a href="./#response-parameter-1">fulfillments</a></td><td>array of OrderItems objects</td><td>order logistics information</td><td></td></tr><tr><td>createDate</td><td>String</td><td>createAt time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>updateDate</td><td>String</td><td>updateAt time "2016-01-18T23:41:00Z"</td><td></td></tr></tbody></table>
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name                        | Type                        | Remark                                                                                                     |   |
-| ------------------------------------- | --------------------------- | ---------------------------------------------------------------------------------------------------------- | - |
-| id                                    | String                      | package id                                                                                                 |   |
-| deliveryTime                          | String                      | delivery time "2016-01-18T23:41:00Z"                                                                       |   |
-| trackingCode                          | String                      | order tracking number                                                                                      |   |
-| [orderItems](./#response-parameter-2) | array of OrderItems objects | order logistics information                                                                                |   |
-| logisticsSearchUrl                    | String                      | [https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ](https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ) |   |
-| carrier                               | String                      | order carrier                                                                                              |   |
+<table><thead><tr><th>Parameter name</th><th>Type</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>id</td><td>String</td><td>package id</td><td></td></tr><tr><td>deliveryTime</td><td>String</td><td>delivery time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>trackingCode</td><td>String</td><td>order tracking number</td><td></td></tr><tr><td><a href="./#response-parameter-2">orderItems</a></td><td>array of OrderItems objects</td><td>order logistics information</td><td></td></tr><tr><td>logisticsSearchUrl</td><td>String</td><td><a href="https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ">https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ</a></td><td></td></tr><tr><td>carrier</td><td>String</td><td>order carrier</td><td></td></tr></tbody></table>
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name | Type       | Remark                                                         |
-| -------------- | ---------- | -------------------------------------------------------------- |
-| id             | number     | item id                                                        |
-| imageUrl       | String     | product picture                                                |
-| productName    | String     | product name                                                   |
-| skuCode        | String     | sku                                                            |
-| subtotal       | BigDecimal | purchasePrices \*productNum                                    |
-| purchasePrices | BigDecimal | sku sales unit price                                           |
-| option1        | String     | sku attribute 1, contains size information, variable attribute |
-| option2        | String     | sku attribute 2, contains size information, variable attribute |
-| option3        | String     | sku attribute 3, contains size information, variable attribute |
-| productNum     | int\[16]   | sales volume                                                   |
+| Parameter name      | Type       | Remark                                                         |
+| ------------------- | ---------- | -------------------------------------------------------------- |
+| id                  | number     | item id                                                        |
+| imageUrl            | String     | product picture                                                |
+| productName         | String     | product name                                                   |
+| skuCode             | String     | sku                                                            |
+| subtotal            | BigDecimal | purchasePrices \*productNum                                    |
+| purchasePrices      | BigDecimal | sku sales unit price                                           |
+| option1             | String     | sku attribute 1, contains size information, variable attribute |
+| option2             | String     | sku attribute 2, contains size information, variable attribute |
+| option3             | String     | sku attribute 3, contains size information, variable attribute |
+| promotionAmount     | String     | promotionAmount                                                |
+| afterDiscountAmount | String     | afterDiscountAmount                                            |
+| stockStatus         | String     | normal,sold\_out                                               |
+| productNum          | int\[16]   | sales volume                                                   |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -69,16 +47,7 @@ description: View order related information
 
 ## Order Status
 
-| Value               | Remark                  |   |
-| ------------------- | ----------------------- | - |
-| waiting\_payment    | order pending payment   |   |
-| cancel              | order cancelled         |   |
-| waiting\__to\__ship | order to be shipped     |   |
-| refunding           | order refund            |   |
-| refunded            | order has been refunded |   |
-| partial\_shipped    | order Partially Shipped |   |
-| shipped             | order shipped           |   |
-| delivered           | order completed         |   |
+<table><thead><tr><th>Value</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>waiting_payment</td><td>order pending payment</td><td></td></tr><tr><td>cancel</td><td>order cancelled</td><td></td></tr><tr><td>waiting_<em>to_</em>ship</td><td>order to be shipped</td><td></td></tr><tr><td>refunding</td><td>order refund</td><td></td></tr><tr><td>refunded</td><td>order has been refunded</td><td></td></tr><tr><td>partial_shipped</td><td>order Partially Shipped</td><td></td></tr><tr><td>shipped</td><td>order shipped</td><td></td></tr><tr><td>delivered</td><td>order completed</td><td></td></tr></tbody></table>
 
 {% swagger method="get" path="/openapi/v1/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
