@@ -14,21 +14,20 @@ description: View order related information
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name      | Type       | Remark                                                         |
-| ------------------- | ---------- | -------------------------------------------------------------- |
-| id                  | number     | item id                                                        |
-| imageUrl            | String     | product picture                                                |
-| productName         | String     | product name                                                   |
-| skuCode             | String     | sku                                                            |
-| subtotal            | BigDecimal | purchasePrices \*productNum                                    |
-| purchasePrices      | BigDecimal | sku sales unit price                                           |
-| option1             | String     | sku attribute 1, contains size information, variable attribute |
-| option2             | String     | sku attribute 2, contains size information, variable attribute |
-| option3             | String     | sku attribute 3, contains size information, variable attribute |
-| promotionAmount     | String     | promotionAmount                                                |
-| afterDiscountAmount | String     | afterDiscountAmount                                            |
-| stockStatus         | String     | normal,sold\_out                                               |
-| productNum          | int\[16]   | sales volume                                                   |
+| Parameter name  | Type       | Remark                                                         |
+| --------------- | ---------- | -------------------------------------------------------------- |
+| id              | number     | item id                                                        |
+| imageUrl        | String     | product picture                                                |
+| productName     | String     | product name                                                   |
+| skuCode         | String     | sku                                                            |
+| subtotal        | BigDecimal | purchasePrices \*productNum                                    |
+| purchasePrices  | BigDecimal | sku sales unit price                                           |
+| option1         | String     | sku attribute 1, contains size information, variable attribute |
+| option2         | String     | sku attribute 2, contains size information, variable attribute |
+| option3         | String     | sku attribute 3, contains size information, variable attribute |
+| promotionAmount | String     | sku sales unit  promotionAmount                                |
+| stockStatus     | String     | normal,sold\_out                                               |
+| productNum      | int\[16]   | sales volume                                                   |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -119,7 +118,6 @@ Default is 1
                 "orderItems": [
                     {
                         "productNum": 1,
-                        "afterDiscountAmount": 3.7100,
                         "subtotal": 3.7100,
                         "imageUrl": "https://img.kakaclo.com/image%2FAMB01682%2FAMB01682_W_M_AU%2F6c3df5092b8bba370515d456e9c100b0.JPG",
                         "option3": "{\"name\":\"print\",\"value\":\"White Leopard\"}",
