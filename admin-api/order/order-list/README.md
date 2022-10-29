@@ -104,107 +104,52 @@ Default is 1
 ```javascript
 {
     "code": 10000,
-    "message": "success",
     "data": {
-        "vo": null,
-        "list": [
-            {
-                "id": "1000000462144",
-                "remark": null,
-                "status": "shipped",
-                "purchaseDate": "2022-09-28T03:32:17Z",
-                "payAt": "2022-09-28T03:32:23Z",
-                "completedAt": "2022-09-28T03:32:23Z",
-                "cancelDate": null,
-                "refundDate": null,
-                "shippingAddress": {
-                    "country": "VE",
-                    "city": "Orleans",
-                    "phone": "07 82 20 10 93",
-                    "recipient": "Lollia Olena222",
-                    "street1": " 7 rue Francois Rabelais",
-                    "street2": null,
-                    "province": "dddssssd",
-                    "zip": "11111",
-                    "vat": null,
-                    "ioss": null
-                },
-                "warehouseId": 1,
-                "totalAmount": 35.9800,
-                "freightAmount": 22.8700,
-                "skusAmount": 13.1100,
-                "orderItems": [
-                    {
-                        "id": "1094003",
-                        "imageUrl": "https://img.kakaclo.com/image%2FAMN01214%2FAMN01214_B_L%2F08e2ee632ea20d8925755d05530abb19.jpg",
-                        "productName": null,
-                        "productNum": 1,
-                        "skuCode": "AMN01214_B_S_AK",
-                        "option1": "{\"name\":\"color\",\"value\":\"Black\"}",
-                        "option2": "{\"name\":\"size\",\"value\":\"PAT2\"}",
-                        "option3": null,
-                        "subtotal": 7.4300,
-                        "purchasePrices": 7.4300
-                    },
-                    {
-                        "id": "1094004",
-                        "imageUrl": "https://img.kakaclo.com/image%2FFSZW07844%2FFSZW07844_NB_S_NUB%2Fc7f22ba71ef71427d2287cdab3b67703.jpg",
-                        "productName": null,
-                        "productNum": 1,
-                        "skuCode": "FSZW07844_NB_S_NUB",
-                        "option1": "{\"name\":\"color\", \"value\":\"Champlain color\"}",
-                        "option2": "{\"name\":\"size\", \"value\":\"S\"}",
-                        "option3": null,
-                        "subtotal": 5.6800,
-                        "purchasePrices": 5.6800
-                    }
-                ],
-                "fulfillments": [
-                    {
-                        "deliveryTime": "2022-09-29T03:25:02Z",
-                        "trackingCode": "RU948852435NL",
-                        "id": "KA2022092811300049_1",
-                        "carrier": "Post NL",
-                        "logisticsSearchUrl": "http://193.112.127.239:8082",
-                        "items": [
-                            {
-                                "id": "1094004",
-                                "imageUrl": "https://img.kakaclo.com/image%2FFSZW07844%2FFSZW07844_NB_S_NUB%2Fc7f22ba71ef71427d2287cdab3b67703.jpg",
-                                "productName": null,
-                                "productNum": 1,
-                                "skuCode": "FSZW07844_NB_S_NUB",
-                                "option1": "{\"name\":\"color\", \"value\":\"Champlain color\"}",
-                                "option2": "{\"name\":\"size\", \"value\":\"S\"}",
-                                "option3": null,
-                                "subtotal": 5.6800,
-                                "purchasePrices": 5.6800
-                            },
-                            {
-                                "id": "1094003",
-                                "imageUrl": "https://img.kakaclo.com/image%2FAMN01214%2FAMN01214_B_L%2F08e2ee632ea20d8925755d05530abb19.jpg",
-                                "productName": null,
-                                "productNum": 1,
-                                "skuCode": "AMN01214_B_S_AK",
-                                "option1": "{\"name\":\"color\",\"value\":\"Black\"}",
-                                "option2": "{\"name\":\"size\",\"value\":\"PAT2\"}",
-                                "option3": null,
-                                "subtotal": 7.4300,
-                                "purchasePrices": 7.4300
-                            }
-                        ]
-                    }
-                ],
-                "createDate": "2022-09-28T03:22:16Z",
-                "modifyDate": "2022-09-29T08:27:21Z"
-            }
-        ],
         "total": 1,
         "pageNumber": 1,
         "pageSize": 10,
-        "totalPageNumber": null,
-        "modifyDate": null,
-        "nextId": null
-    }
+        "list": [
+            {
+                "purchaseDate": "2022-10-29T08:26:01Z",
+                "completedAt": "2022-10-29T08:26:20Z",
+                "payAt": "2022-10-29T08:26:20Z",
+                "skusAmount": 3.7100,
+                "freightAmount": 3.4800,
+                "modifyDate": "2022-10-29T08:26:15Z",
+                "orderItems": [
+                    {
+                        "productNum": 1,
+                        "afterDiscountAmount": 3.7100,
+                        "subtotal": 3.7100,
+                        "imageUrl": "https://img.kakaclo.com/image%2FAMB01682%2FAMB01682_W_M_AU%2F6c3df5092b8bba370515d456e9c100b0.JPG",
+                        "option3": "{\"name\":\"print\",\"value\":\"White Leopard\"}",
+                        "purchasePrices": 7.4300,
+                        "stockStatus": "normal",
+                        "option1": "{\"name\":\"color\",\"value\":\"White Leopard\"}",
+                        "id": "1105713",
+                        "option2": "{\"name\":\"size\",\"value\":\"M\"}",
+                        "promotionAmount": 3.7200,
+                        "skuCode": "AMB01682_W_M_AU"
+                    }
+                ],
+                "totalAmount": 7.1900,
+                "warehouseId": 13,
+                "shippingAddress": {
+                    "zip": "vsvs00v30",
+                    "country": "US",
+                    "province": " de Lofasfasire",
+                    "city": "Orlafasns",
+                    "phone": "07 82 24 67 93",
+                    "recipient": "Lffsollia Odfsdlena",
+                    "street1": " 7 rue  Rabelais"
+                },
+                "id": "1000000506820",
+                "status": "waiting_to_ship",
+                "createDate": "2022-10-29T08:26:15Z"
+            }
+        ]
+    },
+    "message": "success"
 }
 ```
 {% endswagger-response %}
