@@ -11,6 +11,7 @@
         "list": [
             {
                 "id": "1000000462144",
+                "customOrderId":"1001",
                 "remark": null,
                 "status": "shipped",
                 "purchaseDate": "2022-09-28T03:32:17Z",
@@ -124,6 +125,7 @@
         "list": [
             {
                 "id": "1000000387267",
+                "customOrderId":"1002",
                 "remark": null,
                 "status": "partial_shipped",
                 "purchaseDate": "2022-08-20T07:26:51Z",
@@ -221,6 +223,7 @@
         "list": [
             {
                 "id": "1000000463303",
+                "customOrderId":"1003",
                 "remark": null,
                 "status": "waiting_to_ship",
                 "purchaseDate": "2022-09-29T03:07:23Z",
