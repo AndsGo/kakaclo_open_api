@@ -49,7 +49,7 @@ description: >-
           }
         ],
     "salePlatform": "KA",
-    "customOrderId":"10001"
+    "customOrderId":"KA10001"
 }
 ```
 
