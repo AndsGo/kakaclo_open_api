@@ -109,28 +109,29 @@ Default is 1
         "pageSize": 10,
         "list": [
             {
-                "purchaseDate": "2022-10-29T08:26:01Z",
-                "completedAt": "2022-10-29T08:26:20Z",
-                "payAt": "2022-10-29T08:26:20Z",
-                "skusAmount": 3.7100,
-                "freightAmount": 3.4800,
-                "modifyDate": "2022-10-29T08:26:15Z",
+                "purchaseDate": "2022-11-01T06:21:20Z",
+                "completedAt": "2022-11-01T06:21:21Z",
+                "payAt": "2022-11-01T06:21:21Z",
+                "skusAmount": 9.3200,
+                "freightAmount": 10.8000,
+                "modifyDate": "2022-11-01T06:21:12Z",
+                "customOrderId": "sdasddfsdfdsf",
                 "orderItems": [
                     {
-                        "productNum": 1,
-                        "subtotal": 3.7100,
-                        "imageUrl": "https://img.kakaclo.com/image%2FAMB01682%2FAMB01682_W_M_AU%2F6c3df5092b8bba370515d456e9c100b0.JPG",
-                        "option3": "{\"name\":\"print\",\"value\":\"White Leopard\"}",
-                        "purchasePrices": 7.4300,
+                        "subtotal": 9.3200,
+                        "imageUrl": "https://img.kakaclo.com/image%2FFSZW08517%2FFSZW08517_PEB_S_NUB%2Fd87cb7ffcb2c692367ef1c4a521a1c93.jpg",
+                        "option3": "{\"name\":\"print\", \"value\":\"\"}",
+                        "purchasePrices": 4.6600,
                         "stockStatus": "normal",
-                        "option1": "{\"name\":\"color\",\"value\":\"White Leopard\"}",
-                        "id": "1105713",
-                        "option2": "{\"name\":\"size\",\"value\":\"M\"}",
-                        "promotionAmount": 3.7200,
-                        "skuCode": "AMB01682_W_M_AU"
+                        "option1": "{\"name\":\"color\", \"value\":\"Peacock blue\"}",
+                        "id": "1108502",
+                        "productNum": 2,
+                        "option2": "{\"name\":\"size\", \"value\":\"XXL\"}",
+                        "promotionAmount": 0.5000,
+                        "skuCode": "FSZW08517_PEB_XXL_NUB"
                     }
                 ],
-                "totalAmount": 7.1900,
+                "totalAmount": 20.1200,
                 "warehouseId": 13,
                 "shippingAddress": {
                     "zip": "vsvs00v30",
@@ -141,9 +142,9 @@ Default is 1
                     "recipient": "Lffsollia Odfsdlena",
                     "street1": " 7 rue  Rabelais"
                 },
-                "id": "1000000506820",
+                "id": "1000000515397",
                 "status": "waiting_to_ship",
-                "createDate": "2022-10-29T08:26:15Z"
+                "createDate": "2022-11-01T06:21:12Z"
             }
         ]
     },
