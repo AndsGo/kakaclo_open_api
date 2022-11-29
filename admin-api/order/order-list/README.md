@@ -10,7 +10,14 @@ description: View order related information
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
-<table><thead><tr><th>Parameter name</th><th>Type</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>id</td><td>String</td><td>package id</td><td></td></tr><tr><td>deliveryTime</td><td>String</td><td>delivery time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>trackingCode</td><td>String</td><td>order tracking number</td><td></td></tr><tr><td><a href="./#response-parameter-2">orderItems</a></td><td>array of OrderItems objects</td><td>order logistics information</td><td></td></tr><tr><td>logisticsSearchUrl</td><td>String</td><td><a href="https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ">https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ</a></td><td></td></tr><tr><td>carrier</td><td>String</td><td>order carrier</td><td></td></tr></tbody></table>
+<table><thead><tr><th>Parameter name</th><th>Type</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>id</td><td>String</td><td>package id</td><td></td></tr><tr><td>deliveryTime</td><td>String</td><td>delivery time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>trackingCode</td><td>String</td><td>order tracking number</td><td></td></tr><tr><td><a href="./#response-parameter-2">orderItems</a></td><td>array of OrderItems objects</td><td>order logistics information</td><td></td></tr><tr><td>logisticsSearchUrl</td><td>String</td><td><a href="https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ">https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ</a></td><td></td></tr><tr><td>carrier</td><td>String</td><td>order carrier</td><td></td></tr><tr><td>carrierType</td><td>String</td><td> latest or last</td><td></td></tr><tr><td><a href="./#trackinginfo">trackingInfos</a></td><td>array of TrackingInfo objects</td><td>tracking Info list</td><td></td></tr></tbody></table>
+
+#### TrackingInfo
+
+| Parameter name | Type   | Remark                |
+| -------------- | ------ | --------------------- |
+| carrier        | String | order carrier         |
+| trackingCode   | String | order tracking number |
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
