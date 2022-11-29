@@ -19,7 +19,7 @@ This interface provides querying product information based on parameters. There 
 
 #### sortType
 
-<table><thead><tr><th>sort field</th><th>definition</th><th data-hidden>field</th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td>salasVolume</td><td>product salasVolume</td><td>salasVolume</td><td></td><td></td></tr><tr><td>stock</td><td>product stock</td><td>stock</td><td></td><td></td></tr><tr><td>price</td><td>product price</td><td>price</td><td></td><td></td></tr><tr><td>updateTime</td><td>updateTime</td><td>updateTime</td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th>Sort field</th><th>Definition</th><th data-hidden>field</th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td>salasVolume</td><td>product salasVolume</td><td>salasVolume</td><td></td><td></td></tr><tr><td>stock</td><td>product stock</td><td>stock</td><td></td><td></td></tr><tr><td>price</td><td>product price</td><td>price</td><td></td><td></td></tr><tr><td>updateTime</td><td>updateTime</td><td>updateTime</td><td></td><td></td></tr></tbody></table>
 
 ## Response parameter
 
@@ -85,7 +85,7 @@ For scaling parameters, please refer to: https://help.aliyun.com/document\_detai
 
 #### spuStatus or skuStatus
 
-| Code | Description       |
+| Code | Definition        |
 | ---- | ----------------- |
 | 0    | off the shelf     |
 | 1    | on the shelf      |
