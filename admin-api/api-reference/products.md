@@ -103,6 +103,16 @@ Among them, 2-deleted, 3, discontinued means that the product will no longer be 
 &#x20;4-clearance, 5-partial clearance These two states are extended states, you can ignore them for now.
 {% endhint %}
 
+
+
+| SpuStatus                                                                                                     | SkuStatus list     |
+| ------------------------------------------------------------------------------------------------------------- | ------------------ |
+| 0 -off the shelf（All skuItems are "0(off the shelf)"）                                                         | \[0,0..]           |
+| 1-on the shelf (As long as there is one skuItem for " 1(on the shelf)")                                       | \[0,**1**,2,3,4,6] |
+| 2-deleted （All skuItems are "0(deleted)"）                                                                     | \[2,2..]           |
+| 3-discontinued （All skuItems are "3(discontinued)"）                                                           | \[3,3..]           |
+| 6-out of stock (As long as there is one skuItem for " 6(out of stock)",but no item is for " 1(on the shelf)") | \[0,2,3,4,6]       |
+
 ## Query Products
 
 {% swagger baseUrl="" method="get" path="/openapi/v1/product/products" summary="get products" %}
