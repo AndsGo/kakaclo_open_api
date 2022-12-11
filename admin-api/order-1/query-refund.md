@@ -6,7 +6,7 @@ description: Query Order Refund Transaction Slip
 
 Query Order Refund Transaction Slip
 
-{% swagger method="get" path="/openapi/v2/order/orders/refund/{id}" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/orders/refund/{id}" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
