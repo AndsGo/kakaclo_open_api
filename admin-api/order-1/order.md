@@ -57,10 +57,6 @@ description: >-
 "channelCode" If no value is passed, the "Standard Shipping" logistics channel will be used by default
 {% endhint %}
 
-| Parameter name | Type        | Remark                                       |
-| -------------- | ----------- | -------------------------------------------- |
-| kkOrderId      | String\[32] | the order number is returned when successful |
-
 {% swagger method="post" path="/openapi/v1/order/orders" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
 
@@ -112,3 +108,7 @@ From Logistics
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+| Parameter name | Type        | Remark                                       |
+| -------------- | ----------- | -------------------------------------------- |
+| kkOrderId      | String\[32] | the order number is returned when successful |

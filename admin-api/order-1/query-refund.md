@@ -6,24 +6,7 @@ description: Query Order Refund Transaction Slip
 
 Query Order Refund Transaction Slip
 
-## Refund Status
-
-| status               | Remark                 |   |
-| -------------------- | ---------------------- | - |
-| pending\_review      | Refund is under review |   |
-| refund\_successfully | Refund successfully    |   |
-| refund\_failed       | Refund failed          |   |
-
-## Response Properties <a href="#response-parameter" id="response-parameter"></a>
-
-| Parameter name | Type   | Remark              |
-| -------------- | ------ | ------------------- |
-| refundNo       | String | refund order number |
-| id             | String | order id            |
-| remark         | String | order notes         |
-| refundStatus   | String | refund status       |
-
-{% swagger method="get" path="/openapi/v1/order/orders/refund/{id}" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v1/order/orders/refund" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -49,3 +32,20 @@ Query Order Refund Transaction Slip
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+## Response Properties <a href="#response-parameter" id="response-parameter"></a>
+
+| Parameter name                                | Type   | Remark              |
+| --------------------------------------------- | ------ | ------------------- |
+| refundNo                                      | String | refund order number |
+| id                                            | String | order id            |
+| remark                                        | String | order notes         |
+| [refundStatus](query-refund.md#refund-status) | String | refund status       |
+
+## Refund Status
+
+| status               | Remark                 |   |
+| -------------------- | ---------------------- | - |
+| pending\_review      | Refund is under review |   |
+| refund\_successfully | Refund successfully    |   |
+| refund\_failed       | Refund failed          |   |

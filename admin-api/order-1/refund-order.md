@@ -10,6 +10,8 @@ Cancel the order and get a refund. you can only do this when the order has not b
 
 The refund  status can be updated for a maximum of 24 hours. Generally, the status will be updated within 1 hour.
 
+### **Request Parameter**
+
 | Name    | Type   | Description       |
 | ------- | ------ | ----------------- |
 | itemId  | String | Item Id           |
@@ -20,10 +22,6 @@ The refund  status can be updated for a maximum of 24 hours. Generally, the stat
 {% swagger-description %}
 
 {% endswagger-description %}
-
-{% swagger-parameter in="body" name="Remark" required="true" %}
-Refund Notes
-{% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="refund order number" %}
 ```javascript
@@ -36,3 +34,4 @@ Refund Notes
 ```
 {% endswagger-response %}
 {% endswagger %}
+
