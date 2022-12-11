@@ -18,7 +18,7 @@ The refund  status can be updated for a maximum of 24 hours. Generally, the stat
 | skuCode | String | Sku code          |
 | num     | Int    | Refund sku number |
 
-{% swagger method="post" path="/openapi/v1/order/orders/{id}/refund" baseUrl="" summary="" %}
+{% swagger method="post" path="/openapi/v2/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}

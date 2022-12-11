@@ -4,7 +4,7 @@ description: View order related information
 
 # Query Order
 
-{% swagger method="get" path="/openapi/v1/order/orders" baseUrl="" summary="" %}
+{% swagger method="get" path="/openapi/v2/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
