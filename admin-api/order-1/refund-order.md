@@ -6,9 +6,9 @@ description: Create a refund order
 
 Create a refund order。
 
-Cancel the order and get a refund. you can only do this when the order has not been shipped. This operation is performed asynchronously, and you can get the latest status information through "[Query ReFund](../order/query-refund.md)"
+Cancel the order and get a refund. you can only do this when the order has not been shipped. This operation is performed asynchronously, and you can get the latest status information through "[Query ReFund](query-refund.md)"
 
-The refund  status can be updated for a maximum of 24 hours. Generally, the status will be updated within 1 hour.
+The refund status can be updated for a maximum of 24 hours. Generally, the status will be updated within 1 hour.
 
 ### **Request Body Parameter**
 
