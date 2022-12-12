@@ -44,8 +44,9 @@ Query Order Refund Transaction Slip
 
 ## Refund Status
 
-| status               | Remark                 |   |
-| -------------------- | ---------------------- | - |
-| pending\_review      | Refund is under review |   |
-| refund\_successfully | Refund successfully    |   |
-| refund\_failed       | Refund failed          |   |
+| status               | Remark                 |
+| -------------------- | ---------------------- |
+| pending\_review      | Refund is under review |
+| refund\_successfully | Refund successfully    |
+| refund\_failed       | Refund failed          |
+
