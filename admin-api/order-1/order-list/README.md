@@ -4,45 +4,53 @@ description: View order related information
 
 # Query Order
 
+## Request Query Parameter
+
+| Parameter name  | Type   | Remark                                                                                                         |
+| --------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
+| createStartTime | String | <p>filter orders created at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p>       |
+| createEndTime   | String | <p>filter orders created at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p>       |
+| updateStartTime | String | <p>filter orders last updated at or after the date, for example:</p><p><code>"2016-01-18T23:41:00Z"</code></p> |
+| updateEndTime   | String | <p>filter orders last updated at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p>  |
+| ids             | String | Order's IDs, please use commas as separators, for example, 1000000065617,1000000065618                         |
+| pageNumber      | number | <p>page number limit per page, default:</p><p><code>10</code></p><p>, maximum:</p><p><code>250</code></p>      |
+| pageSize        | number | Default is 1                                                                                                   |
+
 {% swagger method="get" path="/openapi/v2/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="query" name="status" required="false" %}
-order status, please use comma as separator, for example waiting_payment,cancel
-{% endswagger-parameter %}
-
 {% swagger-parameter in="query" name="createStartTime" required="false" %}
-filter orders created at or before date, for example:
+filter orders created at or before the date, for example:
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="createEndTime" required="false" %}
-filter orders created at or before date, for example:
+filter orders created at or before the date, for example:
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="updateStartTime" required="false" %}
-filter orders last updated at or after date, for example:
+filter orders last updated at or after the date, for example:
 
 `"2016-01-18T23:41:00Z"`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="updateEndTime" required="false" %}
-filter orders last updated at or before date, for example:
+filter orders last updated at or before the date, for example:
 
 `2016-01-18T23:41:00Z`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="ids" required="false" %}
-Order's IDs, please use comma as separator, for example 1000000065617,1000000065618
+Order's IDs, please use commas as separators, for example, 1000000065617,1000000065618
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="pageNumber" type="number" required="false" %}
-page numberlimit per page, default:
+page number limit per page, default:
 
 `10`
 
