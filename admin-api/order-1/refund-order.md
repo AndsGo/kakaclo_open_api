@@ -10,7 +10,7 @@ Cancel the order and get a refund. you can only do this when the order has not b
 
 The refund  status can be updated for a maximum of 24 hours. Generally, the status will be updated within 1 hour.
 
-### **Request Parameter**
+### **Request Body Parameter**
 
 | Name    | Type   | Description       |
 | ------- | ------ | ----------------- |
@@ -34,4 +34,32 @@ The refund  status can be updated for a maximum of 24 hours. Generally, the stat
 ```
 {% endswagger-response %}
 {% endswagger %}
+
+## Examples
+
+{% tabs %}
+{% tab title="Request" %}
+{% code overflow="wrap" lineNumbers="true" %}
+```shell
+curl -d '{"orderItems":[{"itemId":"120001","skuCode":"FSZW08923_R_L_NUB","num":1},{"itemId":"120002","skuCode":"FSZW08923_R_L_NUB","num":2}]}' \
+-X POST "https://test-developer.kakaclo.com/openapi/openapi/v2/order/orders/10001/refund" \
+-H "Authorization: Bearer {YOU_ACCES_TOKEN}" \
+-H "Content-Type: application/json"
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Response" %}
+{% code overflow="wrap" %}
+```json
+HTTP/1.1 200 ok
+{
+    "code": 10000,
+    "message": "ok",
+    "data":10002
+}
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
