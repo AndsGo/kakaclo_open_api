@@ -135,23 +135,23 @@ Default is 1
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name    | Type       | Remark                                                            |
-| ----------------- | ---------- | ----------------------------------------------------------------- |
-| id                | number     | item id                                                           |
-| imageUrl          | String     | product picture                                                   |
-| productName       | String     | product name                                                      |
-| skuCode           | String     | sku                                                               |
-| purchasePrices    | BigDecimal | sku sales unit price                                              |
-| promotionAmount   | String     | sku sales unit  promotionAmount                                   |
-| productNum        | int\[16]   | sales volume                                                      |
-| subtotal          | BigDecimal | purchasePrices \*productNum                                       |
-| option1           | String     | sku attribute 1, contains size information, variable attribute    |
-| option2           | String     | sku attribute 2, contains size information, variable attribute    |
-| option3           | String     | sku attribute 3, contains size information, variable attribute    |
-| stockStatus       | String     | normal,sold\_out                                                  |
-| financialStatus   | String     | NULL,wating,paid                                                  |
-| fulfillmentStatus | String     | Logistics status: NULL,waiting\_to\_ship,fully\_shipped,completed |
-| refundStatus      | String     | NULL,refunding,refunded                                           |
+| Parameter name                             | Type       | Remark                                                         |
+| ------------------------------------------ | ---------- | -------------------------------------------------------------- |
+| id                                         | number     | item id                                                        |
+| imageUrl                                   | String     | product picture                                                |
+| productName                                | String     | product name                                                   |
+| skuCode                                    | String     | sku                                                            |
+| purchasePrices                             | BigDecimal | sku sales unit price                                           |
+| promotionAmount                            | String     | sku sales unit  promotionAmount                                |
+| productNum                                 | int\[16]   | sales volume                                                   |
+| subtotal                                   | BigDecimal | purchasePrices \*productNum                                    |
+| option1                                    | String     | sku attribute 1, contains size information, variable attribute |
+| option2                                    | String     | sku attribute 2, contains size information, variable attribute |
+| option3                                    | String     | sku attribute 3, contains size information, variable attribute |
+| stockStatus                                | String     | normal,sold\_out                                               |
+| [financialStatus](./#financial-status)     | String     | NULL,wating,paid                                               |
+| [fulfillmentStatus](./#fulfillment-status) | String     | Logistics status: NULL,waiting\_to\_ship,completed             |
+| [refundStatus](./#refund-status)           | String     | NULL,refunding,refunded                                        |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
