@@ -132,7 +132,7 @@ Default is 1
 
 ## Fulfillments Properties <a href="#response-parameter" id="response-parameter"></a>
 
-<table><thead><tr><th>Parameter name</th><th>Type</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>id</td><td>String</td><td>package id</td><td></td></tr><tr><td>packId</td><td>String</td><td>package id</td><td></td></tr><tr><td>status</td><td>String</td><td>preparing,cancelled,shipped,completed</td><td></td></tr><tr><td>carrier</td><td>String</td><td>order carrier</td><td></td></tr><tr><td>carrierType</td><td>String</td><td>latest or last</td><td></td></tr><tr><td>trackingCode</td><td>String</td><td>order tracking number</td><td></td></tr><tr><td>logisticsSearchUrl</td><td>String</td><td><a href="https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ">https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ</a></td><td></td></tr><tr><td>deliveryTime</td><td>String</td><td>delivery time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>i<a href="./#response-parameter-2">tems</a></td><td>array of OrderItems objects</td><td>order logistics information</td><td></td></tr><tr><td><a href="./#trackinginfo">trackingInfos</a></td><td>array of TrackingInfo objects</td><td>tracking Info list.<br>contains all the tracking information, the latest one being the first in the array</td><td></td></tr></tbody></table>
+<table><thead><tr><th>Parameter name</th><th>Type</th><th>Remark</th><th data-hidden></th></tr></thead><tbody><tr><td>id</td><td>String</td><td>package id</td><td></td></tr><tr><td>packId</td><td>String</td><td>package id</td><td></td></tr><tr><td><a href="./#response-parameter-4">status</a></td><td>String</td><td>preparing,cancelled,shipped,completed</td><td></td></tr><tr><td>carrier</td><td>String</td><td>order carrier</td><td></td></tr><tr><td>carrierType</td><td>String</td><td>latest or last</td><td></td></tr><tr><td>trackingCode</td><td>String</td><td>order tracking number</td><td></td></tr><tr><td>logisticsSearchUrl</td><td>String</td><td><a href="https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ">https://t.17track.net/en?v=2#nums=WNBAA0202970436YQ</a></td><td></td></tr><tr><td>deliveryTime</td><td>String</td><td>delivery time "2016-01-18T23:41:00Z"</td><td></td></tr><tr><td>i<a href="./#response-parameter-2">tems</a></td><td>array of OrderItems objects</td><td>order logistics information</td><td></td></tr><tr><td><a href="./#trackinginfo">trackingInfos</a></td><td>array of TrackingInfo objects</td><td>tracking Info list.<br>contains all the tracking information, the latest one being the first in the array</td><td></td></tr></tbody></table>
 
 ### Tracking Info
 
@@ -208,3 +208,11 @@ Default is 1
 | partial\_refund | some items in the order have been refunded                             |
 | refund          | the entire order has been refunded successfully                        |
 
+## Fulfillment Status <a href="#response-parameter" id="response-parameter"></a>
+
+| Value     | Remark                                                                                  |
+| --------- | --------------------------------------------------------------------------------------- |
+| preparing | the package has been sub-packaged and is waiting for delivery by the logistics provider |
+| cancelled | delivery canceled                                                                       |
+| shipped   | the package has been shipped                                                            |
+| completed | the package has been confirmed to have been delivered and the user has signed for it    |
