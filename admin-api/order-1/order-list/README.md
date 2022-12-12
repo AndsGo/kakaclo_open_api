@@ -141,10 +141,10 @@ Default is 1
 | imageUrl                                   | String     | product picture                                                |
 | productName                                | String     | product name                                                   |
 | skuCode                                    | String     | sku                                                            |
-| purchasePrices                             | BigDecimal | sku sales unit price                                           |
-| promotionAmount                            | String     | sku sales unit  promotionAmount                                |
+| finalAmount                                | BigDecimal | sku sales unit price                                           |
+| promotionAmount                            | BigDecimal | sku sales unit  discount deduction amount                      |
 | productNum                                 | int\[16]   | sales volume                                                   |
-| subtotal                                   | BigDecimal | purchasePrices \*productNum                                    |
+| subtotal                                   | BigDecimal | finalAmount\*productNum                                        |
 | option1                                    | String     | sku attribute 1, contains size information, variable attribute |
 | option2                                    | String     | sku attribute 2, contains size information, variable attribute |
 | option3                                    | String     | sku attribute 3, contains size information, variable attribute |
