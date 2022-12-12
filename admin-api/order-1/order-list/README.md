@@ -180,7 +180,7 @@ Default is 1
 | waiting | waiting to pay      |
 | paid    | paid                |
 
-### Order Fulfillment Status
+### Fulfillment Status
 
 | Value              | Remark                                                                     |
 | ------------------ | -------------------------------------------------------------------------- |
@@ -189,3 +189,13 @@ Default is 1
 | partially\_shipped | part of the order has been shipped （the package does not have this status） |
 | fully\_shipped     | all packages of the order have been shipped                                |
 | completed          | the order confirms that the package has been received                      |
+
+### Refund Status
+
+| Value           | Remark                                                                 |
+| --------------- | ---------------------------------------------------------------------- |
+| NULL            | initial empty state                                                    |
+| refunding       | the refund has been submitted and is waiting for the agency's response |
+| partial\_refund | some items in the order have been refunded                             |
+| refund          | the entire order has been refunded successfully                        |
+
