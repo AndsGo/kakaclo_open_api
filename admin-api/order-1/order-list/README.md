@@ -141,7 +141,7 @@ Default is 1
 | imageUrl                                   | String     | product picture                                                |
 | productName                                | String     | product name                                                   |
 | skuCode                                    | String     | sku                                                            |
-| finalAmount                                | BigDecimal | sku sales unit price                                           |
+| finalAmount                                | BigDecimal | unit sku payment amount                                        |
 | promotionAmount                            | BigDecimal | sku sales unit  discount deduction amount                      |
 | productNum                                 | int\[16]   | sales volume                                                   |
 | subtotal                                   | BigDecimal | finalAmount\*productNum                                        |
