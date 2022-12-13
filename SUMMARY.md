@@ -2,6 +2,8 @@
 
 * [Welcome！](README.md)
 * [Quick Start](kuai-su-kai-shi.md)
+* [Release Notes](release-notes/README.md)
+  * [2022-12 Order V2 Version](release-notes/2022-12-order-v2-version.md)
 * [API Usage](api-usage/README.md)
   * [API Endpoint](api-usage/api-endpoint.md)
   * [Rate Limits](api-usage/rate-limits.md)
@@ -14,7 +16,7 @@
   * [CountryAndWarehouse](admin-api/api-reference/countryandwarehouse.md)
   * [Stock](admin-api/api-reference/stock.md)
   * [Product API pull suggestion](admin-api/api-reference/product-api-pull-suggestion.md)
-* [Order](admin-api/order/README.md)
+* [Order V1](admin-api/order/README.md)
   * [Logistics Channel](admin-api/order/channel.md)
   * [Order](admin-api/order/order.md)
   * [Query Order](admin-api/order/order-list/README.md)
