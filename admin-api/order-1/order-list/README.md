@@ -205,7 +205,7 @@ Default is 1
 | partial\_refund | some items in the order have been refunded                             |
 | refund          | the entire order has been refunded successfully                        |
 
-## Fulfillment Status <a href="#response-parameter" id="response-parameter"></a>
+### Fulfillment Status <a href="#response-parameter" id="response-parameter"></a>
 
 | Value     | Remark                                                                                  |
 | --------- | --------------------------------------------------------------------------------------- |
@@ -213,3 +213,4 @@ Default is 1
 | cancelled | delivery canceled                                                                       |
 | shipped   | the package has been shipped                                                            |
 | completed | the package has been confirmed to have been delivered and the user has signed for it    |
+
