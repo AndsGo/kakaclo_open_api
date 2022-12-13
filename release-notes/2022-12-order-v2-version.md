@@ -21,3 +21,4 @@ The following features were changes in Order V2 of kakaclo open APIs:
 * [Order Items Properties](../admin-api/order-1/order-list/#response-parameter-2) added itemId and refundStatus fields.
 * [Fulfillments Properties ](../admin-api/order-1/order-list/#response-parameter-1)added packId and status fields.
 
+#### The[ Refund Order](../admin-api/order-1/refund-order.md)[ ](../admin-api/order-1/refund-order.md)interface adds the function of refunding some items.
