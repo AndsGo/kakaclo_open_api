@@ -12,11 +12,11 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 
 ### **Request Body Parameter**
 
-| Name    | Type   | Description       |
-| ------- | ------ | ----------------- |
-| itemId  | String | Item Id           |
-| skuCode | String | Sku code          |
-| num     | Int    | Refund sku number |
+| Name     | Type   | Description       |
+| -------- | ------ | ----------------- |
+| itemId   | String | Item Id           |
+| skuCode  | String | Sku code          |
+| quantity | Int    | Refund sku number |
 
 {% swagger method="post" path="/openapi/v2/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
@@ -41,7 +41,7 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 {% tab title="Request" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```shell
-curl -d '{"orderItems":[{"itemId":"120001","skuCode":"FSZW08923_R_L_NUB","num":1},{"itemId":"120002","skuCode":"FSZW08923_R_L_NUB","num":2}]}' \
+curl -d '{"orderItems":[{"itemId":"120001","skuCode":"FSZW08923_R_L_NUB","quantity":1},{"itemId":"120002","skuCode":"FSZW08923_R_L_NUB","quantity":2}]}' \
 -X POST "https://test-developer.kakaclo.com/openapi/openapi/v2/order/orders/10001/refund" \
 -H "Authorization: Bearer {YOU_ACCES_TOKEN}" \
 -H "Content-Type: application/json"
