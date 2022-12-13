@@ -37,6 +37,8 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 
 ## Examples
 
+Refund some items
+
 {% tabs %}
 {% tab title="Request" %}
 {% code overflow="wrap" lineNumbers="true" %}
@@ -60,6 +62,32 @@ HTTP/1.1 200 ok
 }
 ```
 {% endcode %}
+{% endtab %}
+{% endtabs %}
+
+Refund the entire order
+
+{% tabs %}
+{% tab title="Request" %}
+{% code overflow="wrap" lineNumbers="true" %}
+```shell
+curl -d '{}' \
+-X POST "https://test-developer.kakaclo.com/openapi/openapi/v2/order/orders/10001/refund" \
+-H "Authorization: Bearer {YOU_ACCES_TOKEN}" \
+-H "Content-Type: application/json"
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Response" %}
+```json
+HTTP/1.1 200 ok
+{
+    "code": 10000,
+    "message": "ok",
+    "data":10002
+}
+```
 {% endtab %}
 {% endtabs %}
 
