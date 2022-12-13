@@ -37,7 +37,7 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 
 ## Examples
 
-#### Refund some items
+### Refund some items
 
 {% tabs %}
 {% tab title="Request" %}
@@ -65,7 +65,7 @@ HTTP/1.1 200 ok
 {% endtab %}
 {% endtabs %}
 
-#### Refund the entire order
+### Refund the entire order
 
 {% tabs %}
 {% tab title="Request" %}
