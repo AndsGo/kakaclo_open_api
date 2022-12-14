@@ -57,7 +57,7 @@ description: >-
 "channelCode" If no value is passed, the "Standard Shipping" logistics channel will be used by default
 {% endhint %}
 
-{% swagger method="post" path="/openapi/v1/order/orders" baseUrl="" summary="Create order related information" %}
+{% swagger method="post" path="/openapi/v2/order/orders" baseUrl="" summary="Create order related information" %}
 {% swagger-description %}
 
 {% endswagger-description %}
