@@ -143,22 +143,21 @@ Default is 1
 
 ## Order Items Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name                             | Type       | Remark                                                                     |
-| ------------------------------------------ | ---------- | -------------------------------------------------------------------------- |
-| id                                         | number     | item id                                                                    |
-| itemId                                     | String     | item id                                                                    |
-| imageUrl                                   | String     | product picture                                                            |
-| productName                                | String     | product name                                                               |
-| skuCode                                    | String     | sku                                                                        |
-| amount                                     | BigDecimal | unit sku payment amount,the selling price displayed on the product page    |
-| productNum                                 | int\[16]   | sales volume                                                               |
-| total                                      | BigDecimal | _**total = amount\*productNum**_                                           |
-| option1                                    | String     | sku attribute 1, contains size information, variable attribute             |
-| option2                                    | String     | sku attribute 2, contains size information, variable attribute             |
-| option3                                    | String     | sku attribute 3, contains size information, variable attribute             |
-| stockStatus                                | String     | normal,sold\_out                                                           |
-| [fulfillmentStatus](./#fulfillment-status) | String     | logistics status: NULL,waiting\_to\_ship,fully\_shipped,partially\_shipped |
-| [refundStatus](./#refund-status)           | String     | NULL,refunding,refunded                                                    |
+| Parameter name                   | Type       | Remark                                                                  |
+| -------------------------------- | ---------- | ----------------------------------------------------------------------- |
+| id                               | number     | item id                                                                 |
+| itemId                           | String     | item id                                                                 |
+| imageUrl                         | String     | product picture                                                         |
+| productName                      | String     | product name                                                            |
+| skuCode                          | String     | sku                                                                     |
+| amount                           | BigDecimal | unit sku payment amount,the selling price displayed on the product page |
+| productNum                       | int\[16]   | sales volume                                                            |
+| total                            | BigDecimal | _**total = amount\*productNum**_                                        |
+| option1                          | String     | sku attribute 1, contains size information, variable attribute          |
+| option2                          | String     | sku attribute 2, contains size information, variable attribute          |
+| option3                          | String     | sku attribute 3, contains size information, variable attribute          |
+| stockStatus                      | String     | normal,sold\_out                                                        |
+| [refundStatus](./#refund-status) | String     | NULL,refunding,refunded                                                 |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
