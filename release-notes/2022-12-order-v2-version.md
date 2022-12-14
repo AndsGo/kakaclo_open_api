@@ -15,7 +15,7 @@ The following features were changes in Order V2 of kakaclo open APIs:
 * The [Order List Properties](../admin-api/order-1/order-list/#response-parameter) status field is split into 4 fields: status, financialStatus, fulfillmentStatus, and refundStatus.
 * The field name of [Order List Properties](../admin-api/order-1/order-list/#response-parameter) has been adjusted \
   payAt -> payDate\
-  completedAt -> completedDate|\
+  completedAt -> completedDate\
   skusAmount -> subTotalAmount
 * [Order List Properties](../admin-api/order-1/order-list/#response-parameter) added couponAmount, promotionAmount, refundableAmount, refundedAmount fields.
 * [Order Items Properties](../admin-api/order-1/order-list/#response-parameter-2) added itemId,fulfillmentStatus, and refundStatus fields.
