@@ -164,7 +164,7 @@
                         "items": [
                             {
                                 "id": "1077104",
-                                "itemId": "1077104",json
+                                "itemId": "1077104",
                                 "refundStatus": "NULL",
                                 "imageUrl": "https://img.kakaclo.com/image%2FFSZW05475%2FFSZW05475_W_S_NUB%2F034de8662a1ad3f607b3c0522cdef229.jpg",
                                 "productName": null,
