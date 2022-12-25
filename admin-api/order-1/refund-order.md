@@ -43,7 +43,7 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 {% tab title="Request" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```shell
-curl -d '{"orderItems":[{"itemId":"120001","skuCode":"FSZW08923_R_L_NUB","quantity":1},{"itemId":"120002","skuCode":"FSZW08923_R_L_NUB","quantity":2}]}' \
+curl -d '{"remark":"other reason","orderItems":[{"itemId":"120001","skuCode":"FSZW08923_R_L_NUB","quantity":1},{"itemId":"120002","skuCode":"FSZW08923_R_L_NUB","quantity":2}]}' \
 -X POST "https://test-developer.kakaclo.com/openapi/openapi/v2/order/orders/10001/refund" \
 -H "Authorization: Bearer {YOU_ACCES_TOKEN}" \
 -H "Content-Type: application/json"
@@ -71,7 +71,7 @@ HTTP/1.1 200 ok
 {% tab title="Request" %}
 {% code overflow="wrap" lineNumbers="true" %}
 ```shell
-curl -d '{}' \
+curl -d '{"remark":"other reason"}' \
 -X POST "https://test-developer.kakaclo.com/openapi/openapi/v2/order/orders/10001/refund" \
 -H "Authorization: Bearer {YOU_ACCES_TOKEN}" \
 -H "Content-Type: application/json"
