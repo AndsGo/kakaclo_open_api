@@ -39,3 +39,19 @@ The pull cycle is recommended to be every 1-5 minutes.
 {% hint style="info" %}
 Generally, the data is pulled like this. Your step size is set to 8 hours. You start from "2021-06-01T00:00:00Z" and pull it every 1 minute. The time point of your first pull is "2021-06-01T00:00:00Z" - "2021-06-01T08:00:00Z", when the last page is pulled in this time period, you can start downloading A time period "2021-06-01T08:00:00Z" - "2021-06-01T16:00:00Z". Until the end time is equal to the current time (for example, the current time is "2022-10-05T11:00:00Z"), the pulled time period is "2022-10-05T08:00:00Z" - "2022-10-05T11:00:00Z". Since your pull task runs every 1 minute. The subsequent interval is basically 1 minute. Such as "2022-10-05T11:00:00Z" - "2022-10-05T11:01:00Z", the next time is "2022-10-05T11:01:00Z" - "2022-10-05T11:02:00Z" " . In this way, the difference between your data and kakaclo's data is basically only 1 minute, and since there is not much data changed in one minute, it can be considered that the data you obtain is real-time.
 {% endhint %}
+
+## Advice on dateStartTime and dateEndTime
+
+{% hint style="info" %}
+Since we use Elasticsearch for our query, this can improve the query efficiency of our api. However, there is a time difference between data synchronization from mysql to Elasticsearch, which is within 5 minutes.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/Dingtalk_20230106112103.jpg" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+So it is recommended that when you query, the maximum time of "dateEndTime" is set to the current time minus 10 minutes. For example, if the current time is "2023-01-05T08:00:00Z", then the maximum time of "dateEndTime" should not exceed "2023-01-05T07:50:00Z".
+
+Another suggestion is that the "dateStartTime" value of the next query is set to the largest "updateTime" in the product data returned last time. In this way, your query time can always cover the latest data.
+
+For example, the largest "updateTime" in the returned data of the current request is "2023-01-03T09:44:54Z", then the next round of request "dateStartTime" can be set to "2023-01-03T09:44:54Z".
+{% endhint %}
