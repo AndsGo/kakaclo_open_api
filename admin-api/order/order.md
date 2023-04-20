@@ -12,6 +12,8 @@ description: >-
 | -------------- | ----------- | ------------------------------- |
 | sku            | string\[64] | sku                             |
 | quantity       | int\[16]    | quantity must be greater than 0 |
+| channelCode    | string\[64] |                                 |
+| warehouseCode  |             |                                 |
 
 ## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
