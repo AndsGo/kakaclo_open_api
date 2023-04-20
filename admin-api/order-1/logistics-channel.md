@@ -8,11 +8,12 @@ description: >-
 
 ## Products Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name | Type        | Remark                                             |
-| -------------- | ----------- | -------------------------------------------------- |
-| sku            | string\[64] | sku                                                |
-| quantity       | int\[16]    | quantity must be greater than 0                    |
-| shipToCountry  | string\[12] | ship to country,shortcode required.Examples: FR,US |
+| Parameter name | Type        | Remark                                                                                                                                                                                                      |
+| -------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sku            | string\[64] | sku                                                                                                                                                                                                         |
+| quantity       | int\[16]    | quantity must be greater than 0                                                                                                                                                                             |
+| shipToCountry  | string\[12] | ship to country,shortcode required.Examples: FR,US                                                                                                                                                          |
+| warehouseCode  | string\[64] | Warehouse code,This value is obtained by calling the CountryAndWarehouse api, and it is not required. If no value is passed or the warehouse is not matched, the G007 warehouse will be used automatically. |
 
 ## Request Properties <a href="#response-parameter" id="response-parameter"></a>
 
