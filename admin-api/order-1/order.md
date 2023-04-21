@@ -52,6 +52,8 @@ description: >-
         ],
     "salePlatform": "KA",
     "customOrderId":"KA10001"
+    "channelCode":"H008--Proactive",
+    "warehouseCode":"H008"
 }
 ```
 
