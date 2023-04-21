@@ -12,8 +12,8 @@ description: >-
 | -------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | sku            | string\[64] | sku                                                                                                                                                                                                         |
 | quantity       | int\[16]    | quantity must be greater than 0                                                                                                                                                                             |
-| channelCode    | string\[64] | Channel code,This value is obtained by calling the Logistics Channel api. It is not required. If no value is passed or the channel is not matched, the standard channel will be used automatically.         |
-| warehouseCode  | string\[64] | Warehouse code,This value is obtained by calling the CountryAndWarehouse api, and it is not required. If no value is passed or the warehouse is not matched, the G007 warehouse will be used automatically. |
+| channelCode    | string\[32] | Channel code,This value is obtained by calling the Logistics Channel api. It is not required. If no value is passed or the channel is not matched, the standard channel will be used automatically.         |
+| warehouseCode  | string\[32] | Warehouse code,This value is obtained by calling the CountryAndWarehouse api, and it is not required. If no value is passed or the warehouse is not matched, the G007 warehouse will be used automatically. |
 
 ## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
