@@ -25,7 +25,8 @@ description: >-
        "quantity": 1
       }
     ],
-    "shipToCountry": "US"
+    "shipToCountry": "US",
+    "warehouseCode":"H008"
 }
 ```
 
