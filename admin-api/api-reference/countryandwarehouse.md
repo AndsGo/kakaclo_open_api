@@ -10,14 +10,14 @@ This interface is to obtain the corresponding relationship between country and w
 
 ## Response parameter
 
-| Parameter name   | Type   | Remark                                                          |
-| ---------------- | ------ | --------------------------------------------------------------- |
-| warehouseId      | Number | warehouse id. for example: 13                                   |
-| warehouseCode    | String | Shipping warehouse code,for example: G004                       |
-| warehouseName    | String | Shipping warehouse name,for example: Warehouse 8 in South China |
-| warehouseNameExt | String | Shipping warehouse Chinese name,for example: 东莞-独立站             |
-| countryCode      | String | Shipping country code,for example: CN\_S                        |
-| countryCn        | String | Shipping country name,for example: South China                  |
+| Parameter name   | Type   | Remark                                                       |
+| ---------------- | ------ | ------------------------------------------------------------ |
+| warehouseId      | Number | warehouse id. for example: 13                                |
+| warehouseCode    | String | Shipping warehouse code,for example: G004                    |
+| warehouseNameExt | String | Shipping warehouse Chinese name,for example: 东莞-独立站          |
+| countryCode      | String | Shipping country code,for example: CN\_S                     |
+| countryCn        | String | Shipping country name,for example: South China               |
+| status           | Number | Warehouse usage status: 0-disabled; 1-enabled,for example: 1 |
 
 ## Query shipping country and warehouse
 
