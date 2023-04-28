@@ -1,8 +1,8 @@
 ---
-description: 2023-04 Product V2 Version
+description: CountryAndWarehouse interface changes
 ---
 
-# 2023-04 Product V2 Version
+# 2023-04 Product CountryAndWarehouse interface changes
 
 2023-04 update: Updated product-related interfaces. This mainly includes the query warehouse information interface.
 
