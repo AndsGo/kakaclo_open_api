@@ -15,8 +15,8 @@ This interface is to obtain the corresponding relationship between country and w
 | warehouseId      | Number | warehouse id. for example: 13                                |
 | warehouseCode    | String | Shipping warehouse code,for example: G004                    |
 | warehouseNameExt | String | Shipping warehouse Chinese name,for example: 东莞-独立站          |
-| countryCode      | String | Shipping country code,for example: CN\_S                     |
-| countryCn        | String | Shipping country name,for example: South China               |
+| countryCode      | String | Shipping country code,for example: CN                        |
+| countryCn        | String | Shipping country name,for example: China                     |
 | status           | Number | Warehouse usage status: 0-disabled; 1-enabled,for example: 1 |
 
 ## Query shipping country and warehouse
