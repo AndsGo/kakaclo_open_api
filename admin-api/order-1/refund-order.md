@@ -12,13 +12,13 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 
 ### **Request Body Parameter**
 
-| Name        | Type   | Description                                                                                                                                   |
-| ----------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| itemId      | String | Item Id                                                                                                                                       |
-| skuCode     | String | Sku code                                                                                                                                      |
-| quantity    | Int    | Refund sku number                                                                                                                             |
-| remark      | String | Refund  remark                                                                                                                                |
-| countryCode | String | Country code,The country code of the actual delivery warehouse of the sku, the Chinese warehouse is 'CN', and the overseas warehouse is 'US'. |
+| Name        | Type   | Description                                                                                                                                                                                 |
+| ----------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| itemId      | String | Item Id                                                                                                                                                                                     |
+| skuCode     | String | Sku code                                                                                                                                                                                    |
+| quantity    | Int    | Refund sku number                                                                                                                                                                           |
+| remark      | String | Refund  remark                                                                                                                                                                              |
+| countryCode | String | Country code, the country code of the actual delivery warehouse of the sku, 'CN' for the Chinese warehouse, and 'US' for the overseas warehouse. This value comes from the Query Order API. |
 
 {% swagger method="post" path="/openapi/v2/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
