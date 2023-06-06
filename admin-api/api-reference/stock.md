@@ -6,13 +6,7 @@ This interface is to query sku inventory. The same sku may belong to different r
 
 ## Request parameter
 
-| Parameter name | Type   | Remark                                                                                                                                                                                       |
-| -------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| skus           | String | Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of **30**, Three options are required. for example: **FSZW03961\_Y\_S\_NUB,FSZW03961\_Y\_XL\_NUB** |
-| warehouseCode  | String | warehouse code. for example: **G007**                                                                                                                                                        |
-| dateStartTime  | String | Inventory update start time, one of the three is required. for example: **2022-03-25T04:00:30Z**                                                                                             |
-| dateEndTime    | String | Inventory update end time, one of the three is required. for example: **2022-03-26T04:00:30Z**                                                                                               |
-| pageNumber     | Number | Page number, when querying according to the update time, PageNumber is required and greater than 0. for example: 1                                                                           |
+<table><thead><tr><th width="250.33333333333331">Parameter name</th><th>Type</th><th>Remark</th></tr></thead><tbody><tr><td>skus</td><td>String</td><td>Commodity SKU code collections, specify the commodity SKU code query, each time a maximum of <strong>30</strong>, Three options are required. for example: <strong>FSZW03961_Y_S_NUB,FSZW03961_Y_XL_NUB</strong></td></tr><tr><td>warehouseCode</td><td>String</td><td>warehouse code. for example: <strong>G007</strong></td></tr><tr><td>dateStartTime</td><td>String</td><td>Inventory update start time, one of the three is required. for example: <strong>2022-03-25T04:00:30Z</strong></td></tr><tr><td>dateEndTime</td><td>String</td><td>Inventory update end time, one of the three is required. for example: <strong>2022-03-26T04:00:30Z</strong></td></tr><tr><td>pageNumber</td><td>Number</td><td>Page number, when querying according to the update time, PageNumber is required and greater than 0. for example: 1</td></tr></tbody></table>
 
 <details>
 

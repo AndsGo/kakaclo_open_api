@@ -85,15 +85,7 @@ For scaling parameters, please refer to: https://help.aliyun.com/document\_detai
 
 #### spuStatus or skuStatus
 
-| Code | Definition        |
-| ---- | ----------------- |
-| 0    | off the shelf     |
-| 1    | on the shelf      |
-| 2    | deleted           |
-| 3    | discontinued      |
-| 4    | clearance         |
-| 5    | partial clearance |
-| 6    | out of stock      |
+<table><thead><tr><th width="119">Code</th><th>Definition</th></tr></thead><tbody><tr><td>0</td><td>off the shelf</td></tr><tr><td>1</td><td>on the shelf</td></tr><tr><td>2</td><td>deleted</td></tr><tr><td>3</td><td>discontinued</td></tr><tr><td>4</td><td>clearance</td></tr><tr><td>5</td><td>partial clearance</td></tr><tr><td>6</td><td>out of stock</td></tr></tbody></table>
 
 {% hint style="info" %}
 Among them, 2-deleted, 3, discontinued means that the product will no longer be sold, and you need to take it off the shelf.

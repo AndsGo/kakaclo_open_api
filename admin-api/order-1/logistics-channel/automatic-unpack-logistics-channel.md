@@ -112,5 +112,5 @@ data is sorted according to "deliveryTime " from small to large, deliveryTime th
 {% endhint %}
 
 {% hint style="info" %}
-"estimatedFreight" is the shipping cost, mainly determined by weight (unit g) and "shipToCountry".The higher the weight, the higher the "estimatedFreight". "weight" is calculated by [sku's packageWeight](../api-reference/products.md#skulist) \*  "quantity"
+"estimatedFreight" is the shipping cost, mainly determined by weight (unit g) and "shipToCountry".The higher the weight, the higher the "estimatedFreight". "weight" is calculated by [sku's packageWeight](../../api-reference/products.md#skulist) \*  "quantity"
 {% endhint %}
