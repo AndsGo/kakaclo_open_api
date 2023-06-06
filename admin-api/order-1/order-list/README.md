@@ -6,15 +6,7 @@ description: View order related information
 
 ## Request Query Parameter
 
-| Parameter name  | Type   | Remark                                                                                                         |
-| --------------- | ------ | -------------------------------------------------------------------------------------------------------------- |
-| createStartTime | String | <p>filter orders created at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p>       |
-| createEndTime   | String | <p>filter orders created at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p>       |
-| updateStartTime | String | <p>filter orders last updated at or after the date, for example:</p><p><code>"2016-01-18T23:41:00Z"</code></p> |
-| updateEndTime   | String | <p>filter orders last updated at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p>  |
-| ids             | String | Order's IDs, please use commas as separators, for example, 1000000065617,1000000065618                         |
-| pageNumber      | number | <p>page number limit per page, default:</p><p><code>10</code></p><p>, maximum:</p><p><code>250</code></p>      |
-| pageSize        | number | Default is 1                                                                                                   |
+<table><thead><tr><th width="191.33333333333331">Parameter name</th><th>Type</th><th>Remark</th></tr></thead><tbody><tr><td>createStartTime</td><td>String</td><td><p>filter orders created at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p></td></tr><tr><td>createEndTime</td><td>String</td><td><p>filter orders created at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p></td></tr><tr><td>updateStartTime</td><td>String</td><td><p>filter orders last updated at or after the date, for example:</p><p><code>"2016-01-18T23:41:00Z"</code></p></td></tr><tr><td>updateEndTime</td><td>String</td><td><p>filter orders last updated at or before the date, for example:</p><p><code>2016-01-18T23:41:00Z</code></p></td></tr><tr><td>ids</td><td>String</td><td>Order's IDs, please use commas as separators, for example, 1000000065617,1000000065618</td></tr><tr><td>pageNumber</td><td>number</td><td><p>page number limit per page, default:</p><p><code>10</code></p><p>, maximum:</p><p><code>250</code></p></td></tr><tr><td>pageSize</td><td>number</td><td>Default is 1</td></tr></tbody></table>
 
 {% swagger method="get" path="/openapi/v2/order/orders" baseUrl="" summary="" %}
 {% swagger-description %}
@@ -159,6 +151,7 @@ Default is 1
 | stockStatus                                | String     | normal,sold\_out                                                           |
 | [fulfillmentStatus](./#fulfillment-status) | String     | logistics status: NULL,waiting\_to\_ship,fully\_shipped,partially\_shipped |
 | [refundStatus](./#refund-status)           | String     | NULL,refunding,refunded                                                    |
+| countryCode                                | String     |                                                                            |
 
 ## Shipping Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
