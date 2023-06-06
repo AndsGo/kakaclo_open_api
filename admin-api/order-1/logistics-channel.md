@@ -78,14 +78,14 @@ Product information
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name           | Type   | Remark                                                                                                                                                       |
-| ------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| channelCode              | String | Logistics channel code,This value is used on the [channelCode](../../order/order.md#response-parameter-2) parameter in the [Order API](../../order/order.md) |
-| channelNameEn            | String | channel name(shipping method)                                                                                                                                |
-| estimatedFreight         | String | Shipping amount                                                                                                                                              |
-| estimatedFreightCurrency | String | USD                                                                                                                                                          |
-| deliveryTime             | String | For example: 6\~10 Business Days                                                                                                                             |
-| channelType              | String | channelType                                                                                                                                                  |
+| Parameter name           | Type   | Remark                                                                                                                                                 |
+| ------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| channelCode              | String | Logistics channel code,This value is used on the [channelCode](../order/order.md#response-parameter-2) parameter in the [Order API](../order/order.md) |
+| channelNameEn            | String | channel name(shipping method)                                                                                                                          |
+| estimatedFreight         | String | Shipping amount                                                                                                                                        |
+| estimatedFreightCurrency | String | USD                                                                                                                                                    |
+| deliveryTime             | String | For example: 6\~10 Business Days                                                                                                                       |
+| channelType              | String | channelType                                                                                                                                            |
 
 ## Response Examples <a href="#response-parameter" id="response-parameter"></a>
 
@@ -119,5 +119,5 @@ data is sorted according to "deliveryTime " from small to large, deliveryTime th
 {% endhint %}
 
 {% hint style="info" %}
-"estimatedFreight" is the shipping cost, mainly determined by weight (unit g) and "shipToCountry".The higher the weight, the higher the "estimatedFreight". "weight" is calculated by [sku's packageWeight](../../api-reference/products.md#skulist) \*  "quantity"
+"estimatedFreight" is the shipping cost, mainly determined by weight (unit g) and "shipToCountry".The higher the weight, the higher the "estimatedFreight". "weight" is calculated by [sku's packageWeight](../api-reference/products.md#skulist) \*  "quantity"
 {% endhint %}
