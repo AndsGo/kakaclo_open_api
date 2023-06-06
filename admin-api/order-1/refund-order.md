@@ -12,12 +12,13 @@ The refund status can be updated for a maximum of 24 hours. Generally, the statu
 
 ### **Request Body Parameter**
 
-| Name     | Type   | Description       |
-| -------- | ------ | ----------------- |
-| itemId   | String | Item Id           |
-| skuCode  | String | Sku code          |
-| quantity | Int    | Refund sku number |
-| remark   | String | Refund  remark    |
+| Name                 | Type   | Description                                                                                                                      |
+| -------------------- | ------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| itemId               | String | Item Id                                                                                                                          |
+| skuCode              | String | Sku code                                                                                                                         |
+| quantity             | Int    | Refund sku number                                                                                                                |
+| remark               | String | Refund  remark                                                                                                                   |
+| warehouseCountryCode | String | The country code of the actual delivery warehouse of the sku, the Chinese warehouse is 'CN', and the overseas warehouse is 'US'. |
 
 {% swagger method="post" path="/openapi/v2/order/orders/{id}/refund" baseUrl="" summary="" %}
 {% swagger-description %}
