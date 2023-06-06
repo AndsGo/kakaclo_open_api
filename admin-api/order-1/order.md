@@ -8,12 +8,13 @@ description: >-
 
 ## Order Item  Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name | Type        | Remark                                                                                                                                                                                                      |
-| -------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| sku            | string\[64] | sku                                                                                                                                                                                                         |
-| quantity       | int\[16]    | quantity must be greater than 0                                                                                                                                                                             |
-| channelCode    | string\[32] | Channel code,This value is obtained by calling the Logistics Channel api. It is not required. If no value is passed or the channel is not matched, the standard channel will be used automatically.         |
-| warehouseCode  | string\[32] | Warehouse code,This value is obtained by calling the CountryAndWarehouse api, and it is not required. If no value is passed or the warehouse is not matched, the G007 warehouse will be used automatically. |
+| Parameter name    | Type        | Remark                                                                                                                                                                                                      |
+| ----------------- | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| sku               | string\[64] | sku                                                                                                                                                                                                         |
+| quantity          | int\[16]    | quantity must be greater than 0                                                                                                                                                                             |
+| ~~channelCode~~   | string\[32] | Channel code,This value is obtained by calling the Logistics Channel api. It is not required. If no value is passed or the channel is not matched, the standard channel will be used automatically.         |
+| ~~warehouseCode~~ | string\[32] | Warehouse code,This value is obtained by calling the CountryAndWarehouse api, and it is not required. If no value is passed or the warehouse is not matched, the G007 warehouse will be used automatically. |
+| channelType       | string\[16] | Channel type,This value defaults to 'Standard' as the standard logistics speed, if you need a faster logistics speed, you need to change the value to 'Express'.                                            |
 
 ## Order Address Properties <a href="#response-parameter" id="response-parameter"></a>
 
