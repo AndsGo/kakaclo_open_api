@@ -51,7 +51,8 @@
                         "option2": "{\"name\":\"size\", \"value\":\"S\"}",
                         "option3": null,
                         "total": 5.6800,
-                        "amount": 5.6800
+                        "amount": 5.680,
+                        "countryCode": "CN"
                     },
                     {
                         "id": "1094224",
@@ -65,7 +66,8 @@
                         "option2": "{\"name\":\"size\",\"value\":\"PAT2\"}",
                         "option3": null,
                         "total": 7.4300,
-                        "amount": 7.4300
+                        "amount": 7.4300,
+                        "countryCode": "US"
                     }
                 ],
                 "fulfillments": null,
@@ -136,7 +138,9 @@
                         "option2": "{\"name\":\"size\", \"value\":\"S\"}",
                         "option3": null,
                         "total": 14.4600,
-                        "amount": 7.2300
+                        "amount": 7.2300,
+                        "countryCode": "CN"
+                        
                     },
                     {
                         "id": "1077105",
@@ -150,7 +154,8 @@
                         "option2": "{\"name\":\"size\", \"value\":\"XL\"}",
                         "option3": null,
                         "total": 6.8100,
-                        "amount": 6.8100
+                        "amount": 6.8100,
+                        "countryCode": "US"
                     }
                 ],
                 "fulfillments": [
@@ -175,6 +180,7 @@
                                 "option3": null,
                                 "total": 14.4600,
                                 "amount": 7.2300
+                                
                             }
                         ]
                     }
