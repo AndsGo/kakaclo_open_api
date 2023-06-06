@@ -52,9 +52,8 @@ description: >-
           }
         ],
     "salePlatform": "KA",
-    "customOrderId":"KA10001"
-    "channelCode":"H008--Proactive",
-    "warehouseCode":"H008"
+    "customOrderId":"KA10001",
+    "channelType":"Standard"
 }
 ```
 
@@ -66,6 +65,10 @@ description: >-
 {% swagger-description %}
 
 {% endswagger-description %}
+
+{% swagger-parameter in="body" name="channelType" %}
+Standard、Express
+{% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="orderAddress" type="Object" required="true" %}
 Order Address Properties
