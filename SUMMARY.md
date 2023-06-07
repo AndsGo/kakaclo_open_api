@@ -6,6 +6,7 @@
   * [2023-04 Product CountryAndWarehouse interface changes](release-notes/2023-04-product-countryandwarehouse-interface-changes.md)
   * [2023-04 Order V1 Version And Order V2 Version](release-notes/2023-04-order-v1-version-and-order-v2-version.md)
   * [2022-12 Order V2 Version](release-notes/2022-12-order-v2-version.md)
+  * [2023-06  Order Automatic Unpacking interface changes](release-notes/2023-06-order-automatic-unpacking-interface-changes.md)
 * [API Usage](api-usage/README.md)
   * [API Endpoint](api-usage/api-endpoint.md)
   * [Rate Limits](api-usage/rate-limits.md)
