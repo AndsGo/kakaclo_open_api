@@ -66,7 +66,7 @@ description: >-
 
 {% endswagger-description %}
 
-{% swagger-parameter in="body" name="channelType" %}
+{% swagger-parameter in="body" name="channelType" required="true" %}
 Standard、Express
 {% endswagger-parameter %}
 
