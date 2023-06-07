@@ -1,7 +1,7 @@
 ---
 description: >-
-  Automatic Split Logistics Channel API provides information like shipping
-  method (channelNameEn), channel code, delivery time, or freight.
+  Automatic Split Logistics Channel API provides information like delivery time,
+  or freight.
 ---
 
 # Automatic Split Logistics Channel
