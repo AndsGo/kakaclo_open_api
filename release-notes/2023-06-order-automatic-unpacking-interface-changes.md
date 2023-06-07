@@ -1,5 +1,5 @@
 ---
-description: Order Automatic Unpacking interface changes
+description: Order Automatic Split interface changes
 ---
 
 # 2023-06  Order Automatic Split interface changes
