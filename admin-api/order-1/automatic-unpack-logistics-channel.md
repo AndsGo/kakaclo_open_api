@@ -77,12 +77,12 @@ Product information
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 
-| Parameter name           | Type   | Remark                           |
-| ------------------------ | ------ | -------------------------------- |
-| estimatedFreight         | String | Shipping amount                  |
-| estimatedFreightCurrency | String | USD                              |
-| deliveryTime             | String | For example: 6\~10 Business Days |
-| channelType              | String | channelType                      |
+| Parameter name           | Type   | Remark                                                                                                       |
+| ------------------------ | ------ | ------------------------------------------------------------------------------------------------------------ |
+| estimatedFreight         | String | Shipping amount                                                                                              |
+| estimatedFreightCurrency | String | USD                                                                                                          |
+| deliveryTime             | String | For example: 6\~10 Business Days                                                                             |
+| channelType              | String | Channel type, 'Standard' is the standard logistics timeliness, 'Express' is the faster logistics timeliness. |
 
 ## Response Examples <a href="#response-parameter" id="response-parameter"></a>
 
@@ -101,7 +101,7 @@ Product information
             "estimatedFreight": 4.77,
             "estimatedFreightCurrency": "USD",
             "deliveryTime": "6~10 Business Days",
-            "channelType": "Expedited"
+            "channelType": "Express"
         }
     ]
 }
