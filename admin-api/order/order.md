@@ -71,6 +71,10 @@ description: >-
 
 {% endswagger-description %}
 
+{% swagger-parameter in="body" name="channelType" %}
+Standard、Express
+{% endswagger-parameter %}
+
 {% swagger-parameter in="body" name="orderAddress" type="Object" required="true" %}
 Order Address Properties
 {% endswagger-parameter %}
