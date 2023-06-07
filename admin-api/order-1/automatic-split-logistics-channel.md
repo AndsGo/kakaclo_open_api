@@ -1,10 +1,10 @@
 ---
 description: >-
-  Automatic Unpack Logistics Channel API provides information like shipping
+  Automatic Split Logistics Channel API provides information like shipping
   method (channelNameEn), channel code, delivery time, or freight.
 ---
 
-# Automatic Unpack Logistics Channel
+# Automatic Split Logistics Channel
 
 ## Products Properties <a href="#response-parameter" id="response-parameter"></a>
 
@@ -28,7 +28,7 @@ description: >-
 }
 ```
 
-{% swagger method="post" path="/openapi/v2/order/orders/automaticUnpack/channel" baseUrl="" summary="" %}
+{% swagger method="post" path="/openapi/v2/order/orders/automaticSplit/channel" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}

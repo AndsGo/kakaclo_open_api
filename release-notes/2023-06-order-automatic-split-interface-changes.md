@@ -2,9 +2,9 @@
 description: Order Automatic Unpacking interface changes
 ---
 
-# 2023-06  Order Automatic Unpacking interface changes
+# 2023-06  Order Automatic Split interface changes
 
-2023-06 Update: Update the order related interface. This mainly includes interfaces for creating an order (automatic unpacking), trial shipping (automatic unpacking), and refund (automatic unpacking partial refund).
+2023-06 Update: Update the order related interface. This mainly includes interfaces for creating an order (automatic split), trial shipping (automatic split), and refund (automatic split partial refund).
 
 ## What’s changes in Order V1
 
@@ -28,6 +28,6 @@ The following features were changes in order V2 of kakaclo open APIs:
 
 * In the return parameter orderItems, the country shortcode field '[countryCode ](../admin-api/order-1/order-list/)after automatic unpacking is added. It is used as the basis parameter for partial refund of the automatic unpacking order.
 
-#### Automatic Unpack Logistics Channel  has been adjusted as follows:
+#### Automatic Split Logistics Channel  has been adjusted as follows:
 
-* Added an interface for automatic unpacking and trial freight calculation, which is used to query the freight estimates for automatic unpacking and delivery of different logistics timeliness levels.
+* Added an interface for automatic split and trial freight calculation, which is used to query the freight estimates for automatic split and delivery of different logistics timeliness levels.
