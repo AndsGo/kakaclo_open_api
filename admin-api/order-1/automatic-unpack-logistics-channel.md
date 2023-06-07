@@ -28,7 +28,7 @@ description: >-
 }
 ```
 
-{% swagger method="post" path="/openapi/v2/order/orders/channel/automation" baseUrl="" summary="" %}
+{% swagger method="post" path="/openapi/v2/order/orders/channel/automationSplit" baseUrl="" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
