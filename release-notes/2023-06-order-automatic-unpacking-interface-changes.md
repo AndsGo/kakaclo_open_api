@@ -30,4 +30,4 @@ The following features were changes in order V2 of kakaclo open APIs:
 
 #### Automatic Unpack Logistics Channel  has been adjusted as follows:
 
-* Added an interface for automatic unpacking and trial freight calculation, which is used to query the estimated freight for automatic unpacking and delivery.
+* Added an interface for automatic unpacking and trial freight calculation, which is used to query the freight estimates for automatic unpacking and delivery of different logistics timeliness levels.
