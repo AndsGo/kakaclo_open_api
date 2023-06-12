@@ -31,3 +31,7 @@ The following features were changes in order V2 of kakaclo open APIs:
 #### Automatic Split Logistics Channel  has been adjusted as follows:
 
 * Added an interface for automatic split and trial freight calculation, which is used to query the freight estimates for automatic split and delivery of different logistics timeliness levels.
+
+#### Refund Order has been adjusted as follows:
+
+*
