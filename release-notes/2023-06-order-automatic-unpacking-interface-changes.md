@@ -34,4 +34,4 @@ The following features were changes in order V2 of kakaclo open APIs:
 
 #### Refund Order has been adjusted as follows:
 
-*
+* When this interface is used for partial or full refund, the request parameters add '[countryCode](../admin-api/order-1/refund-order.md)' and '[refundReason](../admin-api/order-1/refund-order.md)'.
