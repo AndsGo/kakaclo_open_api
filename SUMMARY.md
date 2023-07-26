@@ -3,6 +3,7 @@
 * [Welcome！](README.md)
 * [Quick Start](kuai-su-kai-shi.md)
 * [Release Notes](release-notes/README.md)
+  * [2023-07 product api increase supplierLevel info](release-notes/2023-07-product-api-increase-supplierlevel-info.md)
   * [2023-06  Order Automatic Split interface changes](release-notes/2023-06-order-automatic-unpacking-interface-changes.md)
   * [2023-04 Product CountryAndWarehouse interface changes](release-notes/2023-04-product-countryandwarehouse-interface-changes.md)
   * [2023-04 Order V1 Version And Order V2 Version](release-notes/2023-04-order-v1-version-and-order-v2-version.md)
