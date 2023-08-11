@@ -79,7 +79,7 @@ Product information
 
 | Parameter name           | Type   | Remark                                                                                                                                                            |
 | ------------------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| estimatedFreight         | String | Shipping amount                                                                                                                                                   |
+| estimatedFreight         | Number | Shipping amount                                                                                                                                                   |
 | estimatedFreightCurrency | String | USD                                                                                                                                                               |
 | deliveryTime             | String | For example: 6\~10 Business Days                                                                                                                                  |
 | channelType              | String | Channel type, 'Standard' is the standard logistics timeliness, 'Express' is the faster logistics timeliness, and 'Expedited' is the fastest logistics timeliness. |
