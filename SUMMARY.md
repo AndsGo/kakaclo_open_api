@@ -3,6 +3,7 @@
 * [Welcome！](README.md)
 * [Quick Start](kuai-su-kai-shi.md)
 * [Release Notes](release-notes/README.md)
+  * [2023-08 Add API token refresh function, logistics channel to add Express](release-notes/2023-08-add-api-token-refresh-function-logistics-channel-to-add-express.md)
   * [2023-07 product api increase supplierLevel info](release-notes/2023-07-product-api-increase-supplierlevel-info.md)
   * [2023-06  Order Automatic Split interface changes](release-notes/2023-06-order-automatic-unpacking-interface-changes.md)
   * [2023-04 Product CountryAndWarehouse interface changes](release-notes/2023-04-product-countryandwarehouse-interface-changes.md)
