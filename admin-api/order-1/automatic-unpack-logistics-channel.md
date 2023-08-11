@@ -86,24 +86,27 @@ Product information
 
 ## Response Examples <a href="#response-parameter" id="response-parameter"></a>
 
-```
+```json
 {
     "code": 10000,
-    "message": "success",
     "data": [
         {
-            "estimatedFreight": 6.45,
-            "estimatedFreightCurrency": "USD",
-            "deliveryTime": "3~5 Business Days",
-            "channelType": "Standard"
+            "deliveryTime": "6~9 Business Days",
+            "estimatedFreight": 6.1600,
+            "channelType": "Express"
         },
         {
-            "estimatedFreight": 4.77,
-            "estimatedFreightCurrency": "USD",
-            "deliveryTime": "6~10 Business Days",
-            "channelType": "Express"
+            "deliveryTime": "3~4 Business Days",
+            "estimatedFreight": 24.2500,
+            "channelType": "Expedited"
+        },
+        {
+            "deliveryTime": "8~12 Business Days",
+            "estimatedFreight": 5.0400,
+            "channelType": "Standard"
         }
-    ]
+    ],
+    "message": "Success!"
 }
 ```
 
