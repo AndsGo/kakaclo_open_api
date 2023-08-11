@@ -8,4 +8,5 @@ description: >-
 
 API token page: [https://kakaclo.com/personal-center/api-setting](https://kakaclo.com/personal-center/api-setting)
 
-Logistics channel to add express (a total of Standard, Express, Expedited)，
+[Logistics channel](../admin-api/order-1/automatic-unpack-logistics-channel.md) to add express (a total of Standard, Express, Expedited)\
+Channel type, 'Standard' is the standard logistics timeliness, 'Express' is the faster logistics timeliness, and 'Expedited' is the fastest logistics timeliness.
