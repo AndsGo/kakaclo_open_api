@@ -1,7 +1,8 @@
 ---
 description: >-
-  创建定制产品模块API,
-  通过此接口成功创建的定制产品将会在https://www.kakaclo.com/commodity/customProduct/list页面展示
+  Create a customized product module API. Customized products successfully
+  created through this interface will be displayed on the
+  https://www.kakaclo.com/commodity/customProduct/list page.
 ---
 
 # Custom Product
