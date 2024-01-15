@@ -7,6 +7,3 @@ description: >-
 
 # Custom Product
 
-
-
-*
