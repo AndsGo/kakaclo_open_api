@@ -36,6 +36,7 @@
   * [Refund Order](admin-api/order-1/refund-order.md)
   * [Query ReFund](admin-api/order-1/query-refund.md)
   * [Automatic Split Logistics Channel](admin-api/order-1/automatic-unpack-logistics-channel.md)
-* [Custom Product](admin-api/custom-product.md)
+* [Custom Product](admin-api/custom-product/README.md)
+  * [Create Custom Order](admin-api/custom-product/create-custom-order.md)
 * [Payment](admin-api/payment/README.md)
   * [Query Balance](admin-api/payment/query-balance.md)

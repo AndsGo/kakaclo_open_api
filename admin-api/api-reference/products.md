@@ -97,7 +97,7 @@ the commodity SPU code query, each time a maximum of 30, and one of the four opt
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="skus" type="String" required="true" %}
-the commodity SKU code query, each time a maximum of 30, and one of the four options is required. for example: AMN00432_B_M,AMN00432_B_XL
+the commodity SKU code query, each time a maximum of 30, and one of the four options is required. for example: AMN00432\_B\_M,AMN00432\_B\_XL
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="categoryId" type="Number" required="true" %}
@@ -113,15 +113,7 @@ Sort type, which can be sorted by different fields according to the given parame
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="sortBy" type="String" %}
-Sorting method, ascending order: 
-
-**asc**
-
-, reverse order: 
-
-**desc.**
-
- for example: desc.
+Sorting method, ascending order: **asc**, reverse order: **desc.** for example: desc.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="dateEndTime" type="String" required="true" %}

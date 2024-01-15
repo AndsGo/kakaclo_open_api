@@ -96,11 +96,7 @@ custom order number
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="channelCode" %}
-From Logistics 
-
-[channel API ](channel.md#response-parameter-2)
-
-
+From Logistics [channel API ](channel.md#response-parameter-2)
 {% endswagger-parameter %}
 
 {% swagger-response status="200: OK" description="" %}
