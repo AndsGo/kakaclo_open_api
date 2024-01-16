@@ -14,7 +14,7 @@ description: Create a custom order
 
 ## Header <a href="#response-parameter" id="response-parameter"></a>
 
-For common header, refer to How to call KakaClo Shop APIs - Common Headers
+For common header, refer to [`How to call KakaClo Shop APIs - Common Headers`](../../kuai-su-kai-shi.md#get-your-api-keys)
 
 ```url
 curl --request POST \
