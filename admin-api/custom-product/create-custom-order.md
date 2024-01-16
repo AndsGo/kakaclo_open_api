@@ -4,13 +4,26 @@ description: Create a custom order
 
 # Create Custom Order
 
-
-
 {% swagger method="post" path="/order" baseUrl="/openapi/v2/product/custom" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 {% endswagger %}
+
+## orderAddresses  Properties <a href="#response-parameter" id="response-parameter"></a>
+
+| Properties | Type         | Require | Sample	             | Properties description |
+| ---------- | ------------ | ------- | ------------------- | ---------------------- |
+| country    | string\[50]  | Y       | US                  | Receiving country      |
+| city       | string\[100] | Y       | Orlafasns           | Receiving city         |
+| phone      | int\[32]     | Y       | 07 82 24 67 93      | Receiving phone number |
+| recipient  | string\[100] | Y       | Lffsollia Odfsdlena | recipient              |
+| street1    | string\[100] | Y       | 7 rue Rabelais      | street1                |
+| street2    | string\[100] | N       |                     |                        |
+| province   | string\[50]  | Y       | de Lofasfasire      | Receiving province     |
+| zip        | string\[50]  | Y       | vsvs00v30           | post code              |
+
+
 
 ## Order Item  Properties <a href="#response-parameter" id="response-parameter"></a>
 
