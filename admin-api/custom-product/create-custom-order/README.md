@@ -1,11 +1,6 @@
----
-description: >-
-  This API allows clients to create custom orders for personalized products.
-  Upon successful creation, users can view their submitted records in the custom
-  product list at Custom Product List.
----
-
 # Create Custom Order
+
+This API allows clients to create custom orders for personalized products.Upon successful creation, users can view their submitted records in the custom product list at [Custom Product List](https://www.kakaclo.com/commodity/customProduct/list).
 
 ### Endpoint
 
