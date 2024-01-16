@@ -15,9 +15,9 @@ This API allows clients to create custom orders for personalized products.Upon s
 For common header, refer to [`How to call KakaClo Shop APIs - Common Headers`](../../kuai-su-kai-shi.md#get-your-api-keys)
 
 ```url
-curl --request POST \
-     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/order' \
-     --header 'Accept: application/json' \
+curl --request POST
+     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/order'
+     --header 'Accept: application/json'
      --header 'Authorization: Bearer YOU_ACCES-TOKEN' 
 ```
 
@@ -82,7 +82,7 @@ Request body sampls
 
 ### Response
 
-After the custom order is successfully created, the data field will return the unique ID of the current task: C202401164058. This field can be used to get the custom order list.
+After the custom order is successfully created, the data field will return the demandNo of the current task: C202401164058. This field can be used to get the custom order list.
 
 ```json
 Success Response
