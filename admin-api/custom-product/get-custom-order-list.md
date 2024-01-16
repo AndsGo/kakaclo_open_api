@@ -89,7 +89,8 @@ curl --request POST
                         "city": "Orlafasns",
                         "phone": "07 82 24 67 93",
                         "recipient": "Lffsollia Odfsdlena",
-                        "street1": " 7 rue  Rabelais",
+                        "street1": "7 rue  Rabelais",
+                        "street2": "",
                         "province": "de Lofasfasire",
                         "zip": "vsvs00v30"
                     },
@@ -98,7 +99,7 @@ curl --request POST
                         {
                             "customerSku": "FSZW11087_P_FREESIZE_NUB",
                             "quantity": 1,
-                            "importImage": [
+                            "imageUrls": [
                                 "https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2Fda299fa3e37b65654bc5153c325b8b00.jpg"
                             ],
                             "remark": "test custom order",
