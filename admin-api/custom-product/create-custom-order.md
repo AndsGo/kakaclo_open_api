@@ -4,11 +4,24 @@ description: Create a custom order
 
 # Create Custom Order
 
+### Endpoint
+
 {% swagger method="post" path="/order" baseUrl="/openapi/v1/product/custom" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 {% endswagger %}
+
+## Header <a href="#response-parameter" id="response-parameter"></a>
+
+For common header, refer to How to call KakaClo Shop APIs - Common Headers
+
+```url
+curl --request POST \
+     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/order' \
+     --header 'Accept: application/json' \
+     --header 'Authorization: Bearer YOU_ACCES-TOKEN' 
+```
 
 ## Body  Properties <a href="#response-parameter" id="response-parameter"></a>
 
