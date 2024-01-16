@@ -4,7 +4,7 @@ description: Create a custom order
 
 # Create Custom Order
 
-{% swagger method="post" path="/order" baseUrl="/openapi/v2/product/custom" summary="" %}
+{% swagger method="post" path="/order" baseUrl="/openapi/v1/product/custom" summary="" %}
 {% swagger-description %}
 
 {% endswagger-description %}
