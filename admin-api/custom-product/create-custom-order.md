@@ -65,17 +65,38 @@ Request body sampls
             "importImage": [
                 "https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2Fda299fa3e37b65654bc5153c325b8b00.jpg"
             ],
-            "remark": "test cutom order",
+            "remark": "test custom order",
             "color": "Pink",
             "size": "XL",
             "print": "Positioning printing",
             "material": "Acrylic",
-            "printUniqueCode": "Print content ('##' separated)",
-            "customerBarcode": "unique code",
-            "uniqueCodeType": "Print unique code label display template 1-barcode 2-QR code 3-double code 4-plain text"
+            "printUniqueCode": "",
+            "customerBarcode": "FSZW11087_P_FREESIZE_NUB",
+            "uniqueCodeType": "3"
         }
     ],
     "customOrderId": "KA10001",
     "channelType": "Standard"
+}
+```
+
+
+
+### Response
+
+```json
+Success Response
+{
+  "code": 10000,
+  "message": "success",
+  "data": "C202401164058"
+}
+```
+
+```json
+Error Response
+{
+  "code": xxxxx,
+  "message": "error message",
 }
 ```
