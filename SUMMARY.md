@@ -37,6 +37,7 @@
   * [Query ReFund](admin-api/order-1/query-refund.md)
   * [Automatic Split Logistics Channel](admin-api/order-1/automatic-unpack-logistics-channel.md)
 * [Custom Product](admin-api/custom-product/README.md)
-  * [Create Custom Order](admin-api/custom-product/create-custom-order.md)
+  * [Create Custom Order](admin-api/custom-product/create-custom-order/README.md)
+    * [Custom Product List](https://kakaclo.com/commodity/customProduct/list/)
 * [Payment](admin-api/payment/README.md)
   * [Query Balance](admin-api/payment/query-balance.md)
