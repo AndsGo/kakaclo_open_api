@@ -10,6 +10,14 @@ description: Create a custom order
 {% endswagger-description %}
 {% endswagger %}
 
+## Body  Properties <a href="#response-parameter" id="response-parameter"></a>
+
+
+
+<table><thead><tr><th width="162">Properties</th><th>Type</th><th>Require</th><th>Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[200]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>mainImageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>custom order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td>orderAddresses</td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td>orderItemsList</td><td>array object</td><td>Y</td><td></td><td>Order item array</td></tr></tbody></table>
+
+## &#x20;<a href="#response-parameter" id="response-parameter"></a>
+
 ## orderAddresses  Properties <a href="#response-parameter" id="response-parameter"></a>
 
 | Properties | Type         | Require | Sample	             | Properties description |
