@@ -12,7 +12,7 @@ This API allows clients to create custom orders for personalized products.Upon s
 
 ## Header <a href="#response-parameter" id="response-parameter"></a>
 
-For common header, refer to [`How to call KakaClo Shop APIs - Common Headers`](../../../kuai-su-kai-shi.md#get-your-api-keys)
+For common header, refer to [`How to call KakaClo Shop APIs - Common Headers`](../../kuai-su-kai-shi.md#get-your-api-keys)
 
 ```url
 curl --request POST \
@@ -25,7 +25,7 @@ curl --request POST \
 
 
 
-<table><thead><tr><th width="162">Properties</th><th width="121">Type</th><th width="94">Require</th><th width="143">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[100]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>mainImageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>customer order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td><a href="./#response-parameter-2">orderAddresses</a></td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td><a href="./#response-parameter-3">orderItemsList</a></td><td>array object</td><td>Y</td><td></td><td>Order item array</td></tr></tbody></table>
+<table><thead><tr><th width="162">Properties</th><th width="121">Type</th><th width="94">Require</th><th width="143">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[100]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>mainImageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>customer order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td><a href="create-custom-order.md#response-parameter-2">orderAddresses</a></td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td><a href="create-custom-order.md#response-parameter-3">orderItemsList</a></td><td>array object</td><td>Y</td><td></td><td>Order item array</td></tr></tbody></table>
 
 ## &#x20;<a href="#response-parameter" id="response-parameter"></a>
 
@@ -81,6 +81,8 @@ Request body sampls
 
 
 ### Response
+
+After the custom order is successfully created, the data field will return the unique ID of the current task: C202401164058. This field can be used to get the custom order list.
 
 ```json
 Success Response
