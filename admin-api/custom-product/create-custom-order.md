@@ -25,7 +25,7 @@ curl --request POST
 
 
 
-<table><thead><tr><th width="162">Properties</th><th width="121">Type</th><th width="94">Require</th><th width="143">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[100]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>imageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>Product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>Customer order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td><a href="create-custom-order.md#response-parameter-2">orderAddresses</a></td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td><a href="create-custom-order.md#response-parameter-3">orderItemsList</a></td><td>[]object</td><td>Y</td><td></td><td>Order item array</td></tr><tr><td>description</td><td>string</td><td>N</td><td></td><td>Description or custom order</td></tr></tbody></table>
+<table><thead><tr><th width="162">Properties</th><th width="121">Type</th><th width="94">Require</th><th width="143">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[100]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>imageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>Product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>Customer order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td><a href="create-custom-order.md#response-parameter-2">orderAddresses</a></td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td><a href="create-custom-order.md#response-parameter-3">orderItems</a></td><td>[]object</td><td>Y</td><td></td><td>Order item array</td></tr><tr><td>description</td><td>string</td><td>N</td><td></td><td>Description or custom order</td></tr></tbody></table>
 
 ## &#x20;<a href="#response-parameter" id="response-parameter"></a>
 
@@ -55,7 +55,7 @@ curl --request POST
     "description": "best order",
     "productName": "product name",
     "imageUrl": "https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg",
-    "orderItemsList": [
+    "orderItems": [
         {
             "customerSku": "FSZW11087_P_FREESIZE_NUB",
             "quantity": 1,

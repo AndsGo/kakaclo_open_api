@@ -47,7 +47,7 @@ curl --request POST
 
 ### Response orderDetail Properties
 
-<table><thead><tr><th width="179">Properties</th><th width="104">Type</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td><a href="create-custom-order.md#response-parameter-3">orderAddresses</a></td><td>object</td><td></td><td>Order address information</td></tr><tr><td>remark</td><td>string</td><td>order remark</td><td>Order remark</td></tr><tr><td><a href="create-custom-order.md#response-parameter-4">orderItemsList</a></td><td>[]object</td><td></td><td>Order item array</td></tr></tbody></table>
+<table><thead><tr><th width="179">Properties</th><th width="104">Type</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td><a href="create-custom-order.md#response-parameter-3">orderAddresses</a></td><td>object</td><td></td><td>Order address information</td></tr><tr><td>remark</td><td>string</td><td>order remark</td><td>Order remark</td></tr><tr><td><a href="create-custom-order.md#response-parameter-4">orderItems</a></td><td>[]object</td><td></td><td>Order item array</td></tr></tbody></table>
 
 ## Reques Body  Example <a href="#response-parameter" id="response-parameter"></a>
 
@@ -96,7 +96,7 @@ curl --request POST
                         "zip": "vsvs00v30"
                     },
                     "remark": "best order",
-                    "orderItemsList": [
+                    "orderItems": [
                         {
                             "customerSku": "FSZW11087_P_FREESIZE_NUB",
                             "quantity": 1,
