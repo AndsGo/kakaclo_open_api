@@ -6,6 +6,8 @@ description: >-
 
 # Get Custom Order List
 
+The Get Custom Order List API can query the custom order list created through the Create Custom Order Interface.
+
 ### Endpoint
 
 
