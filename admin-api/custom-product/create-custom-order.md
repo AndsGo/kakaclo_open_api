@@ -25,13 +25,13 @@ curl --request POST
 
 
 
-<table><thead><tr><th width="162">Properties</th><th width="121">Type</th><th width="94">Require</th><th width="143">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[100]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>imageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>customer order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td><a href="create-custom-order.md#response-parameter-2">orderAddresses</a></td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td><a href="create-custom-order.md#response-parameter-3">orderItemsList</a></td><td>[]object</td><td>Y</td><td></td><td>Order item array</td></tr></tbody></table>
+<table><thead><tr><th width="162">Properties</th><th width="121">Type</th><th width="94">Require</th><th width="143">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>productName</td><td>string[100]</td><td>Y</td><td>Bule Skirt</td><td>Product name</td></tr><tr><td>imageUrl</td><td>string[200]</td><td>Y</td><td><a href="https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg">https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg</a></td><td>Product image url</td></tr><tr><td>customOrderId</td><td>string[40]</td><td>N</td><td>KA10001</td><td>Customer order id</td></tr><tr><td>channelType</td><td>string[20]</td><td>N</td><td>Standard</td><td>Logistics type, for example: standard,express, expedited</td></tr><tr><td><a href="create-custom-order.md#response-parameter-2">orderAddresses</a></td><td>object</td><td>Y</td><td></td><td>Order address information</td></tr><tr><td><a href="create-custom-order.md#response-parameter-3">orderItemsList</a></td><td>[]object</td><td>Y</td><td></td><td>Order item array</td></tr><tr><td>description</td><td>string</td><td>N</td><td></td><td>Description or custom order</td></tr></tbody></table>
 
 ## &#x20;<a href="#response-parameter" id="response-parameter"></a>
 
 ## orderAddresses  Properties <a href="#response-parameter" id="response-parameter"></a>
 
-<table><thead><tr><th>Properties</th><th width="116">Type</th><th width="93">Require</th><th width="146">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>country</td><td>string[50]</td><td>Y</td><td>US</td><td>Receiving country</td></tr><tr><td>city</td><td>string[100]</td><td>Y</td><td>Orlafasns</td><td>Receiving city</td></tr><tr><td>phone</td><td>int[32]</td><td>Y</td><td>07 82 24 67 93</td><td>Receiving phone number</td></tr><tr><td>recipient</td><td>string[100]</td><td>Y</td><td>Lffsollia Odfsdlena</td><td>recipient</td></tr><tr><td>street1</td><td>string[100]</td><td>Y</td><td>7 rue Rabelais</td><td>street1</td></tr><tr><td>street2</td><td>string[100]</td><td>N</td><td></td><td>street2</td></tr><tr><td>province</td><td>string[50]</td><td>Y</td><td>de Lofasfasire</td><td>Receiving province</td></tr><tr><td>zip</td><td>string[50]</td><td>Y</td><td>vsvs00v30</td><td>post code</td></tr></tbody></table>
+<table><thead><tr><th>Properties</th><th width="116">Type</th><th width="93">Require</th><th width="146">Sample	</th><th>Properties description</th></tr></thead><tbody><tr><td>country</td><td>string[50]</td><td>Y</td><td>US</td><td>Receiving country</td></tr><tr><td>city</td><td>string[100]</td><td>Y</td><td>Orlafasns</td><td>Receiving city</td></tr><tr><td>phone</td><td>int[32]</td><td>Y</td><td>07 82 24 67 93</td><td>Receiving phone number</td></tr><tr><td>recipient</td><td>string[100]</td><td>Y</td><td>Lffsollia Odfsdlena</td><td>Recipient</td></tr><tr><td>street1</td><td>string[100]</td><td>Y</td><td>7 rue Rabelais</td><td>Street1</td></tr><tr><td>street2</td><td>string[100]</td><td>N</td><td></td><td>Street2</td></tr><tr><td>province</td><td>string[50]</td><td>Y</td><td>de Lofasfasire</td><td>Receiving province</td></tr><tr><td>zip</td><td>string[50]</td><td>Y</td><td>vsvs00v30</td><td>post code</td></tr></tbody></table>
 
 
 
@@ -52,7 +52,7 @@ curl --request POST
         "province": "de Lofasfasire",
         "zip": "vsvs00v30"
     },
-    "remark": "best order",
+    "description": "best order",
     "productName": "product name",
     "imageUrl": "https://img.kakaclo.com/image%2FFSZW11087%2FFSZW11087_P_FREESIZE_NUB%2F0b39a40b85efb6ed554eaf7456b79ab2.jpg",
     "orderItemsList": [
