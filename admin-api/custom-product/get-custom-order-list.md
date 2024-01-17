@@ -1,9 +1,3 @@
----
-description: >-
-  The Get Custom Order List interface can query the custom order list created
-  through the interface or page.
----
-
 # Get Custom Order List
 
 The Get Custom Order List API can query the custom order list created through the Create Custom Order Interface.
