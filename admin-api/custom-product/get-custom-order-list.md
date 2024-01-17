@@ -39,7 +39,7 @@ curl --request POST
 
 ### Response Data Properties&#x20;
 
-<table><thead><tr><th width="179">Properties</th><th width="104">Type</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td><a href="get-custom-order-list.md#response-list-properties">list</a></td><td>[]object</td><td></td><td>Returns a list array of data</td></tr><tr><td>total</td><td>int</td><td>1</td><td>Total number of data items</td></tr><tr><td>pageNumber</td><td>int</td><td>1</td><td>page number</td></tr><tr><td>pageSize</td><td>int</td><td>20</td><td>page size</td></tr></tbody></table>
+<table><thead><tr><th width="179">Properties</th><th width="104">Type</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td><a href="get-custom-order-list.md#response-list-properties">list</a></td><td>[]object</td><td></td><td>Returns a list array of data</td></tr><tr><td>total</td><td>int</td><td>1</td><td>Total number of data items</td></tr></tbody></table>
 
 ### Response list Properties&#x20;
 
@@ -116,8 +116,6 @@ curl --request POST
                 }
             }
         ],
-        "pageNumber": 1,
-        "pageSize": 20,
         "total": 1
     },
     "message": "success"
