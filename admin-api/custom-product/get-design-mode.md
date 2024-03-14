@@ -1,2 +1,0 @@
-# Get Design Mode
-
