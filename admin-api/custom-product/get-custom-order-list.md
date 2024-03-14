@@ -1,6 +1,6 @@
 # Get Custom Order List
 
-longThe Get Custom Order List API can query the custom order list created through the Create Custom Order Interface.
+The Get Custom Order List API can query the custom order list created through the Create Custom Order Interface.
 
 ### Endpoint
 
