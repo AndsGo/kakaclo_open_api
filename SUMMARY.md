@@ -39,6 +39,6 @@
 * [Custom Product](admin-api/custom-product/README.md)
   * [Create Custom Order](admin-api/custom-product/create-custom-order.md)
   * [Get Custom Order List](admin-api/custom-product/get-custom-order-list.md)
-  * [Design Mode](admin-api/custom-product/design-mode.md)
+  * [Get Design Model List](admin-api/custom-product/get-design-model-list.md)
 * [Payment](admin-api/payment/README.md)
   * [Query Balance](admin-api/payment/query-balance.md)
