@@ -64,7 +64,7 @@ curl --request POST
                 "name": "Short sleeve T-shirt",
                 "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240315/23448f22-7af0-4dd4-b768-5f7444e52495.png",
                 "type": "3D",
-                "createdTime": "2022-03-21 11:24:18",
+                "createdTime": "2024-03-13 11:58:58",
                 "updatedTime": null
             }
         ],
