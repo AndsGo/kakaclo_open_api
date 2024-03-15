@@ -8,8 +8,6 @@ Endpoint
 
 <mark style="color:green;">`POST`</mark> `/`openapi/v1/product/custom/designCategory/search
 
-\<Description of the endpoint>
-
 **Headers**
 
 For common header, refer to [How to call KakaClo Shop APIs - Common Headers](https://docs.kakaclo.com/kuai-su-kai-shi)
