@@ -8,15 +8,13 @@ Endpoint
 
 <mark style="color:green;">`POST`</mark> /openapi/v1/product/custom/designModel/search
 
-\<Description of the endpoint>
-
 **Headers**
 
 For common header, refer to [How to call KakaClo Shop APIs - Common Headers](https://docs.kakaclo.com/kuai-su-kai-shi)
 
 ```
 curl --request POST
-     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/designMode/search'
+     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/designModel/search'
      --header 'Content-Type: application/json'
      --header 'Authorization: Bearer YOU_ACCES-TOKEN'
 ```
@@ -26,9 +24,7 @@ curl --request POST
 | Content-Type  | `application/json` |
 | Authorization | `Bearer <token>`   |
 
-**Body**
-
-#### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
+### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
 
 | Properties      | Type    | Require | Sample                    | Properties description               |
 | --------------- | ------- | ------- | ------------------------- | ------------------------------------ |
