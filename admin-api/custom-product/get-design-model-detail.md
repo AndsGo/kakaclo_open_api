@@ -12,8 +12,6 @@ dEndpoint
 
 For common header, refer to [How to call KakaClo Shop APIs - Common Headers](https://docs.kakaclo.com/kuai-su-kai-shi)
 
-Copy
-
 ```
 curl --request POST
      --url 'https://developer.kakaclo.com/openapi/v1/product/custom/designModel/search'
