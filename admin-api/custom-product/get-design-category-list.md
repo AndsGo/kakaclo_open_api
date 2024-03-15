@@ -1,5 +1,7 @@
 ---
-description: Get the list of sample clothing model category
+description: >-
+  This interface will return all first-level and second-level categories. Note:
+  parentId=0 is the first-level category.
 ---
 
 # Get Design Category List
