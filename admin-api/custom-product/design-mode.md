@@ -1,5 +1,5 @@
 ---
-description: Get the list of sample clothing model that can be designed by the system
+description: Get the list of sample clothing model that can be designed by the system.
 ---
 
 # Get Design Model List
