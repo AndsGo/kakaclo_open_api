@@ -36,19 +36,26 @@ Request Parameter
 
 **Response Body Parameter**
 
-| Name        | Type   | Description                    |
-| ----------- | ------ | ------------------------------ |
-| `id`        | long   | Primary key ID                 |
-| modelId     | string | Design model id                |
-| globalId    | string | Global ID                      |
-| code        | string | Design model code              |
-| spu         | string | spu code                       |
-| status      | int    | Design model status(1-active)  |
-| normalPrice | number | Design model normal price(USD) |
-| name        | string | Design model name              |
-| type        | string | Design model type              |
-| createdTime | string | Design model crated time       |
-| updateTime  | string | Design model update time       |
+| Name           | Type      | Description                      |
+| -------------- | --------- | -------------------------------- |
+| `id`           | long      | Primary key ID                   |
+| modelId        | string    | Design model id                  |
+| globalId       | string    | Global ID                        |
+| code           | string    | Design model code                |
+| spu            | string    | spu code                         |
+| status         | int       | Design model status(1-active)    |
+| name           | string    | Design model name                |
+| normalPrice    | number    | Design model normal price(USD)   |
+| salesVolume    | int\[32]  | The sales volume of design model |
+| imageUrl       | string    | Image url of design model        |
+| imageUrls      | \[]string | Image url list of design model   |
+| type           | string    | Design model type                |
+| technique      | string    | Technique of design model        |
+| productionTime | string    | Production time of design model  |
+| description    | string    | Description of design model      |
+| sizeContent    | string    | Size content of design model     |
+| createDate     | string    | Design model crated time         |
+| modifyDate     | string    | Design model update time         |
 
 **Response**
 
@@ -75,7 +82,9 @@ Request Parameter
         "technique": "Thermal transfer",
         "productionTime": "5-7 business days",
         "description": "Product description ~~",
-        "sizeContent": "[{\"size\":[{\"name\":\"Sleeve Length\",\"size_value\":[{\"name\":\"M\",\"value\":19},{\"name\":\"L\",\"value\":19.5}]},{\"name\":\"1/2 cuff\",\"size_value\":[{\"name\":\"M\",\"value\":16.9},{\"name\":\"L\",\"value\":17.6}]},{\"name\":\"shoulder width\",\"size_value\":[{\"name\":\"M\",\"value\":41},{\"name\":\"L\",\"value\":43}]},{\"name\":\"1/2 bust\",\"size_value\":[{\"name\":\"M\",\"value\":48.5},{\"name\":\"L\",\"value\":51.5}]},{\"name\":\"clothes length\",\"size_value\":[{\"name\":\"M\",\"value\":64},{\"name\":\"L\",\"value\":66}]}],\"sheet_name\":\"Size Chart\"}]"
+        "sizeContent": "[{\"size\":[{\"name\":\"Sleeve Length\",\"size_value\":[{\"name\":\"M\",\"value\":19},{\"name\":\"L\",\"value\":19.5}]},{\"name\":\"1/2 cuff\",\"size_value\":[{\"name\":\"M\",\"value\":16.9},{\"name\":\"L\",\"value\":17.6}]},{\"name\":\"shoulder width\",\"size_value\":[{\"name\":\"M\",\"value\":41},{\"name\":\"L\",\"value\":43}]},{\"name\":\"1/2 bust\",\"size_value\":[{\"name\":\"M\",\"value\":48.5},{\"name\":\"L\",\"value\":51.5}]},{\"name\":\"clothes length\",\"size_value\":[{\"name\":\"M\",\"value\":64},{\"name\":\"L\",\"value\":66}]}],\"sheet_name\":\"Size Chart\"}]",
+        "createDate":"2024-03-13 11:58:58.157",
+        "modifyDate":"2024-03-13 14:58:58.159",
     },
     "message": "success"
 }
