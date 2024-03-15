@@ -4,7 +4,7 @@ description: Get design model details
 
 # Get Design Model Detail
 
-dEndpoint
+Endpoint
 
 <mark style="color:green;">`GET`</mark> /openapi/v1/product/custom/designModel/detail/{id}
 
