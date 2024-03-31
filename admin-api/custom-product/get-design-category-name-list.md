@@ -8,7 +8,7 @@ description: >-
 
 Endpoint
 
-<mark style="color:green;">`GET`</mark> `/`openapi/v1/product/custom/api/modelCategoryName/search
+<mark style="color:green;">`GET`</mark> `/`openapi/v1/product/custom/modelCategoryName/search
 
 **Headers**
 
