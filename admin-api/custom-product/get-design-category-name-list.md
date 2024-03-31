@@ -1,0 +1,70 @@
+---
+description: >-
+  This interface will return all first-level and second-level categories. Note:
+  parentId=0 is the first-level category.
+---
+
+# Get Design Category Name List
+
+Endpoint
+
+<mark style="color:green;">`GET`</mark> `/`openapi/v1/product/custom/api/modelCategoryName/search
+
+**Headers**
+
+For common header, refer to [How to call KakaClo Shop APIs - Common Headers](https://docs.kakaclo.com/kuai-su-kai-shi)
+
+```
+curl --request POST
+     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/designModel/search'
+     --header 'Content-Type: application/json'
+     --header 'Authorization: Bearer YOU_ACCES-TOKEN'
+```
+
+| Name          | Value              |
+| ------------- | ------------------ |
+| Content-Type  | `application/json` |
+| Authorization | `Bearer <token>`   |
+
+**Response Body**
+
+| Name   | Type   | Description                                                                                                                                    |
+| ------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| status | string | Design model status: 0-off the shelf; 1-on the shelf; 4-out of stock, Use English "," to separate multiple items with commas, for example: 1,4 |
+
+{% tabs %}
+{% tab title="200" %}
+```json
+{
+  "code": 10000,
+  "data": [
+    "Fishing Clothes",
+    "Hoodie",
+    "Jacket",
+    "Kimono",
+    "Pants",
+    "Pet Suit",
+    "Polo Shirt",
+    "Retro",
+    "Shirt",
+    "Skirt",
+    "Sports",
+    "Suit",
+    "Swimsuit",
+    "T-shirt",
+    "Underwear",
+    "Vest"
+  ],
+  "message": "Success!"
+}
+```
+{% endtab %}
+
+{% tab title="400" %}
+```json
+{
+  "error": "Invalid request"
+}
+```
+{% endtab %}
+{% endtabs %}

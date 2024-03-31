@@ -28,28 +28,17 @@ description: >-
 }
 ```
 
-{% swagger method="post" path="/openapi/v2/order/orders/channel/automationSplit" baseUrl="" summary="" %}
-{% swagger-description %}
+<mark style="color:green;">`POST`</mark> `/openapi/v2/order/orders/channel/automationSplit`
 
-{% endswagger-description %}
+#### Request Body
 
-{% swagger-parameter in="body" name="shipToCountry" required="true" %}
-shipping country shortcode required FR,US
-{% endswagger-parameter %}
+| Name                                            | Type   | Description                               |
+| ----------------------------------------------- | ------ | ----------------------------------------- |
+| shipToCountry<mark style="color:red;">\*</mark> | String | shipping country shortcode required FR,US |
+| products<mark style="color:red;">\*</mark>      | Array  | Product information                       |
 
-{% swagger-parameter in="body" name="products" type="Array" required="true" %}
-Product information
-{% endswagger-parameter %}
-
-{% swagger-response status="401: Unauthorized" description="" %}
-```javascript
-{
-    // Response
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
     "code": 10000,
@@ -72,8 +61,16 @@ Product information
     ]
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+
+{% tab title="401: Unauthorized " %}
+```javascript
+{
+    // Response
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Response Properties <a href="#response-parameter" id="response-parameter"></a>
 

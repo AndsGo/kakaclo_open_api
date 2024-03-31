@@ -61,40 +61,24 @@ description: >-
 "channelCode" If no value is passed, the "Standard Shipping" logistics channel will be used by default
 {% endhint %}
 
-{% swagger method="post" path="/openapi/v2/order/orders" baseUrl="" summary="Create order related information" %}
-{% swagger-description %}
+## Create order related information
 
-{% endswagger-description %}
+<mark style="color:green;">`POST`</mark> `/openapi/v2/order/orders`
 
-{% swagger-parameter in="body" name="channelType" required="true" %}
-Standard、Express
-{% endswagger-parameter %}
+#### Request Body
 
-{% swagger-parameter in="body" name="orderAddress" type="Object" required="true" %}
-Order Address Properties
-{% endswagger-parameter %}
+| Name                                             | Type   | Description                                                                                                                                     |
+| ------------------------------------------------ | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| orderAddress<mark style="color:red;">\*</mark>   | Object | Order Address Properties                                                                                                                        |
+| orderItemsList<mark style="color:red;">\*</mark> | Array  | Order Items Properties                                                                                                                          |
+| remark                                           | String | order notes                                                                                                                                     |
+| salePlatform                                     | String | Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress、OverStock、TopHatter、JoyBuy、Homedepot、Facebookshop、Mercari、Facebook Marketplace |
+| channelCode                                      | String | From Logistics [channel API ](../order/channel.md#response-parameter-2)                                                                         |
+| customOrderId                                    | String | custom order number                                                                                                                             |
+| channelType<mark style="color:red;">\*</mark>    | String | Standard、Express                                                                                                                                |
 
-{% swagger-parameter in="body" name="orderItemsList" type="Array" required="true" %}
-Order Items Properties
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="remark" required="false" %}
-order notes
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="salePlatform" %}
-Amazon、Wish、eBay、Walmart、Groupon、IrobotBoxERP、Shopify、Aliexpress、OverStock、TopHatter、JoyBuy、Homedepot、Facebookshop、Mercari、Facebook Marketplace
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="customOrderId" %}
-custom order number
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="channelCode" %}
-From Logistics [channel API ](../order/channel.md#response-parameter-2)
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="" %}
+{% tabs %}
+{% tab title="200: OK " %}
 ```javascript
 {
     "code": 10000,
@@ -102,16 +86,16 @@ From Logistics [channel API ](../order/channel.md#response-parameter-2)
     "data": 1000000371651
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="401: Unauthorized" description="" %}
+{% tab title="401: Unauthorized " %}
 ```javascript
 {
     // Response
 }
 ```
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
 
 | Parameter name | Type        | Remark                                       |
 | -------------- | ----------- | -------------------------------------------- |

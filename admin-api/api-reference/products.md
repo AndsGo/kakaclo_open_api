@@ -87,44 +87,25 @@ Among them, 2-deleted, 3, discontinued means that the product will no longer be 
 
 ## Query Products
 
-{% swagger baseUrl="" method="get" path="/openapi/v1/product/products" summary="get products" %}
-{% swagger-description %}
+## get products
 
-{% endswagger-description %}
+<mark style="color:blue;">`GET`</mark> `/openapi/v1/product/products`
 
-{% swagger-parameter in="query" name="spus" type="String" required="true" %}
-the commodity SPU code query, each time a maximum of 30, and one of the four options is required. for example: AMN00432,AMN00433
-{% endswagger-parameter %}
+#### Query Parameters
 
-{% swagger-parameter in="query" name="skus" type="String" required="true" %}
-the commodity SKU code query, each time a maximum of 30, and one of the four options is required. for example: AMN00432\_B\_M,AMN00432\_B\_XL
-{% endswagger-parameter %}
+| Name                                            | Type   | Description                                                                                                                                                                                                                                                       |
+| ----------------------------------------------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| spus<mark style="color:red;">\*</mark>          | String | the commodity SPU code query, each time a maximum of 30, and one of the four options is required. for example: AMN00432,AMN00433                                                                                                                                  |
+| skus<mark style="color:red;">\*</mark>          | String | the commodity SKU code query, each time a maximum of 30, and one of the four options is required. for example: AMN00432\_B\_M,AMN00432\_B\_XL                                                                                                                     |
+| dateStartTime<mark style="color:red;">\*</mark> | String | The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: 2022-01-07T04:04:39Z |
+| dateEndTime<mark style="color:red;">\*</mark>   | String | The end time of the update time, UTC time, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required. for example: 2022-01-08T04:04:39Z         |
+| pageNumber                                      | Number | Page number, when querying according to the update time, PageNumber is required and greater than 0.                                                                                                                                                               |
+| categoryId<mark style="color:red;">\*</mark>    | Number | Category id, one of five is required, and pageNumber is required as a parameter. for example: 3654.                                                                                                                                                               |
+| sortType                                        | String | Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: salasVolume                                                                                    |
+| sortBy                                          | String | Sorting method, ascending order: **asc**, reverse order: **desc.** for example: desc.                                                                                                                                                                             |
 
-{% swagger-parameter in="query" name="categoryId" type="Number" required="true" %}
-Category id, one of five is required, and pageNumber is required as a parameter. for example: 3654.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="dateStartTime" type="String" required="true" %}
-The start time of the update time, UTC time, cannot be greater than the end time, the time is accurate to the year, month, and day, and the hour, minute, and second are not verified, and one of the four options is required. for example: 2022-01-07T04:04:39Z
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="sortType" type="String" %}
-Sort type, which can be sorted by different fields according to the given parameters. When not specified, the default is reversed by the update time. for example: salasVolume
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="sortBy" type="String" %}
-Sorting method, ascending order: **asc**, reverse order: **desc.** for example: desc.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="dateEndTime" type="String" required="true" %}
-The end time of the update time, UTC time, cannot be less than the start time, the time is accurate to the year, month, and day, and the hour, minute, and second are not checked. One of the four options is required. for example: 2022-01-08T04:04:39Z
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="pageNumber" type="Number" required="false" %}
-Page number, when querying according to the update time, PageNumber is required and greater than 0.
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Successfully query" %}
+{% tabs %}
+{% tab title="200 Successfully query" %}
 ```javascript
 {
     "code":10000,
@@ -183,9 +164,9 @@ Page number, when querying according to the update time, PageNumber is required 
     "message":"Success！"
 }
 ```
-{% endswagger-response %}
+{% endtab %}
 
-{% swagger-response status="400: Bad Request" description="Permission denied" %}
+{% tab title="400: Bad Request Permission denied" %}
 
-{% endswagger-response %}
-{% endswagger %}
+{% endtab %}
+{% endtabs %}
