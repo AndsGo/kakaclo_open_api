@@ -26,25 +26,26 @@ curl --request POST
 
 ### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
 
-| Properties      | Type        | Require | Sample                    | Properties description               |
-| --------------- | ----------- | ------- | ------------------------- | ------------------------------------ |
-| categoryIds     | \[]int\[64] | N       | \[10,1483258449929080833] | Category ID comes from category list |
-| designModelCode | string      | N       | "D425"                    | Design model code                    |
-| lastUpdatedTime | int\[64]    | N       | 1694319208000             | Design model last updated time       |
+| Properties      | Type      | Require | Sample        | Properties description                      |
+| --------------- | --------- | ------- | ------------- | ------------------------------------------- |
+| categoryNames   | \[]string | N       | \["Skirt"]    | Category name comes from category name list |
+| modelCode       | string    | N       | "PODQRA028"   | Design model code                           |
+| lastUpdatedTime | int\[64]  | N       | 1694319208000 | Design model last updated time              |
 
 **Body**
 
-| Name        | Type     | Description                    |
-| ----------- | -------- | ------------------------------ |
-| `id`        | int\[64] | Primary key ID                 |
-| modelId     | string   | Design model id                |
-| globalId    | string   | Global ID                      |
-| code        | string   | Design model code              |
-| normalPrice | double   | Design model normal price(USD) |
-| name        | string   | Design model name              |
-| type        | string   | Design model type              |
-| createdTime | string   | Design model crated time       |
-| updateTime  | string   | Design model update time       |
+| Name         | Type     | Description                    |
+| ------------ | -------- | ------------------------------ |
+| `id`         | int\[64] | Primary key ID                 |
+| modelId      | string   | Design model id                |
+| categoryName | string   | Skirt                          |
+| modelCode    | string   | Design model code              |
+| normalPrice  | double   | Design model normal price(USD) |
+| enName       | string   | Design model english name      |
+| imageUrl     | string   | Design model image url         |
+| backImageUrl | string   | Design model back image url    |
+| createDate   | string   | Design model crated time       |
+| modifyDate   | string   | Design model update time       |
 
 **Response**
 
@@ -59,7 +60,7 @@ curl --request POST
                 "id": "1889",
                 "model_id": "2073164990626574110001",
                 "globalId": "2073164990626574110001",
-                "code": "B577",
+                "code": "PODQRA028",
                 "normalPrice": 8.05,
                 "name": "Short sleeve T-shirt",
                 "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240315/23448f22-7af0-4dd4-b768-5f7444e52495.png",
