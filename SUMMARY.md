@@ -42,5 +42,6 @@
   * [Get Design Category Name List](admin-api/custom-product/get-design-category-name-list.md)
   * [Get Design Model List](admin-api/custom-product/design-mode.md)
   * [Get Design Model Detail](admin-api/custom-product/get-design-model-detail.md)
+  * [Get Custom Designed List](admin-api/custom-product/get-custom-designed-list.md)
 * [Payment](admin-api/payment/README.md)
   * [Query Balance](admin-api/payment/query-balance.md)

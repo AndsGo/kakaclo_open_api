@@ -1,12 +1,12 @@
 ---
-description: Get the list of sample clothing model that can be designed by the system.
+description: Get the list of products designed in the designer
 ---
 
-# Get Design Model List
+# Get Custom Designed List
 
 Endpoint
 
-<mark style="color:green;">`POST`</mark> /openapi/v1/product/custom/designModel/search
+<mark style="color:green;">`POST`</mark> /openapi/v1/product/custom/customDesigned/search
 
 **Headers**
 
@@ -14,19 +14,21 @@ For common header, refer to [How to call KakaClo Shop APIs - Common Headers](htt
 
 ```
 curl --request POST
-     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/designModel/search'
+     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/customDesigned/search'
      --header 'Content-Type: application/json'
      --header 'Authorization: Bearer YOU_ACCES-TOKEN'
 ```
+
+**Headers**
 
 | Name          | Value              |
 | ------------- | ------------------ |
 | Content-Type  | `application/json` |
 | Authorization | `Bearer <token>`   |
 
-### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
+#### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
 
-<table><thead><tr><th>Properties</th><th width="92">Type</th><th width="89">Require</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td>categoryNames</td><td>[]string</td><td>N</td><td>["Skirt"]</td><td>Category name comes from category name list</td></tr><tr><td>modelCode</td><td>string</td><td>N</td><td>"PODQRA028"</td><td>Design model code</td></tr><tr><td>lastUpdatedTime</td><td>int[64]</td><td>N</td><td>1694319208000</td><td>Design model last updated time</td></tr><tr><td>pageNumber</td><td>int</td><td>N</td><td>1</td><td>pageNumber starts from 1, default is 1</td></tr><tr><td>pageSize</td><td>int</td><td>N</td><td>20</td><td>"page Size" represents the return list pagination, the number of custom model per page. Each page can retrieve up to 100 custom order records.default is 20</td></tr></tbody></table>
+<table><thead><tr><th>Properties</th><th width="92">Type</th><th width="83">Require</th><th width="165">Sample</th><th>Properties description</th></tr></thead><tbody><tr><td>categoryNames</td><td>[]string</td><td>N</td><td>["Skirt"]</td><td>Category name comes from category name list</td></tr><tr><td>modelCode</td><td>string</td><td>N</td><td>"PODQRA028"</td><td>Design model code</td></tr><tr><td>spus</td><td>[]string</td><td>N</td><td>["QCUT00042"]</td><td>Spu array</td></tr><tr><td>searchContent</td><td>string</td><td>N</td><td>Short sleeve T-shirt</td><td>Product name or single spu, fuzzy query</td></tr><tr><td>lastUpdatedTime</td><td>int[64]</td><td>N</td><td>1694319208000</td><td>Design model last updated time</td></tr></tbody></table>
 
 **Body**
 
@@ -45,9 +47,7 @@ curl --request POST
 
 **Response**
 
-{% tabs %}
-{% tab title="200" %}
-```json
+```
 {
     "code": 10000,
     "data": {
@@ -70,13 +70,3 @@ curl --request POST
     "message": "success"
 }
 ```
-{% endtab %}
-
-{% tab title="400" %}
-```json
-{
-  "error": "Invalid request"
-}
-```
-{% endtab %}
-{% endtabs %}
