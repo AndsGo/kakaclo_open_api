@@ -28,45 +28,54 @@ curl --request POST
 
 #### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
 
-<table><thead><tr><th>Properties</th><th width="92">Type</th><th width="83">Require</th><th width="165">Sample</th><th>Properties description</th></tr></thead><tbody><tr><td>categoryNames</td><td>[]string</td><td>N</td><td>["Skirt"]</td><td>Category name comes from category name list</td></tr><tr><td>modelCode</td><td>string</td><td>N</td><td>"PODQRA028"</td><td>Design model code</td></tr><tr><td>spus</td><td>[]string</td><td>N</td><td>["QCUT00042"]</td><td>Spu array</td></tr><tr><td>searchContent</td><td>string</td><td>N</td><td>Short sleeve T-shirt</td><td>Product name or single spu, fuzzy query</td></tr><tr><td>lastUpdatedTime</td><td>int[64]</td><td>N</td><td>1694319208000</td><td>Design model last updated time</td></tr></tbody></table>
+<table><thead><tr><th>Properties</th><th width="92">Type</th><th width="83">Require</th><th width="165">Sample</th><th>Properties description</th></tr></thead><tbody><tr><td>modelCodes</td><td>[]string</td><td>N</td><td>["PODQRA028"]</td><td>Design model code array</td></tr><tr><td>spus</td><td>[]string</td><td>N</td><td>["QCUT00042"]</td><td>Spu array</td></tr><tr><td>searchContent</td><td>string</td><td>N</td><td>Short sleeve T-shirt</td><td>Product name or single spu, fuzzy query</td></tr><tr><td>lastUpdatedTime</td><td>int[64]</td><td>N</td><td>1694319208000</td><td>Design model last updated time</td></tr><tr><td>pageNumber</td><td>int</td><td>N</td><td>1</td><td>pageNumber starts from 1, default is 1</td></tr><tr><td>pageSize</td><td>int</td><td>N</td><td>20</td><td>"page Size" represents the return list pagination, the number of custom designed product per page. Each page can retrieve up to 100 custom order records.default is 20</td></tr></tbody></table>
 
 **Body**
 
-| Name         | Type     | Description                    |
-| ------------ | -------- | ------------------------------ |
-| `id`         | int\[64] | Primary key ID                 |
-| modelId      | string   | Design model id                |
-| categoryName | string   | Skirt                          |
-| modelCode    | string   | Design model code              |
-| normalPrice  | double   | Design model normal price(USD) |
-| enName       | string   | Design model english name      |
-| imageUrl     | string   | Design model image url         |
-| backImageUrl | string   | Design model back image url    |
-| createDate   | string   | Design model crated time       |
-| modifyDate   | string   | Design model update time       |
+| Name             | Type     | Description                        |
+| ---------------- | -------- | ---------------------------------- |
+| `id`             | int\[64] | Primary key ID                     |
+| customDesignedId | string   | POD customized designed product ID |
+| categoryName     | string   | Skir                               |
+| modelCode        | string   | Design model code                  |
+| price            | double   | Designed product price(USD)        |
+| enName           | string   | Design product english name        |
+| imageUrl         | string   | Design product image url           |
+| backImageUrl     | string   | Design product  back image url     |
+| kkProductId      | int\[64] | Kaka product ID                    |
+| modelId          | string   | Design model id                    |
+| orderCount       | int      | Quantity of order                  |
+| spu              | string   | Spu code                           |
+| createDate       | int\[64] | Design product crated time         |
+| modifyDate       | int\[64] | Design product update time         |
 
 **Response**
 
 ```
-{
-    "code": 10000,
-    "data": {
-        "list": [
-            {
-                "id": "1889",
-                "model_id": "2073164990626574110001",
-                "globalId": "2073164990626574110001",
-                "code": "PODQRA028",
-                "normalPrice": 8.05,
-                "name": "Short sleeve T-shirt",
-                "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240315/23448f22-7af0-4dd4-b768-5f7444e52495.png",
-                "type": "3D",
-                "createdTime": "2024-03-13 11:58:58",
-                "updatedTime": null
-            }
-        ],
-        "total": 1
-    },
-    "message": "success"
+
+  "code": 10000,
+  "data": {
+    "list": [
+      {
+        "backImageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240325/5baf5db0-4e6a-41e9-9c79-df2ec2bc758e.png",
+        "customDesignedId": 234234645,
+        "customModelId": 234355433,
+        "enName": "en_name",
+        "id": 1,
+        "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240325/1f74a546-96ce-4940-86d2-b345f4897ad0.png",
+        "kkCategoryId": 12331,
+        "kkProductId": 2323423,
+        "modelCode": "PODQRA028",
+        "modelId": "123451234565",
+        "orderCount": 0,
+        "price": 8.35,
+        "spu": "A302",
+        "createDate":"1712475208144",
+        "modifyDate":"1712475208144",
+      }
+    ],
+    "total": 1
+  },
+  "message": "Success!"
 }
 ```
