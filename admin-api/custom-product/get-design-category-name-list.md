@@ -26,10 +26,6 @@ curl --request POST
 
 **Response Body**
 
-| Name   | Type   | Require | Sample | Description                                                                                                                  |
-| ------ | ------ | ------- | ------ | ---------------------------------------------------------------------------------------------------------------------------- |
-| status | string | true    | 1,4    | Design model status: 0-off the shelf; 1-on the shelf; 4-out of stock, Use English "," to separate multiple items with commas |
-
 {% tabs %}
 {% tab title="200" %}
 ```json

@@ -4,7 +4,7 @@ description: Get the list of sample clothing model that can be designed by the s
 
 # Get Design Model List
 
-Endpoint
+intEndpoint
 
 <mark style="color:green;">`POST`</mark> /openapi/v1/product/custom/designModel/search
 
@@ -26,22 +26,21 @@ curl --request POST
 
 ### Request Body Properties <a href="#response-parameter-1" id="response-parameter-1"></a>
 
-<table><thead><tr><th>Properties</th><th width="92">Type</th><th width="89">Require</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td>categoryNames</td><td>[]string</td><td>N</td><td>["Skirt"]</td><td>Category name comes from category name list</td></tr><tr><td>modelCode</td><td>string</td><td>N</td><td>"PODQRA028"</td><td>Design model code</td></tr><tr><td>lastUpdatedTime</td><td>int[64]</td><td>N</td><td>1694319208000</td><td>Design model last updated time</td></tr><tr><td>pageNumber</td><td>int</td><td>N</td><td>1</td><td>pageNumber starts from 1, default is 1</td></tr><tr><td>pageSize</td><td>int</td><td>N</td><td>20</td><td>"page Size" represents the return list pagination, the number of custom model per page. Each page can retrieve up to 100 custom order records.default is 20</td></tr></tbody></table>
+<table><thead><tr><th>Properties</th><th width="92">Type</th><th width="89">Require</th><th>Sample</th><th>Properties description</th></tr></thead><tbody><tr><td>categoryNames</td><td>[]string</td><td>N</td><td>["Skirt"]</td><td>Category name comes from category name list</td></tr><tr><td>modelCodes</td><td>[]string</td><td>N</td><td>["PODQRA028"]</td><td>Design model code array</td></tr><tr><td>lastUpdatedTime</td><td>int[64]</td><td>N</td><td>1694319208000</td><td>Design model last updated time</td></tr><tr><td>pageNumber</td><td>int</td><td>N</td><td>1</td><td>pageNumber starts from 1, default is 1</td></tr><tr><td>pageSize</td><td>int</td><td>N</td><td>20</td><td>"page Size" represents the return list pagination, the number of custom model per page. Each page can retrieve up to 100 custom order records.default is 20</td></tr><tr><td>enName</td><td>string</td><td>N</td><td>"Short sleeve T-shirt"</td><td>Design model  english name,Support fuzzy query</td></tr></tbody></table>
 
 **Body**
 
 | Name         | Type     | Description                    |
 | ------------ | -------- | ------------------------------ |
 | `id`         | int\[64] | Primary key ID                 |
-| modelId      | string   | Design model id                |
-| categoryName | string   | Skirt                          |
+| categoryName | string   | Design model category name     |
 | modelCode    | string   | Design model code              |
-| normalPrice  | double   | Design model normal price(USD) |
+| price        | double   | Design model normal price(USD) |
 | enName       | string   | Design model english name      |
 | imageUrl     | string   | Design model image url         |
 | backImageUrl | string   | Design model back image url    |
-| createDate   | string   | Design model crated time       |
-| modifyDate   | string   | Design model update time       |
+| createDate   | int\[64] | Design model crated time       |
+| modifyDate   | int\[64] | Design model update time       |
 
 **Response**
 
@@ -53,16 +52,15 @@ curl --request POST
     "data": {
         "list": [
             {
-                "id": "1889",
-                "model_id": "2073164990626574110001",
-                "globalId": "2073164990626574110001",
-                "code": "PODQRA028",
-                "normalPrice": 8.05,
-                "name": "Short sleeve T-shirt",
-                "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240315/23448f22-7af0-4dd4-b768-5f7444e52495.png",
-                "type": "3D",
-                "createdTime": "2024-03-13 11:58:58",
-                "updatedTime": null
+                "id": 73,
+                "modelCode": "PODQRA028",
+                "categoryName": "T-shirt",
+                "price": 8.05,
+                "enName": "Short sleeve T-shirt",
+                "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240323/5b14dda5-68e6-41bf-ae3a-b8caa2eaa267.png",
+                "backImageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240329/5140a1a5-7f33-4ceb-99c7-6b86184d012e.png",
+                "createDate": 1712629505078,
+                "modifyDate": 1712629505078
             }
         ],
         "total": 1
