@@ -36,14 +36,12 @@ curl --request POST
 | ---------------- | -------- | ---------------------------------- |
 | `id`             | int\[64] | Primary key ID                     |
 | customDesignedId | string   | POD customized designed product ID |
-| categoryName     | string   | Skir                               |
 | modelCode        | string   | Design model code                  |
 | price            | double   | Designed product price(USD)        |
 | enName           | string   | Design product english name        |
 | imageUrl         | string   | Design product image url           |
 | backImageUrl     | string   | Design product  back image url     |
 | kkProductId      | int\[64] | Kaka product ID                    |
-| modelId          | string   | Design model id                    |
 | orderCount       | int      | Quantity of order                  |
 | spu              | string   | Spu code                           |
 | createDate       | int\[64] | Design product crated time         |
@@ -59,14 +57,11 @@ curl --request POST
       {
         "backImageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240325/5baf5db0-4e6a-41e9-9c79-df2ec2bc758e.png",
         "customDesignedId": 234234645,
-        "customModelId": 234355433,
         "enName": "en_name",
         "id": 1,
         "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240325/1f74a546-96ce-4940-86d2-b345f4897ad0.png",
-        "kkCategoryId": 12331,
         "kkProductId": 2323423,
         "modelCode": "PODQRA028",
-        "modelId": "123451234565",
         "orderCount": 0,
         "price": 8.35,
         "spu": "A302",
