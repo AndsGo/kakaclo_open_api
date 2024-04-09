@@ -70,8 +70,8 @@ curl --request POST
         "orderCount": 0,
         "price": 8.35,
         "spu": "A302",
-        "createDate":"1712475208144",
-        "modifyDate":"1712475208144",
+        "createDate":1712475208144,
+        "modifyDate":1712475208144,
       }
     ],
     "total": 1
