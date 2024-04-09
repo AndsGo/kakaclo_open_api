@@ -1,7 +1,5 @@
 ---
-description: >-
-  This interface will return all first-level and second-level categories. Note:
-  parentId=0 is the first-level category.
+description: Get all category names of POD customized clothing styles
 ---
 
 # Get Design Category Name List
@@ -16,7 +14,7 @@ For common header, refer to [How to call KakaClo Shop APIs - Common Headers](htt
 
 ```
 curl --request POST
-     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/designModel/search'
+     --url 'https://developer.kakaclo.com/openapi/v1/product/custom/modelCategoryName/search'
      --header 'Content-Type: application/json'
      --header 'Authorization: Bearer YOU_ACCES-TOKEN'
 ```
