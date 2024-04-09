@@ -43,5 +43,6 @@
   * [Get Custom Designed List](admin-api/custom-product/get-custom-designed-list.md)
   * [Get Custom Designed Detail](admin-api/custom-product/get-custom-designed-detail.md)
   * [Create designed product orders and get order list](admin-api/custom-product/create-designed-product-orders-and-get-order-list.md)
+  * [Get KakaClo pod-designer address](admin-api/custom-product/get-kakaclo-pod-designer-address.md)
 * [Payment](admin-api/payment/README.md)
   * [Query Balance](admin-api/payment/query-balance.md)
