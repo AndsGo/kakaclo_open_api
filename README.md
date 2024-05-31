@@ -5,4 +5,5 @@
 [Go相关](broken-reference)
 
 * 1.[Go语言入门](go/go-yu-yan-ru-men-zhi-nan.md)
+* 2.[Go操作Mysql和Redis](go/go-cao-zuo-mysql-he-redis.md)
 
