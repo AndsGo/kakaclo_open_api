@@ -1,5 +1,5 @@
 ---
-description: Go语言入门指南
+description: 良友
 ---
 
 # ⭐ Go语言入门指南
