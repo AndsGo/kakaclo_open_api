@@ -1,3 +1,8 @@
 # Initial page
 
 定期发布组内技术分享
+
+[Go相关](broken-reference)
+
+* 1.[Go语言入门](go/go-yu-yan-ru-men-zhi-nan.md)
+
