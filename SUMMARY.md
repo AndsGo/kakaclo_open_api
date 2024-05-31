@@ -4,7 +4,7 @@
 
 ## publish
 
-* [👬 组员列表](publish/untitled.md)
+* [👬 组员列表](publish/group.md)
 
 ## 🎓 Go
 
