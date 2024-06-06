@@ -14,3 +14,4 @@
 ## 🏐 Wordpress站群
 
 * [0️ 需求分析](wordpress-zhan-qun/xu-qiu-fen-xi.md)
+* [1️ 代码初始化](wordpress-zhan-qun/dai-ma-chu-shi-hua.md)
