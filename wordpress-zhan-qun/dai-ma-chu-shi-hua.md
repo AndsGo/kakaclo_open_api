@@ -195,6 +195,18 @@ cnn := sqlx.NewMysql(c.DB.DataSource)
 StationUsersModel: model.NewStationUsersModel(cnn),
 ```
 
+#### 生成swagger文档
+
+```
+goctl api plugin -plugin goctl-swagger="swagger -filename station.json -host 127.0.0.1:8888" -api station.api -dir .
+```
+
+运行swagger
+
+```
+ swagger serve --no-open -F=swagger --port 36666 station.json
+```
+
 ### 编写业务代码
 
 业务代码基本都在logic中编写
@@ -208,4 +220,8 @@ StationUsersModel: model.NewStationUsersModel(cnn),
 ```
 git clone https://github.com/kailong321200875/vue-element-plus-admin.git
 ```
+
+
+
+这次运行的源码
 
