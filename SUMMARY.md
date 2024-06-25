@@ -6,6 +6,11 @@
 
 * [👬 组员列表](publish/group.md)
 
+***
+
+* [🔧 开发规范](kai-fa-gui-fan.md)
+* [Go开发规范](go-kai-fa-gui-fan.md)
+
 ## 🎓 Go
 
 * [⭐ Go语言入门指南](go/go-yu-yan-ru-men-zhi-nan.md)
