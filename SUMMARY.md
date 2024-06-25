@@ -9,7 +9,7 @@
 ***
 
 * [🔧 开发规范](kai-fa-gui-fan.md)
-* [Go开发规范](go-kai-fa-gui-fan.md)
+* [👺 Go开发规范](go-kai-fa-gui-fan.md)
 
 ## 🎓 Go
 
