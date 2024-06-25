@@ -6,6 +6,8 @@
 本规范参考了 [uber-go](https://github.com/xxjwxc/uber\_go\_guide\_cn)
 {% endhint %}
 
+[原文](https://goguide.ryansu.tech/guide/standard/1-golang.html)
+
 ## 基本规范 <a href="#ji-ben-gui-fan" id="ji-ben-gui-fan"></a>
 
 ### 限制单行长度 <a href="#xian-zhi-dan-hang-chang-du" id="xian-zhi-dan-hang-chang-du"></a>
