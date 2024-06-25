@@ -6,10 +6,9 @@
 
 * [👬 组员列表](publish/group.md)
 
-***
+## 📓 开发规范
 
-* [🔧 开发规范](kai-fa-gui-fan/README.md)
-  * [👺 Go开发规范](kai-fa-gui-fan/go-kai-fa-gui-fan.md)
+* [👺 Go开发规范](kai-fa-gui-fan/go-kai-fa-gui-fan.md)
 
 ## 🎓 Go
 
