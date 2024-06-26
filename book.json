@@ -1,0 +1,40 @@
+{
+	"title": "Kakaclo Open API",
+	"description": "",
+	"author": "kakaclo",
+	"language": "en_us",
+	"link": {
+		"sidebar": {
+			"HOME": "https://www.kakaclo.com"
+		}
+	},
+	"plugins": [
+		"-lunr",
+		"-search",
+		"search-pro",
+		"back-to-top-button",
+		"chapter-fold",
+		"expandable-chapters-small",
+		"code",
+		"copy-code-button",
+		"advanced-emoji",
+		"splitter",
+		"-sharing",
+		"sharing-plus",
+		"tbfed-pagefooter",
+		"donate"
+	],
+	"pluginsConfig": {
+		"code": {
+			"copyButtons": true
+		},
+		"github": {
+			"url": "https://github.com/AndsGo/kakaclo_open_api/tree/develop"
+		},
+		"tbfed-pagefooter": {
+			"copyright": "Copyright &copy kakaclo.com 2022",
+			"modify_label": "Revision time of this document:",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		}
+	}
+}
