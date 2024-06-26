@@ -48,7 +48,7 @@ curl --request POST
 {% tab title="body example" %}
 ```json
 {
-  "modelId": "6571014",
+  "modelId": "1",
   "enName": "Dinosaur Round Neck Short Sleeve T-Shirt-Children's Clothing",
   "imageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240325/1f74a546-96ce-4940-86d2-b345f4897ad0.png",
   "backImageUrl": "https://oss-pubilc.kakaclo.com/images/common/custom/images/20240325/5baf5db0-4e6a-41e9-9c79-df2ec2bc758e.png",
