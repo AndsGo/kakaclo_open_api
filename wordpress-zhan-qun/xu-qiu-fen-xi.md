@@ -26,7 +26,7 @@ description: 徐林
 
 [https://98ughm.axshare.com/#id=817l34\&p=%E7%AB%99%E7%BE%A4%E7%AE%A1%E7%90%86](https://98ughm.axshare.com/#id=817l34\&p=%E7%AB%99%E7%BE%A4%E7%AE%A1%E7%90%86)
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2.模块
 

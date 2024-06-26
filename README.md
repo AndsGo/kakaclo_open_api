@@ -2,6 +2,10 @@
 
 定期发布组内技术分享
 
+[开发规范](broken-reference)
+
+* [Go开发规范](kai-fa-gui-fan/go-kai-fa-gui-fan.md)
+
 [Go相关](broken-reference)
 
 * 1.[Go语言入门](go/go-yu-yan-ru-men-zhi-nan.md)

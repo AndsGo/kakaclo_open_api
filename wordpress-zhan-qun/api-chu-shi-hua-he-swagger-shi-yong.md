@@ -353,7 +353,7 @@ rest.MustNewServer(c.RestConf, rest.WithCors())
 
 访问 [http://127.0.0.1:36666/docs](http://127.0.0.1:36666/docs) 页面，可以直接在页面上进行测试。
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>swagger</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>swagger</p></figcaption></figure>
 
 源码
 
