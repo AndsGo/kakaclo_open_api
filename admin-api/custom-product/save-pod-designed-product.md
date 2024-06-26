@@ -7,8 +7,6 @@ description: >-
 
 # Save POD Designed Product
 
-
-
 ## Create a new POD designed product
 
 <mark style="color:green;">`POST`</mark> `/`openapi/v1/product/custom/customDesigned/addProduct
@@ -29,16 +27,20 @@ curl --request POST
 | Content-Type  | `application/json` |
 | Authorization | `Bearer <token>`   |
 
+
+
 **Request Body Properties**
 
 | Name           | Type   | Description                                                                                           |
 | -------------- | ------ | ----------------------------------------------------------------------------------------------------- |
 | modelId        | string | modelId value source: id field returned by Get Design Model List or Get Design Model Detail interface |
-| `enName`       | string | Name of the designed product                                                                          |
+| enName         | string | Name of the designed product                                                                          |
 | imageUrl       | string | Designed clothing front picture                                                                       |
 | backImageUrl   | string | Designed clothing back picture                                                                        |
 | materialImages | array  | All the material pictures used in the clothing design pictures                                        |
 | colorValue     | string | Select the specific color value of the color                                                          |
+
+
 
 **Request body**
 
