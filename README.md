@@ -14,6 +14,10 @@
 * 3.[Go语言的数组和切片](go/go-yu-yan-de-shu-zu-he-qie-pian.md)
 * 4.[深入理解通道Channel和协程Goroutine](go/shen-ru-li-jie-tong-dao-channel-he-xie-cheng-goroutine.md)
 
+[PHP](broken-reference)
+
+* 1.[在windows上使用vs code调试laravel](php/zai-windows-shang-shi-yong-visual-studio-code-tiao-shi-laravel-10.md)
+
 [Wordpress站群](broken-reference)
 
 * 1.[需求分析](wordpress-zhan-qun/xu-qiu-fen-xi.md)
