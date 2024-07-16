@@ -661,7 +661,7 @@ var (
 自定义的错误命名则建议使用 `Error` 作为后缀
 
 {% code overflow="wrap" %}
-```
+```go
 // 同样，这个错误被导出，以便这个包的用户可以将它与 errors.As 匹配。
 
 type NotFoundError struct {
