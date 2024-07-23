@@ -2,6 +2,10 @@
 
 定期发布组内技术分享
 
+请查看 [在线文档](https://kakaclo.gitbook.io/kakclo-open-wiki)
+
+
+
 [开发规范](broken-reference)
 
 * [Go开发规范](kai-fa-gui-fan/go-kai-fa-gui-fan.md)
