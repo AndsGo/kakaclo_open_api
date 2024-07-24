@@ -160,7 +160,7 @@ func (m *defaultPostsModel) QueryPosts(ctx context.Context,data *station.PostsRe
         params = append(params,  data.Categories)
     }
     if data.CreateTime!=""{ 
-        query += " and create_time >= ? and create_time < ?"
+        query += " and create_at >= ? and create_at < ?"
         params = append(params,  fmt.Sprintf("%v 00:00:00",data.CreateTime))
         params = append(params,  fmt.Sprintf("%v 23:59:59:999",data.CreateTime))
     }
