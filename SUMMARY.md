@@ -30,3 +30,7 @@
 * [4️ rpc代码初始化和数据库代码生成](wordpress-zhan-qun/rpc-dai-ma-chu-shi-hua-he-shu-ju-ku-dai-ma-sheng-cheng.md)
 * [5️ api和rpc业务代码编写](wordpress-zhan-qun/api-he-rpc-ye-wu-dai-ma-bian-xie.md)
 * [6️ wordpress外部库的引入和测试](wordpress-zhan-qun/wordpress-wai-bu-ku-de-yin-ru-he-ce-shi.md)
+
+## 🏗️ 运维
+
+* [🚑 supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
