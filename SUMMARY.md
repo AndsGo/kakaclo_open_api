@@ -29,3 +29,4 @@
 * [3️ api初始化和swagger使用](wordpress-zhan-qun/api-chu-shi-hua-he-swagger-shi-yong.md)
 * [4️ rpc代码初始化和数据库代码生成](wordpress-zhan-qun/rpc-dai-ma-chu-shi-hua-he-shu-ju-ku-dai-ma-sheng-cheng.md)
 * [5️ api和rpc业务代码编写](wordpress-zhan-qun/api-he-rpc-ye-wu-dai-ma-bian-xie.md)
+* [6️ wordpress外部库的引入和测试](wordpress-zhan-qun/wordpress-wai-bu-ku-de-yin-ru-he-ce-shi.md)
