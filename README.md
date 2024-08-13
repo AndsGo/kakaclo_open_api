@@ -10,6 +10,7 @@
 
 * [Go开发规范](kai-fa-gui-fan/go-kai-fa-gui-fan.md)
 * [阿里java开发规范](kai-fa-gui-fan/a-li-java-kai-fa-gui-fan.md)
+* [TypeScript编码规范](kai-fa-gui-fan/typescript-bian-ma-gui-fan.md)
 
 [Go相关](broken-reference)
 

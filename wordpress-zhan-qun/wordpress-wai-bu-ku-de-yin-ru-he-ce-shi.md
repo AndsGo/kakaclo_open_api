@@ -1,5 +1,9 @@
 # 6️ wordpress外部库的引入和测试
 
+
+
+{% embed url="https://www.bilibili.com/video/BV1JDYueiEgi/" %}
+
 本次目标我们主要讲解引入`wordpress`外部库并测试。
 
 我们将一些外部库和工具包放入到pkg项目，方便其他项目引用。
