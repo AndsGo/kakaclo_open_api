@@ -36,3 +36,7 @@
 ## 🏗️ 运维
 
 * [🚑 supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
+
+## 💐 前端 <a href="#vitevue3ts-xiang-mu" id="vitevue3ts-xiang-mu"></a>
+
+* [vite、vue3、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
