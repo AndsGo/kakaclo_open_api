@@ -18,6 +18,7 @@
 * [🕋 Go操作MySQL和Redis](go/go-cao-zuo-mysql-he-redis.md)
 * [🔢 Go语言的数组和切片](go/go-yu-yan-de-shu-zu-he-qie-pian.md)
 * [💱 深入理解通道Channel和协程Goroutine](go/shen-ru-li-jie-tong-dao-channel-he-xie-cheng-goroutine.md)
+* [oss图片处理库](go/oss-tu-pian-chu-li-ku.md)
 
 ## 🐘 PHP
 
