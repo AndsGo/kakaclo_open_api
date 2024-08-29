@@ -33,3 +33,11 @@
 * 6.[wordpress外部库的引入和测试](wordpress-zhan-qun/wordpress-wai-bu-ku-de-yin-ru-he-ce-shi.md)
 * 7.[job项目搭建和测试](wordpress-zhan-qun/job-xiang-mu-da-jian-he-ce-shi.md)
 
+[运维](broken-reference)
+
+* [supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
+
+[前端](broken-reference)
+
+* [vite、vue、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
+
