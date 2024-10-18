@@ -41,3 +41,7 @@
 ## 💐 前端 <a href="#vitevue3ts-xiang-mu" id="vitevue3ts-xiang-mu"></a>
 
 * [vite、vue3、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
+
+## Java
+
+* [记一次库版本升级引起程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
