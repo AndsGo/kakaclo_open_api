@@ -87,7 +87,7 @@ func (l *QueryPostsLogic) QueryPosts(req *types.PostsReq) (resp *types.PostsList
 
 调用model接口这里是复杂查询，我们需要自己进行数据库逻辑编写，这里我们先定义出model接口
 
-> QueryPosts(ctx context.Context,in _station.PostsReq )(\[]_Posts,uint64,error)
+> QueryPosts(ctx context.Context,in _station.PostsReq )(\[]_&#x50;osts,uint64,error)
 
 **querypostslogic.go**
 
