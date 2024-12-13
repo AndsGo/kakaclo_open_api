@@ -19,6 +19,7 @@
 * [🔢 Go语言的数组和切片](go/go-yu-yan-de-shu-zu-he-qie-pian.md)
 * [💱 深入理解通道Channel和协程Goroutine](go/shen-ru-li-jie-tong-dao-channel-he-xie-cheng-goroutine.md)
 * [oss图片处理库](go/oss-tu-pian-chu-li-ku.md)
+* [Go有限状态机实现和实战](go/go-you-xian-zhuang-tai-ji-shi-xian-he-shi-zhan.md)
 
 ## 🐘 PHP
 

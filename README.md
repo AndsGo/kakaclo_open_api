@@ -18,6 +18,8 @@
 * 2.[Go操作Mysql和Redis](go/go-cao-zuo-mysql-he-redis.md)
 * 3.[Go语言的数组和切片](go/go-yu-yan-de-shu-zu-he-qie-pian.md)
 * 4.[深入理解通道Channel和协程Goroutine](go/shen-ru-li-jie-tong-dao-channel-he-xie-cheng-goroutine.md)
+* 5.[oss图片处理库](go/oss-tu-pian-chu-li-ku.md)
+* 6.[Go有限状态机实现和实战](go/go-you-xian-zhuang-tai-ji-shi-xian-he-shi-zhan.md)
 
 [PHP](broken-reference)
 
@@ -40,4 +42,8 @@
 [前端](broken-reference)
 
 * [vite、vue、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
+
+[JAVA](broken-reference)
+
+* [记一次库升级引起的程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
 
