@@ -1,5 +1,6 @@
 ---
 description: xulin
+icon: diagram-project
 ---
 
 # Go有限状态机实现和实战
