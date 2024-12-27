@@ -47,3 +47,6 @@
 
 * [记一次库升级引起的程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
 
+[Comfyui](broken-reference)
+
+* [ComfyUI API Documentation](comfyui/comfyui-api-documentation.md)
