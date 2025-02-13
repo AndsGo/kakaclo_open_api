@@ -20,6 +20,7 @@
 * 4.[深入理解通道Channel和协程Goroutine](go/shen-ru-li-jie-tong-dao-channel-he-xie-cheng-goroutine.md)
 * 5.[oss图片处理库](go/oss-tu-pian-chu-li-ku.md)
 * 6.[Go有限状态机实现和实战](go/go-you-xian-zhuang-tai-ji-shi-xian-he-shi-zhan.md)
+* 7.[快速搭建支持图片实时处理的文件服务](go/kuai-su-da-jian-zhi-chi-tu-pian-shi-shi-chu-li-de-wen-jian-fu-wu.md)
 
 [PHP](broken-reference)
 
@@ -38,6 +39,7 @@
 [运维](broken-reference)
 
 * [supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
+* [PLG（Promtail + Loki + Grafana）日志系统生产快速实践](yun-wei/plgpromtail-+-loki-+-grafana-ri-zhi-xi-tong-sheng-chan-kuai-su-shi-jian.md)
 
 [前端](broken-reference)
 
