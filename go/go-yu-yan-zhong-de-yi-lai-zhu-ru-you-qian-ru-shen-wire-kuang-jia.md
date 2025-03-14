@@ -40,7 +40,7 @@ description: 进峰
 
 *   **不使用依赖注入**：
 
-    ```
+    ```go
     package main
     ​
     var (
@@ -79,7 +79,7 @@ description: 进峰
     ```
 *   **手动依赖注入**：
 
-    ```
+    ```go
     package main
     ​
     func NewMySQLClient(url string) *MySQLClient {
@@ -164,7 +164,7 @@ Wire 是 Google 开源的依赖注入框架。官方定义是：“Wire 是一�
 
 **安装 Wire：**
 
-```
+```sh
 go install github.com/google/wire/cmd/wire@latest
 ```
 
@@ -172,7 +172,7 @@ go install github.com/google/wire/cmd/wire@latest
 
 *   **Provider**：普通的 Go 函数，用于生成某个对象。Wire 通过 Provider 了解对象的依赖关系。
 
-    ```
+    ```go
     func NewMySQLClient(url string) *MySQLClient {
         return &MySQLClient{url: url}
     }
@@ -183,7 +183,7 @@ go install github.com/google/wire/cmd/wire@latest
     ```
 *   **Injector**：Wire 生成的函数，用于按依赖顺序调用 Provider。
 
-    ```
+    ```go
     // wire.go
     //go:build wireinject
     // +build wireinject
@@ -200,7 +200,7 @@ go install github.com/google/wire/cmd/wire@latest
 
     执行 `wire` 命令后，生成 `wire_gen.go` 文件：
 
-    ```
+    ```go
     // wire_gen.go
     func wireApp(url string) *App {
         mySQLClient := NewMySQLClient(url)
@@ -223,7 +223,7 @@ go install github.com/google/wire/cmd/wire@latest
 └── service
 ```
 
-![](https://oss-public.kakaclo.com/images/test/20250314/6816aa72-ab8f-4a6e-ac3c-c4600ba55c0e.png)
+<figure><img src="https://oss-public.kakaclo.com/images/test/20250314/6816aa72-ab8f-4a6e-ac3c-c4600ba55c0e.png" alt=""><figcaption></figcaption></figure>
 
 **依赖关系：**
 
@@ -232,9 +232,11 @@ go install github.com/google/wire/cmd/wire@latest
 * **service**：服务层，处理 DTO 到 DO 的转换。
 * **server**：HTTP 和 gRPC 服务的创建与配置。
 
+<figure><img src="../.gitbook/assets/wire.png" alt=""><figcaption></figcaption></figure>
+
 **Provider 定义：**
 
-```
+```go
 // biz 目录
 var ProviderSet = wire.NewSet(NewGreeterUsecase)
 ​
@@ -250,7 +252,7 @@ func NewGreeterUsecase(repo GreeterRepo, logger log.Logger) *GreeterUsecase {
 
 **Injector 定义：**
 
-```
+```go
 // wire.go
 func wireApp(*conf.Server, *conf.Data, log.Logger) (*kratos.App, func(), error) {
     panic(wire.Build(server.ProviderSet, data.ProviderSet, biz.ProviderSet, service.ProviderSet))
@@ -261,11 +263,11 @@ func wireApp(*conf.Server, *conf.Data, log.Logger) (*kratos.App, func(), error) 
 
 运行`wire`命令生成依赖注入代码
 
-```
+```bash
 wire
 ```
 
-```
+```go
 // wire_gen.go
 func wireApp(confServer *conf.Server, confData *conf.Data, logger log.Logger) (*kratos.App, func(), error) {
     dataData, cleanup, err := data.NewData(confData, logger)
@@ -288,7 +290,7 @@ func wireApp(confServer *conf.Server, confData *conf.Data, logger log.Logger) (*
 
 *   **携带错误返回值的 Provider**：
 
-    ```
+    ```go
     func ProvideBaz(ctx context.Context, bar Bar) (Baz, error) {
         if bar.X == 0 {
             return Baz{}, errors.New("cannot provide baz when bar is zero")
@@ -298,7 +300,7 @@ func wireApp(confServer *conf.Server, confData *conf.Data, logger log.Logger) (*
     ```
 *   **Provider 集合**：
 
-    ```
+    ```go
     var SuperSet = wire.NewSet(ProvideFoo, ProvideBar, ProvideBaz)
     ```
 
