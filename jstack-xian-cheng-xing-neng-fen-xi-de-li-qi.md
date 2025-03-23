@@ -7,6 +7,8 @@ icon: stack-overflow
 
 本期我们分享人是组内小伙伴志华，给大家分享下 如何使用`jstack`分析线程问题。
 
+<div data-full-width="true"><figure><img src=".gitbook/assets/jstack__2025-03-23+14_14_42.jpg" alt="" width="135"><figcaption></figcaption></figure></div>
+
 `jstack` 是 Java 开发工具包（JDK）中的一个命令行工具，用于生成 Java 虚拟机（JVM）中所有线程的堆栈跟踪信息。它可以帮助开发人员分析线程的状态、锁的持有情况以及潜在的线程死锁问题。
 
 ### 0.线程状态
