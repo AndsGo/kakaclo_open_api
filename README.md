@@ -25,6 +25,7 @@ icon: book
 * 5.[oss图片处理库](go/oss-tu-pian-chu-li-ku.md)
 * 6.[Go有限状态机实现和实战](go/go-you-xian-zhuang-tai-ji-shi-xian-he-shi-zhan.md)
 * 7.[快速搭建支持图片实时处理的文件服务](go/kuai-su-da-jian-zhi-chi-tu-pian-shi-shi-chu-li-de-wen-jian-fu-wu.md)
+* 8.[Go 语言中的依赖注入：由浅入深Wire 框架](go/go-yu-yan-zhong-de-yi-lai-zhu-ru-you-qian-ru-shen-wire-kuang-jia.md)
 
 [PHP](broken-reference)
 
@@ -54,6 +55,7 @@ icon: book
 * [记一次库升级引起的程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
 * [大文件解析优化：如何避免OOM异常？](java/da-wen-jian-jie-xi-you-hua-ru-he-bi-mian-oom-yi-chang.md)
 * [java 导入导出](java-bao-biao-dao-ru-dao-chu-xiang-guan/)
+* [Jstack线程/性能分析的利器](jstack-xian-cheng-xing-neng-fen-xi-de-li-qi.md)
 
 [Comfyui](broken-reference)
 
