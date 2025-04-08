@@ -62,6 +62,10 @@
   * [生成带有公式的 Excel 表格](java-bao-biao-dao-ru-dao-chu-xiang-guan/sheng-cheng-dai-you-gong-shi-de-excel-biao-ge.md)
 * [Jstack线程/性能分析的利器](jstack-xian-cheng-xing-neng-fen-xi-de-li-qi.md)
 
-## 🖼️ ComfyUi
+## 🖼️ AI
 
-* [ComfyUI API Documentation](comfyui/comfyui-api-documentation.md)
+* [ComfyUI API Documentation](ai/comfyui-api-documentation.md)
+
+## 架构
+
+* [DDD 简单入门](jia-gou/ddd-jian-dan-ru-men.md)

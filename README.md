@@ -57,6 +57,10 @@ icon: book
 * [java 导入导出](java-bao-biao-dao-ru-dao-chu-xiang-guan/)
 * [Jstack线程/性能分析的利器](jstack-xian-cheng-xing-neng-fen-xi-de-li-qi.md)
 
-[Comfyui](broken-reference)
+[AI](broken-reference)
 
-* [ComfyUI API Documentation](comfyui/comfyui-api-documentation.md)
+* [ComfyUI API Documentation](ai/comfyui-api-documentation.md)
+
+[架构](broken-reference)
+
+* [DDD简单入门](jia-gou/ddd-jian-dan-ru-men.md)
