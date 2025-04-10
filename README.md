@@ -60,6 +60,8 @@ icon: book
 [AI](broken-reference)
 
 * [ComfyUI API Documentation](ai/comfyui-api-documentation.md)
+* [Prompt工程](prompt-gong-cheng.md)
+* [LangGpt prompt样例](langgpt-prompt-yang-li.md)
 
 [架构](broken-reference)
 

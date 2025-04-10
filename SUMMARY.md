@@ -69,6 +69,7 @@
 ***
 
 * [Prompt工程](prompt-gong-cheng.md)
+* [LangGPT prompt样例](langgpt-prompt-yang-li.md)
 
 ## 架构
 
