@@ -187,24 +187,24 @@ LangGPT这是一种编写高质量提示词的工具，它的理论基础是一�
 
 [Chat with 提示词专家 - Kimi.ai](https://kimi.moonshot.cn/kimiplus/conpg00t7lagbbsfqkq0)
 
-## 4.实战(作业)
+## 4.实战
 
 环境：网页版deepseek,vscode+通义灵码
 
 模型使用：deepseek R1(深度思考) 会有思维链输出，对**编写提示词**和理解输出代码很有帮助，前期可以多使用这个。
 
-1.使用prompt框架设计提示词，实现一个需求。这里我们就使用LangGPT模板开发一个简单应用，大家可以选择一个适合自己业务的prompt代码。
+#### 1.使用prompt框架设计提示词，实现一个需求。这里我们就使用LangGPT模板开发一个简单应用，大家可以选择一个适合自己业务的prompt代码。
 
-1. [Chat with 提示词专家 - Kimi.ai ](https://kimi.moonshot.cn/kimiplus/conpg00t7lagbbsfqkq0)使用LangGPT 生成提示词模板
+* [Chat with 提示词专家 - Kimi.ai ](https://kimi.moonshot.cn/kimiplus/conpg00t7lagbbsfqkq0)使用LangGPT 生成提示词模板
 
 <figure><img src=".gitbook/assets/image-20250410162218518.png" alt=""><figcaption></figcaption></figure>
 
-1. 修改模板后调用 chatGpt或deepseek
-2.  继续交互调整
+* 修改模板后调用 chatGpt或deepseek
+*   继续交互调整
 
-    交互时主要遵循prompt原则
+    交互时尽量遵循prompt的[要素](prompt-gong-cheng.md#id-3.-ti-shi-ci-yao-su)和[原则](prompt-gong-cheng.md#id-4.-she-ji-ti-shi-de-yi-xie-yuan-ze)
 
-2.使用ai插件微调项目，如果是编辑代码
+#### 2.使用ai插件微调项目
 
 ## 5.总结
 
