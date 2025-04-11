@@ -1,3 +1,7 @@
+---
+icon: image-landscape
+---
+
 # ComfyUI API Documentation
 
 ## ComfyUI API Documentation

@@ -62,9 +62,14 @@
   * [生成带有公式的 Excel 表格](java-bao-biao-dao-ru-dao-chu-xiang-guan/sheng-cheng-dai-you-gong-shi-de-excel-biao-ge.md)
 * [Jstack线程/性能分析的利器](jstack-xian-cheng-xing-neng-fen-xi-de-li-qi.md)
 
-## 🖼️ AI
+## 🤖 AI
 
 * [ComfyUI API Documentation](ai/comfyui-api-documentation.md)
+
+***
+
+* [Prompt工程](prompt-gong-cheng.md)
+* [LangGPT prompt样例](langgpt-prompt-yang-li.md)
 
 ## 架构
 
