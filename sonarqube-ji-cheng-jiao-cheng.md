@@ -39,6 +39,14 @@ docker run -d --name sonarqube --network sonarqube-net \
 * 配置数据库（PostgreSQL/MySQL/Oracle）。
 * 启动：`./bin/[OS]/sonar.sh start`。
 
+#### 1.3 插件安装
+
+在应用市场中安装插件
+
+如下我安装了中文包插件
+
+<figure><img src=".gitbook/assets/image-20250417203034454.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### **2. 项目扫描**
