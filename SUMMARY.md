@@ -42,6 +42,10 @@
 * [🚑 supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
 * [📈 PLG（Promtail + Loki + Grafana）日志系统生产快速实践](yun-wei/plgpromtail-+-loki-+-grafana-ri-zhi-xi-tong-sheng-chan-kuai-su-shi-jian.md)
 
+***
+
+* [SonarQube 集成教程](sonarqube-ji-cheng-jiao-cheng.md)
+
 ## 💐 前端 <a href="#vitevue3ts-xiang-mu" id="vitevue3ts-xiang-mu"></a>
 
 * [vite、vue3、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
