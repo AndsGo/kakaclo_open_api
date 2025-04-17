@@ -368,8 +368,6 @@ docker -logs sonarqube
 
 参考：
 
-参考：
-
 [https://www.jianshu.com/p/1a4b8bdf12f8](https://www.jianshu.com/p/1a4b8bdf12f8)
 
 [https://www.tcxurun.cn/2024/12/10/%e4%bd%bf%e7%94%a8docker%e6%96%b9%e5%bc%8f%e5%ae%89%e8%a3%85sonar-7-8-%e6%89%ab%e6%8f%8fjdk1-8%e9%a1%b9%e7%9b%ae/](https://www.tcxurun.cn/2024/12/10/%E4%BD%BF%E7%94%A8docker%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85sonar-7-8-%E6%89%AB%E6%8F%8Fjdk1-8%E9%A1%B9%E7%9B%AE/)
