@@ -335,6 +335,37 @@ docker run --rm \
 
 sonar-scanner-cli的方式适用于几乎所有语言。
 
+java项目建议使用 mvn 进行扫描
+
+**常用的命令:**
+
+```shell
+//运行一个docker容器
+docker run -d --name sonartest sonarqube:7.8-community
+```
+
+```shell
+//停止容器
+docker stop sonartest
+//删除容器
+docker rm sonartest
+```
+
+```shell
+//将容器内重要文件复制到宿主机
+docker cp sonartest:/opt/sonarqube/conf /data/volume/sonarqube
+docker cp sonartest:/opt/sonarqube/data /data/volume/sonarqube
+docker cp sonartest:/opt/sonarqube/logs /data/volume/sonarqube
+docker cp sonartest:/opt/sonarqube/extensions /data/volume/sonarqube
+```
+
+```shell
+//查看docker日志
+docker -logs sonarqube
+```
+
+参考：
+
 参考：
 
 [https://www.jianshu.com/p/1a4b8bdf12f8](https://www.jianshu.com/p/1a4b8bdf12f8)
