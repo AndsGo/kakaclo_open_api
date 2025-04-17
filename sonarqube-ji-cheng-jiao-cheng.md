@@ -153,6 +153,8 @@ docker run --rm \
 * **问题分类**：按严重程度（Blocker/Critical/Major）筛选。
 * **历史趋势**：代码质量随时间变化。
 
+<figure><img src=".gitbook/assets/image-20250417201611317.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### **4. 高级配置**
