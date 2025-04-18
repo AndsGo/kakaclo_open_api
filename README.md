@@ -4,7 +4,7 @@ icon: book
 
 # 目录
 
-定期发布组内技术分享
+定期发布组内技术分享，[公司网站](https://www.kakaclo.com)
 
 请查看 [在线文档](https://kakaclo.gitbook.io/kakclo-open-wiki)
 
@@ -45,6 +45,7 @@ icon: book
 
 * [supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
 * [PLG（Promtail + Loki + Grafana）日志系统生产快速实践](yun-wei/plgpromtail-+-loki-+-grafana-ri-zhi-xi-tong-sheng-chan-kuai-su-shi-jian.md)
+* [SonarQube 集成教程](sonarqube-ji-cheng-jiao-cheng.md)
 
 [前端](broken-reference)
 
