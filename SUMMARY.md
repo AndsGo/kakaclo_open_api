@@ -74,6 +74,7 @@
 
 * [Prompt工程](prompt-gong-cheng.md)
 * [LangGPT prompt样例](langgpt-prompt-yang-li.md)
+* [Cursor的AI编码最佳实践指南](cursor-de-ai-bian-ma-zui-jia-shi-jian-zhi-nan.md)
 
 ## 架构
 
