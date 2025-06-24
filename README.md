@@ -63,6 +63,8 @@ icon: book
 * [ComfyUI API Documentation](ai/comfyui-api-documentation.md)
 * [Prompt工程](prompt-gong-cheng.md)
 * [LangGpt prompt样例](langgpt-prompt-yang-li.md)
+* [Cursor的AI编码最佳实践指南](cursor-de-ai-bian-ma-zui-jia-shi-jian-zhi-nan.md)
+* [lora-tool：为 image注入 LoRA 魔力](loratool-wei-image-zhu-ru-lora-mo-li.md)
 
 [架构](broken-reference)
 

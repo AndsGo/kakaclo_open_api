@@ -1,5 +1,6 @@
 ---
 description: Ryo Lu
+icon: robot
 ---
 
 # Cursor的AI编码最佳实践指南
