@@ -341,6 +341,38 @@ docker run --rm \
     sonarsource/sonar-scanner-cli
 ```
 
+## 6.案例场景
+
+### 1.java项目升级
+
+某公司在进行项目升级时，决定从JDK 8迁移到JDK 11。为了确保Sonar扫描过程的顺利进行，他们采取了以下步骤：
+
+* 在所有开发人员的工作站上安装JDK 11，并统一配置`JAVA_HOME`。
+* 更新项目的`pom.xml`文件，指定`maven.compiler.source`和`maven.compiler.target`为11。
+* 在SonarQube服务器上设置`JAVA_HOME`为JDK 11的路径。
+* 在Jenkins/其他CICD流水线上构建代理上安装JDK 11，并在构建配置中设置环境变量。
+
+通过这些步骤，他们成功完成了JDK版本的迁移，并确保了Sonar扫描过程的顺利进行。
+
+将项目JDK和Sonar的**JDK版本保持一致**。
+
+### 2. 多个不同语言项目
+
+公司存在java，PHP，python，Go项目。
+
+* java项目使用mvn方式进行扫描，过程同案例1
+* PHP，python，Go项目使用sonar-scanner-cli的方式进行扫描
+* PHP，python，Go项目中需配置好sonar-project.properties
+
+#### 3.多个JDK版本项目
+
+公司可能存在使用不同JDK版本的项目如果JDK8和jDK11共存。
+
+由于sonar-scanner扫描的是class文件，因此可以分两边进行。
+
+* 在构建阶段，使用JDK 8的Docker镜像进行编译和测试。
+* 在Sonar扫描阶段，使用JDK 11的Docker镜像运行Sonar Scanner。
+
 **tips**:
 
 sonar-scanner-cli的方式适用于几乎所有语言。
