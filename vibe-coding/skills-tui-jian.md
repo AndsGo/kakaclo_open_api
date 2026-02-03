@@ -57,3 +57,10 @@ Obsidian 官方推出的，可以高效的管理和理解你的 Obsidian知识�
 可以使用 React 框架去创建视频，通过 CSS、SVG、WebGL 等内容以及变量、API、函数等等，能够创建出质量非常不错的视频，最近也是大火的 Skill。
 
 地址：[https://github.com/remotion-dev/remotion](https://github.com/remotion-dev/remotion)
+
+10、find skills
+
+vercel 开发的专门用来找skills 的skills\
+This skill helps you discover and install skills from the open agent skills ecosystem.\
+地址: [https://skills.sh/](https://skills.sh/)
+
