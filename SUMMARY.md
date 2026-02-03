@@ -94,6 +94,7 @@
 * [四个追问式提示词方法](vibe-coding/si-ge-zhui-wen-shi-ti-shi-ci-fang-fa.md)
 * [程序员MCP服务器使用文档大全](vibe-coding/cheng-xu-yuan-mcp-fu-wu-qi-shi-yong-wen-dang-da-quan.md)
 * [Claude Code 完全指南：使用方式、技巧与最佳实践Page](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian-page.md)
+* [skills 推荐](vibe-coding/skills-tui-jian.md)
 
 ## Agents开发
 
