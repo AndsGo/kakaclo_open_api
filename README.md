@@ -82,6 +82,13 @@ icon: book
 * [AI编程：逃离"修改地狱"的五个实战技巧](vibe-coding/ai-bian-ma-tao-li-xiu-gai-di-yu-de-wu-ge-shi-zhan-ji-qiao.md)
 * [四个追问式提示词方法](vibe-coding/si-ge-zhui-wen-shi-ti-shi-ci-fang-fa.md)
 * [程序员MCP服务器使用文档大全](vibe-coding/cheng-xu-yuan-mcp-fu-wu-qi-shi-yong-wen-dang-da-quan.md)
+* [Claude Code 完全指南：使用方式、技巧与最佳实践](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian.md)
+* [skils 推荐](vibe-coding/skills-tui-jian.md)
+
+[OpenClaw](/broken/pages/9vpiRWqPDBsZLUeSDT6T)
+
+* [OpenClaw(Clawdbot)快速接入Discord指南](openclaw/openclawclawdbot-kuai-su-jie-ru-discord-zhi-nan.md)
+* [OpenClaw（原 Clawdbot）钉钉对接](openclaw/openclaw-yuan-clawdbot-ding-ding-dui-jie-bao-mu-ji-jiao-cheng-shou-ba-shou-jiao-ni-da-zao-zi-ji-de-a.md)
 
 [AGENTS开发](/broken/pages/JScFI505sxthGfFMI2N4)
 
