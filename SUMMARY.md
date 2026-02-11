@@ -93,14 +93,26 @@
 * [AI编码：逃离"修改地狱"的五个实战技巧](vibe-coding/ai-bian-ma-tao-li-xiu-gai-di-yu-de-wu-ge-shi-zhan-ji-qiao.md)
 * [四个追问式提示词方法](vibe-coding/si-ge-zhui-wen-shi-ti-shi-ci-fang-fa.md)
 * [程序员MCP服务器使用文档大全](vibe-coding/cheng-xu-yuan-mcp-fu-wu-qi-shi-yong-wen-dang-da-quan.md)
+* [Claude Code 完全指南：使用方式、技巧与最佳实践](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian.md)
+* [skills 推荐](vibe-coding/skills-tui-jian.md)
+
+## 🦞 openclaw
+
+* [OpenClaw(Clawdbot)快速接入Discord指南](openclaw/openclawclawdbot-kuai-su-jie-ru-discord-zhi-nan.md)
+* [OpenClaw（原 Clawdbot）钉钉对接保姆级教程 手把手教你打造自己的 AI 助手](openclaw/openclaw-yuan-clawdbot-ding-ding-dui-jie-bao-mu-ji-jiao-cheng-shou-ba-shou-jiao-ni-da-zao-zi-ji-de-a.md)
 
 ## Agents开发
 
 * [第一章 初识智能体](agents-kai-fa/di-yi-zhang-chu-shi-zhi-neng-ti.md)
 
+## 数据中台
+
+* [数据中台技术架构文档（中小型跨境电商企业·轻量级方案）](shu-ju-zhong-tai/shu-ju-zhong-tai-ji-shu-jia-gou-wen-dang-zhong-xiao-xing-kua-jing-dian-shang-qi-ye-qing-liang-ji-fan.md)
+
 ## prompt
 
 * [代码分析师](prompt/dai-ma-fen-xi-shi.md)
+* [🚀 新手快速入门 Prompt（80/20 学习法）](prompt/xin-shou-kuai-su-ru-men-prompt8020-xue-xi-fa.md)
 
 ## 架构
 

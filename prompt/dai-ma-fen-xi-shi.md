@@ -1,5 +1,6 @@
 ---
 description: songxulin
+icon: message-code
 ---
 
 # 代码分析师
