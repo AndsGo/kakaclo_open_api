@@ -96,6 +96,11 @@
 * [Claude Code 完全指南：使用方式、技巧与最佳实践Page](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian-page.md)
 * [skills 推荐](vibe-coding/skills-tui-jian.md)
 
+## 🦞 openclaw
+
+* [OpenClaw(Clawdbot)快速接入Discord指南](openclaw/openclawclawdbot-kuai-su-jie-ru-discord-zhi-nan.md)
+* [OpenClaw（原 Clawdbot）钉钉对接保姆级教程 手把手教你打造自己的 AI 助手](openclaw/openclaw-yuan-clawdbot-ding-ding-dui-jie-bao-mu-ji-jiao-cheng-shou-ba-shou-jiao-ni-da-zao-zi-ji-de-a.md)
+
 ## Agents开发
 
 * [第一章 初识智能体](agents-kai-fa/di-yi-zhang-chu-shi-zhi-neng-ti.md)
