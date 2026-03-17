@@ -1,5 +1,6 @@
 ---
 description: xulin
+icon: claude
 ---
 
 # Claude Code 团队入门指南
