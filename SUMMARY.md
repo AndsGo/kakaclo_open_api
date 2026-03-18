@@ -96,6 +96,7 @@
 * [Claude Code 完全指南：使用方式、技巧与最佳实践](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian.md)
 * [skills 推荐](vibe-coding/skills-tui-jian.md)
 * [Superpowers 技能体系设计学习文档](vibe-coding/superpowers-ji-neng-ti-xi-she-ji-xue-xi-wen-dang.md)
+* [从 Vibe Coding 到 Agentic Engineering：学会像智能体一样看世界](vibe-coding/cong-vibe-coding-dao-agentic-engineering-xue-hui-xiang-zhi-neng-ti-yi-yang-kan-shi-jie.md)
 * [Claude Code 团队入门指南](vibe-coding/claude-code-tuan-dui-ru-men-zhi-nan.md)
 
 ## 🦞 openclaw
