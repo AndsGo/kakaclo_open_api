@@ -50,6 +50,10 @@
 
 * [vite、vue3、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
 
+## python
+
+* [一个可被 CI 约束的 FastAPI 后端模板：从分层规范到团队协作](python/yi-ge-ke-bei-ci-yue-shu-de-fastapi-hou-duan-mu-ban-cong-fen-ceng-gui-fan-dao-tuan-dui-xie-zuo.md)
+
 ## Java
 
 * [🛑 记一次库版本升级引起程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
