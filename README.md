@@ -51,6 +51,10 @@ icon: book
 
 * [vite、vue、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
 
+[PYTHON](/broken/pages/ntC0EBuQqzIXrU8GaYJI)
+
+* [一个可被 CI 约束的 FastAPI 后端模板：从分层规范到团队协作](python/yi-ge-ke-bei-ci-yue-shu-de-fastapi-hou-duan-mu-ban-cong-fen-ceng-gui-fan-dao-tuan-dui-xie-zuo.md)
+
 [JAVA](/broken/pages/Rlk052XwaeFBMul2ndd5)
 
 * [记一次库升级引起的程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
@@ -84,6 +88,9 @@ icon: book
 * [程序员MCP服务器使用文档大全](vibe-coding/cheng-xu-yuan-mcp-fu-wu-qi-shi-yong-wen-dang-da-quan.md)
 * [Claude Code 完全指南：使用方式、技巧与最佳实践](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian.md)
 * [skils 推荐](vibe-coding/skills-tui-jian.md)
+* [Superpowers技能体现设计学习文档](vibe-coding/superpowers-ji-neng-ti-xi-she-ji-xue-xi-wen-dang.md)
+* [从 Vibe Coding 到 Agentic Engineering：学会像智能体一样看世界](vibe-coding/cong-vibe-coding-dao-agentic-engineering-xue-hui-xiang-zhi-neng-ti-yi-yang-kan-shi-jie.md)
+* [Claude Code 团队入门指南](vibe-coding/claude-code-tuan-dui-ru-men-zhi-nan.md)
 
 [OpenClaw](/broken/pages/9vpiRWqPDBsZLUeSDT6T)
 
@@ -93,6 +100,10 @@ icon: book
 [AGENTS开发](/broken/pages/JScFI505sxthGfFMI2N4)
 
 * [第一章 认识智能体](agents-kai-fa/di-yi-zhang-chu-shi-zhi-neng-ti.md)
+
+[数据中台](/broken/pages/yu3aouBn7j049pXOszBA)
+
+* [数据中台技术架构文档（中小型跨境电商企业-轻量级方案）](shu-ju-zhong-tai/shu-ju-zhong-tai-ji-shu-jia-gou-wen-dang-zhong-xiao-xing-kua-jing-dian-shang-qi-ye-qing-liang-ji-fan.md)
 
 [架构](/broken/pages/JYHGe5DEl4dg5W2CRjT8)
 

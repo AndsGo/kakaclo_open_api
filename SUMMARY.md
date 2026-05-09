@@ -50,6 +50,10 @@
 
 * [vite、vue3、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
 
+## python
+
+* [一个可被 CI 约束的 FastAPI 后端模板：从分层规范到团队协作](python/yi-ge-ke-bei-ci-yue-shu-de-fastapi-hou-duan-mu-ban-cong-fen-ceng-gui-fan-dao-tuan-dui-xie-zuo.md)
+
 ## Java
 
 * [🛑 记一次库版本升级引起程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
@@ -95,6 +99,9 @@
 * [程序员MCP服务器使用文档大全](vibe-coding/cheng-xu-yuan-mcp-fu-wu-qi-shi-yong-wen-dang-da-quan.md)
 * [Claude Code 完全指南：使用方式、技巧与最佳实践](vibe-coding/claude-code-wan-quan-zhi-nan-shi-yong-fang-shi-ji-qiao-yu-zui-jia-shi-jian.md)
 * [skills 推荐](vibe-coding/skills-tui-jian.md)
+* [Superpowers 技能体系设计学习文档](vibe-coding/superpowers-ji-neng-ti-xi-she-ji-xue-xi-wen-dang.md)
+* [从 Vibe Coding 到 Agentic Engineering：学会像智能体一样看世界](vibe-coding/cong-vibe-coding-dao-agentic-engineering-xue-hui-xiang-zhi-neng-ti-yi-yang-kan-shi-jie.md)
+* [Claude Code 团队入门指南](vibe-coding/claude-code-tuan-dui-ru-men-zhi-nan.md)
 
 ## 🦞 openclaw
 
