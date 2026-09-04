@@ -10,13 +10,13 @@ icon: book
 
 
 
-[开发规范](/broken/pages/unQwzUkDvbFJUPi1oMRw)
+[开发规范](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/kai-fa-gui-fan)
 
 * [Go开发规范](kai-fa-gui-fan/go-kai-fa-gui-fan.md)
 * [阿里java开发规范](kai-fa-gui-fan/a-li-java-kai-fa-gui-fan.md)
 * [TypeScript编码规范](kai-fa-gui-fan/typescript-bian-ma-gui-fan.md)
 
-[Go相关](/broken/pages/N9x1vSKF0XbptvUToWPS)
+[Go相关](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/go)
 
 * 1.[Go语言入门](go/go-yu-yan-ru-men-zhi-nan.md)
 * 2.[Go操作Mysql和Redis](go/go-cao-zuo-mysql-he-redis.md)
@@ -27,11 +27,11 @@ icon: book
 * 7.[快速搭建支持图片实时处理的文件服务](go/kuai-su-da-jian-zhi-chi-tu-pian-shi-shi-chu-li-de-wen-jian-fu-wu.md)
 * 8.[Go 语言中的依赖注入：由浅入深Wire 框架](go/go-yu-yan-zhong-de-yi-lai-zhu-ru-you-qian-ru-shen-wire-kuang-jia.md)
 
-[PHP](/broken/pages/m59yRgdRlBiZhvNZmdJ2)
+[PHP](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/php)
 
 * 1.[在windows上使用vs code调试laravel](php/zai-windows-shang-shi-yong-visual-studio-code-tiao-shi-laravel-10.md)
 
-[Wordpress站群](/broken/pages/v6fgAGjBLf8tTcyQwIwZ)
+[Wordpress站群](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/wordpress-zhan-qun)
 
 * 1.[需求分析](wordpress-zhan-qun/xu-qiu-fen-xi.md)
 * 2.[代码初始化](wordpress-zhan-qun/dai-ma-chu-shi-hua.md)
@@ -41,28 +41,28 @@ icon: book
 * 6.[wordpress外部库的引入和测试](wordpress-zhan-qun/wordpress-wai-bu-ku-de-yin-ru-he-ce-shi.md)
 * 7.[job项目搭建和测试](wordpress-zhan-qun/job-xiang-mu-da-jian-he-ce-shi.md)
 
-[运维](/broken/pages/IN3ajDHRpUfWi14FPACF)
+[运维](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/yun-wei)
 
 * [supervisor安装使用](yun-wei/supervisor-an-zhuang-shi-yong.md)
 * [PLG（Promtail + Loki + Grafana）日志系统生产快速实践](yun-wei/plgpromtail-+-loki-+-grafana-ri-zhi-xi-tong-sheng-chan-kuai-su-shi-jian.md)
 * [SonarQube 集成教程](sonarqube-ji-cheng-jiao-cheng.md)
 
-[前端](/broken/pages/9nKbmKaiO7Uoi7crBkxs)
+[前端](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/vitevue3ts-xiang-mu)
 
 * [vite、vue、TS项目搭建](vitevue3ts-xiang-mu/vitevue3ts-xiang-mu-da-jian.md)
 
-[PYTHON](/broken/pages/ntC0EBuQqzIXrU8GaYJI)
+[PYTHON](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/python)
 
 * [一个可被 CI 约束的 FastAPI 后端模板：从分层规范到团队协作](python/yi-ge-ke-bei-ci-yue-shu-de-fastapi-hou-duan-mu-ban-cong-fen-ceng-gui-fan-dao-tuan-dui-xie-zuo.md)
 
-[JAVA](/broken/pages/Rlk052XwaeFBMul2ndd5)
+[JAVA](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/java)
 
 * [记一次库升级引起的程序自动停止](java/ji-yi-ci-ku-ban-ben-sheng-ji-yin-qi-cheng-xu-zi-dong-ting-zhi.md)
 * [大文件解析优化：如何避免OOM异常？](java/da-wen-jian-jie-xi-you-hua-ru-he-bi-mian-oom-yi-chang.md)
 * [java 导入导出](java-bao-biao-dao-ru-dao-chu-xiang-guan/)
 * [Jstack线程/性能分析的利器](jstack-xian-cheng-xing-neng-fen-xi-de-li-qi.md)
 
-[AI](/broken/pages/wff9H4QHF14z1xQgopxN)
+[AI](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/ai)
 
 * [ComfyUI API Documentation](ai/comfyui-api-documentation.md)
 * [Prompt工程](prompt-gong-cheng.md)
@@ -72,8 +72,9 @@ icon: book
 * [没有AI背景的团队如何快速进行AI开发](mei-you-ai-bei-jing-de-tuan-dui-ru-he-kuai-su-jin-xing-ai-kai-fa.md)
 * [build you own code agent](build-you-own-code-agent.md)
 * [启发式AI沟通框架](qi-fa-shi-ai-gou-tong-kuang-jia.md)
+* [搭建自己的Agent Harness环境](da-jian-zi-ji-de-agent-harness-huan-jing.md)
 
-[VIBE CODING](/broken/pages/XwpCLzDJ5Vfzuj73mTLb)
+[VIBE CODING](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/vibe-coding)
 
 * [kiro spec复现](vibe-coding/kiro-spec-fu-xian.md)
 * [6A工作流](vibe-coding/6a-gong-zuo-liu.md)
@@ -92,19 +93,19 @@ icon: book
 * [从 Vibe Coding 到 Agentic Engineering：学会像智能体一样看世界](vibe-coding/cong-vibe-coding-dao-agentic-engineering-xue-hui-xiang-zhi-neng-ti-yi-yang-kan-shi-jie.md)
 * [Claude Code 团队入门指南](vibe-coding/claude-code-tuan-dui-ru-men-zhi-nan.md)
 
-[OpenClaw](/broken/pages/9vpiRWqPDBsZLUeSDT6T)
+[OpenClaw](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/openclaw)
 
 * [OpenClaw(Clawdbot)快速接入Discord指南](openclaw/openclawclawdbot-kuai-su-jie-ru-discord-zhi-nan.md)
 * [OpenClaw（原 Clawdbot）钉钉对接](openclaw/openclaw-yuan-clawdbot-ding-ding-dui-jie-bao-mu-ji-jiao-cheng-shou-ba-shou-jiao-ni-da-zao-zi-ji-de-a.md)
 
-[AGENTS开发](/broken/pages/JScFI505sxthGfFMI2N4)
+[AGENTS开发](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/agents-kai-fa)
 
 * [第一章 认识智能体](agents-kai-fa/di-yi-zhang-chu-shi-zhi-neng-ti.md)
 
-[数据中台](/broken/pages/yu3aouBn7j049pXOszBA)
+[数据中台](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/shu-ju-zhong-tai)
 
 * [数据中台技术架构文档（中小型跨境电商企业-轻量级方案）](shu-ju-zhong-tai/shu-ju-zhong-tai-ji-shu-jia-gou-wen-dang-zhong-xiao-xing-kua-jing-dian-shang-qi-ye-qing-liang-ji-fan.md)
 
-[架构](/broken/pages/JYHGe5DEl4dg5W2CRjT8)
+[架构](https://app.gitbook.com/s/6R0H2y3DjtewCWFWXC2c/jia-gou)
 
 * [DDD简单入门](jia-gou/ddd-jian-dan-ru-men.md)
